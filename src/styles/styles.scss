@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PoynterOSDisplay';
+    src: url(../fonts/PoynterOSDisplay.ttf) format('truetype');
+}
+
+h1 {
+    font-family: PoynterOSDisplay, serif;
+    font-style: normal;
+    font-weight: 400;
+}
