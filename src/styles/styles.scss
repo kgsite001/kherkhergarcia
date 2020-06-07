@@ -1,6 +1,11 @@
 @font-face {
     font-family: 'PoynterOSDisplay';
-    src: url(../fonts/PoynterOSDisplay.ttf) format('truetype');
+    src: url(../fonts/PoynterOSDisplay.otf);
+}
+
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url(../fonts/AvenirNext-Regular.ttf);
 }
 
 h1 {
