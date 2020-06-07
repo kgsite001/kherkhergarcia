@@ -8,9 +8,52 @@
   src: url(../fonts/AvenirNext-Regular.ttf);
 }
 
-h1 {
-  font-family: PoynterOSDisplay, serif;
-  font-style: normal;
-  font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'AvenirNext-Regular', sans-serif;
+  font-size: 16px;
+}
+
+.nav-flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.nav-flex_container li {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-flex_container section {
+  border: 1px solid black;
+  height: 200px;
 }
 /*# sourceMappingURL=styles.css.map */
