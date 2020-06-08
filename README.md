@@ -1,6 +1,6 @@
-#Kherkher Garcia
+# Kherkher Garcia
 
-##Tools used
+## Tools used
 - React
 - SASS
 - GatsbyJS
