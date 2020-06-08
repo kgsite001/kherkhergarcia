@@ -11,7 +11,6 @@
 * {
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: 'AvenirNext-Regular', sans-serif;
   font-size: 16px;
 }
@@ -25,6 +24,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
+  border: 1px solid black;
 }
 
 .nav-flex_container li {

@@ -7,7 +7,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="main-flex_container">
-      <section></section>
+      <section>
+        <h1>We are with you all the way.</h1>
+        <h2>Our reputation is built on our commitment to service and a strong record of success</h2>
+      </section>
       <section></section>
       <section></section>
       <section></section>
