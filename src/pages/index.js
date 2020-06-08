@@ -16,7 +16,7 @@ const IndexPage = () => (
           <button>Ask Us Anything ➝</button>
         </div>
       </section>
-      <section className="testimonials_container">
+      <section className="stories_container">
         <h1>The moment you are injured, the clock starts. The longer you wait, the harder your case gets.</h1>
         <p>Ruby's day started like any other. We approach our clients like family. Our team is dedicated to putting your needs
           first and helping you achieve the best possible result for you. Our focus is your justice.</p>
