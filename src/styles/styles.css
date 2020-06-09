@@ -24,12 +24,13 @@
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
-  border: 1px solid black;
+  border: 0px solid black;
   margin: 0;
 }
 
 .nav-flex_container li {
   text-align: center;
+  border: 0px solid black;
   font-size: 12px;
   margin: 20px 10px;
   display: -webkit-box;
@@ -54,13 +55,13 @@
 }
 
 .main-flex_container section {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 .main-flex_container .hero-menu_container {
-  background-image: url(../images/Couple.png);
+  background-image: url(../images/HeroIMG-Jesus.png);
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: #60a3ff;
   background-blend-mode: multiply;
   opacity: 1;
@@ -80,7 +81,7 @@
 }
 
 .main-flex_container .hero-menu_container .hero-menu_copy {
-  max-width: 30%;
+  max-width: 50%;
   margin-bottom: 3%;
   margin-left: 12%;
 }
@@ -88,22 +89,82 @@
 .main-flex_container .hero-menu_container h1 {
   font-family: PoynterOSDisplay, serif;
   color: white;
-  font-size: 4rem;
+  font-size: 48px;
   font-weight: 100;
 }
 
 .main-flex_container .hero-menu_container h2 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
-.main-flex_container .hero-menu_container button {
+.main-flex_container .testimonials_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-flex_container .testimonials_container div {
+  border: 0px solid black;
+  width: 50%;
+  padding: 50px 25px;
+}
+
+.main-flex_container .results_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #f6f7fc;
+  padding: 50px 25px;
+}
+
+.main-flex_container .results_container .results-table_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #122a3e;
+  opacity: 25%;
+}
+
+.section_subtitle {
+  font-family: PoynterOSDisplay;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #032dc1;
+}
+
+.section_paragraph {
+  font-size: 14px;
+}
+
+button {
   color: white;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: bold;
   padding: 5px 20px;
-  margin-left: 15%;
-  margin-top: 20px;
+  margin-top: 10px;
   background: #e94f37 0% 0% no-repeat padding-box;
   opacity: 1;
   border: 0px;

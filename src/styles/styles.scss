@@ -19,12 +19,12 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 0;
 
     li {
         text-align: center;
-        //border: 1px solid black;
+        border: 0px solid black;
         font-size: 12px;
         margin: 20px 10px;
         display: flex;
@@ -38,14 +38,14 @@
     flex-direction: column;
 
     section {
-        border: 1px solid black;
+        border: 0px solid black;
         //height: 200px;
     }
 
     .hero-menu_container {
-        background-image: url(../images/Couple.png);
+        background-image: url(../images/HeroIMG-Jesus.png);
         background-size: cover;
-        min-height: 100vh; //media-query-- 50vh at mobile
+        min-height: 50vh; //media-query-- 100vh at large
         background-color: #60a3ff;
         background-blend-mode: multiply;
         opacity: 1;
@@ -55,7 +55,7 @@
         justify-content: flex-end;
 
         .hero-menu_copy {
-            max-width: 30%; //media-query increase for small
+            max-width: 50%; //media-query decrease for large
             margin-bottom: 3%;
             margin-left: 12%;
         }
@@ -63,25 +63,70 @@
         h1 {
             font-family: PoynterOSDisplay, serif;
             color: white;
-            font-size: 4rem; //media-query decrease for small
+            font-size: 48px; //media-query increase for large
             font-weight: 100;
         }
 
         h2 {
             color: white;
-            font-size: 1.2rem; //media-query decrease for small
+            font-size: 16px; //media-query increase for large
         }
 
-        button {
-            color: white;
-            font-size: 1.2rem; //media-query decrease for small
-            font-weight: bold;
-            padding: 5px 20px;
-            margin-left: 15%;
-            margin-top: 20px;
-            background: #e94f37 0% 0% no-repeat padding-box;
-            opacity: 1;
-            border: 0px;
-        }
+        
     }
+
+    .testimonials_container {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            border: 0px solid black;
+            width: 50%;
+            padding: 50px 25px;
+        }
+
+    }
+
+    .results_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        background: #f6f7fc;
+       padding: 50px 25px;
+
+       .results-table_container {
+           display: flex;
+           flex-direction: row;
+       }
+    }
+}
+
+.section_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #122a3e;
+    opacity: 25%;
+}
+
+.section_subtitle {
+    font-family: PoynterOSDisplay;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #032dc1;
+}
+
+.section_paragraph {
+    font-size: 14px;
+}
+
+button {
+    color: white;
+    font-size: 16px; //media-query increase for large11
+    font-weight: bold;
+    padding: 5px 20px;
+    margin-top: 10px;
+    background: #e94f37 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0px;
 }
