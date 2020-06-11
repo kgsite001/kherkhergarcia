@@ -3,6 +3,19 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import scale from "../images/scale.svg"
+import handshake from "../images/handshake.svg"
+import phone from "../images/phone.svg"
+
+import award1 from '../images/award-top_25.png'
+import award2 from '../images/award-ntl_top_100.png'
+import award3 from '../images/award-super_lawyer.png'
+import award4 from '../images/award-association_for_justice.png'
+import award5 from '../images/award-top_percent.png'
+import award6 from '../images/award-million_dollar.png'
+import award7 from '../images/award-top_40.png'
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -180,8 +193,46 @@ const IndexPage = () => (
         </div>
         <button>See More Updates ➝</button>
       </section>
-      <section></section>
-      <section></section>
+      <section className="ask_container">
+        <div className="ask-main_container">
+          <h1 className="section_title">Ask Us Anything</h1>
+          <h2 className="section_subtitle">Let us help you find a way forward..</h2>
+          <p className="section_paragraph">Use our guides to select the lawyer that is right for you.</p>
+        </div>
+        <div className="ask-sub_container">
+          <div className="ask-sub_info">
+            <img src={scale}></img>
+            <h1 className="ask-sub_info-title">Know Your Rights</h1>
+            <p className="ask-sub_info-description">Understand what options you have so you can take the right steps forward.</p>
+            <p className="ask-sub_info-link">Read More ➝</p>
+          </div>
+          <div className="ask-sub_info">
+            <img src={handshake}></img>
+            <h1 className="ask-sub_info-title">Know Your Rights</h1>
+            <p className="ask-sub_info-description"> Understand what options you have so you can take the right steps forward.</p>
+            <p className="ask-sub_info-link">Download a Free Guide ➝</p>
+          </div>
+          <div className="ask-sub_info">
+            <img src={phone}></img>
+            <h1 className="ask-sub_info-title">Know Your Rights</h1>
+            <p className="ask-sub_info-description">Understand what options you have so you can take the right steps forward.</p>
+            <p className="ask-sub_info-link">Ask Us Anything ➝</p>
+          </div>
+        </div>
+      </section>
+      <section className="awards_container">
+        <h1 className="section_title">Nationally Recognized & Awarded</h1>
+        <div className="awards-icon_container">
+          <img src={award1}></img>
+          <img src={award2}></img>
+          <img src={award3}></img>
+          <img src={award4}></img>
+          <img src={award5}></img>
+          <img src={award6}></img>
+          <img src={award7}></img>
+          
+        </div>
+      </section>
     </div>
   </Layout>
 )

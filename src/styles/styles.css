@@ -104,15 +104,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-flex_container .testimonials_container div {
   border: 0px solid black;
-  width: 50%;
+  width: 75%;
+  margin: auto;
 }
 
 .main-flex_container .results_container {
@@ -135,10 +136,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-flex_container .results_container .results-table_container .results-table {
@@ -206,14 +207,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-flex_container .about-main_container div {
   border: 0px solid black;
+  margin: auto;
 }
 
 .main-flex_container .about-main_container .about-main_copy {
@@ -228,19 +230,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
-  border-top: 2px solid #032dc1;
 }
 
 .main-flex_container .about-sub_container div {
-  width: 33.3%;
+  width: 55%;
   padding: 10px;
 }
 
@@ -282,10 +286,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-flex_container .questions_container .questions_introduction,
@@ -297,11 +301,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 55%;
 }
 
 .main-flex_container .news_container {
-  background-color: #fffbf0;
+  background-color: #8DA9C4;
   text-align: center;
 }
 
@@ -309,17 +315,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-flex_container .news_container .news-story_flexcontainer .news-story {
   -webkit-box-shadow: 2px 2px 5px 0px #878787;
   box-shadow: 2px 2px 5px 0px #878787;
   background-color: white;
-  width: 300px;
+  width: 75%;
   margin: 20px;
   padding: 20px;
 }
@@ -341,6 +350,80 @@
   font-size: 12px;
   font-weight: bold;
   color: #e94f37;
+}
+
+.main-flex_container .ask_container {
+  text-align: center;
+}
+
+.main-flex_container .ask_container .ask-sub_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-flex_container .ask_container .ask-sub_container .ask-sub_info {
+  margin: 20px;
+}
+
+.main-flex_container .ask_container .ask-sub_container .ask-sub_info img {
+  width: 60px;
+}
+
+.main-flex_container .ask_container .ask-sub_container .ask-sub_info .ask-sub_info-title {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main-flex_container .ask_container .ask-sub_container .ask-sub_info .ask-sub_info-description {
+  font-size: 12px;
+}
+
+.main-flex_container .ask_container .ask-sub_container .ask-sub_info .ask-sub_info-link {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 40px;
+  color: #e94f37;
+}
+
+.main-flex_container .awards_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #FEC82E;
+  padding: 10px !important;
+}
+
+.main-flex_container .awards_container .awards-icon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-flex_container .awards_container .awards-icon_container img {
+  margin: 0px 0px;
+  width: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .section_title {
@@ -373,16 +456,16 @@ button {
 }
 
 section {
-  padding: 50px 10%;
+  padding: 50px 0%;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .hero-menu_container {
     min-height: 80vh !important;
     padding: 50px 10%;
   }
   .hero-menu_container .hero-menu_copy {
-    max-width: 40% !important;
+    max-width: 40%;
   }
   .hero-menu_container .hero-menu_copy h1 {
     font-size: 62px;
@@ -399,8 +482,87 @@ section {
   .section_paragraph {
     font-size: 16px;
   }
+  .testimonials_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .results-table_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .about-main_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .about-sub_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: initial !important;
+        -ms-flex-align: initial !important;
+            align-items: initial !important;
+    border-top: 2px solid #032dc1 !important;
+  }
+  .news-story_flexcontainer {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .news-story_title {
+    font-size: 16px !important;
+  }
+  .news-story_excerpt {
+    font-size: 14px !important;
+  }
+  .news-story_link {
+    font-size: 14px !important;
+  }
+  .questions_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .ask-sub_container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .ask-sub_info-title {
+    font-size: 16px !important;
+  }
+  .ask-sub_info-description {
+    font-size: 14px !important;
+  }
+  .ask-sub_info-link {
+    font-size: 14px !important;
+  }
   section {
     padding: 50px 20%;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .hero-menu_container {
+    min-height: 10vh !important;
+  }
+  .hero-menu_container .hero-menu_copy {
+    max-width: 100% !important;
+  }
+  .hero-menu_container .hero-menu_copy h1 {
+    font-size: 26px;
+  }
+  .awards-icon_container img {
+    width: 10% !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

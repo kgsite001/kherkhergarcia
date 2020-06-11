@@ -77,11 +77,12 @@
 
     .testimonials_container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         div {
             border: 0px solid black;
-            width: 50%;
+            width: 75%;
+            margin: auto;
             //padding: 50px 10%;
         }
     }
@@ -95,7 +96,7 @@
 
         .results-table_container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
 
             .results-table {
                 display: flex;
@@ -158,10 +159,11 @@
 
     .about-main_container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         div {
             border: 0px solid black;
+            margin: auto;
         }
 
         .about-main_copy {
@@ -173,14 +175,16 @@
     }
     .about-sub_container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         margin-top: 20px;
+
+    
         //padding-top: 20px;
-        border-top: 2px solid #032dc1;
 
         div {
-            width: 33.3%;
+            width: 55%;
             padding: 10px;
         }
 
@@ -209,30 +213,32 @@
 
     .questions_container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        
 
         .questions_introduction,
         .questions_list {
             display: flex;
             flex-direction: column;
-            width: 50%; //media-query 40/60 on desktop
+            align-self: center;
+            width: 55%; //media-query 40/60 on desktop
         }
     }
 
     .news_container {
-        background-color: #fffbf0;
+        background-color: #8DA9C4;
         text-align: center;
-
+       
         .news-story_flexcontainer {
             display: flex;
-            flex-direction: row; //media-query switch to columns on small devices
-
+            flex-direction: column; //media-query switch to columns on small devices
+            align-items: center;
             .news-story {
                 -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
                 -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
                 box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
                 background-color: white;
-                width: 300px;
+                width: 75%;
                 margin: 20px;
                 padding: 20px;
 
@@ -254,6 +260,65 @@
                     color:  #e94f37;
                 }
             }
+        }
+    }
+
+    .ask_container {
+        text-align: center;
+
+        .ask-sub_container {
+            display: flex;
+            flex-direction: column;
+
+            .ask-sub_info {
+                margin: 20px;
+
+                img {
+                    width: 60px;
+                }
+
+                .ask-sub_info-title {
+                    margin: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+    
+                .ask-sub_info-description {
+                    font-size: 12px;
+                }
+
+                .ask-sub_info-link {
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-top: 40px;
+                    color:  #e94f37;
+                }
+            }
+            
+        }
+    }
+
+    .awards_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #FEC82E;
+        padding: 10px !important;
+
+        .awards-icon_container {
+            display: flex;
+            flex-wrap: nowrap; //media-query wrap on small devices
+            flex-direction: row;
+            justify-content: space-around;
+            
+
+            img {
+                margin: 0px 0px;
+                width: 80px;
+                align-self: center;
+            }
+            
+        
         }
     }
 }
@@ -288,20 +353,20 @@ button {
 }
 
 section {
-    padding: 50px 10%;
+    padding: 50px 0%; //10%
 }
 
-$phone: "(max-width: 767px)";
-$tablet: "(min-width: 768px) and (max-width: 1023px)";
-$desktop: "(min-width: 1024px)";
+$phone: "only screen and (max-width: 599px)";
+$tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
+$desktop: "only screen and (min-width: 1024px)";
 
-@media #{$desktop} {
+@media only screen and (min-width: 1024px) {
     .hero-menu_container {
         min-height: 80vh !important;
         padding: 50px 10%;
 
         .hero-menu_copy {
-            max-width: 40% !important;
+            max-width: 40%;
 
             h1 {
                 font-size: 62px;
@@ -323,7 +388,82 @@ $desktop: "(min-width: 1024px)";
         font-size: 16px;
     }
 
+    .testimonials_container {
+        flex-direction: row !important;
+    }
+
+    .results-table_container {
+        flex-direction: row !important;
+    }
+
+    .about-main_container {
+        flex-direction: row !important;
+
+        
+    }
+    .about-sub_container {
+        flex-direction: row !important;
+        align-items: initial !important;
+        border-top: 2px solid #032dc1 !important; 
+
+
+    }
+
+    
+    .news-story_flexcontainer {
+        flex-direction: row !important;
+    }
+
+    .news-story_title {
+        font-size: 16px !important;
+    }
+
+    .news-story_excerpt {
+        font-size: 14px !important;
+    }
+    .news-story_link {
+        font-size: 14px !important;
+    }
+
+    .questions_container {
+        flex-direction: row !important;
+    }
+
+    .ask-sub_container {
+        flex-direction: row !important;
+    }
+    .ask-sub_info-title {
+        font-size: 16px !important;
+    }
+    .ask-sub_info-description {
+        font-size: 14px !important;
+    }
+    .ask-sub_info-link {
+        font-size: 14px !important;
+    }
+
     section {
         padding: 50px 20%;
+    }
+}
+
+@media #{$phone} {
+    
+    
+    .hero-menu_container {
+        min-height: 10vh !important;
+         
+        .hero-menu_copy {
+            max-width: 100% !important;
+            h1 {
+                font-size: 26px;
+            }
+        }
+    }
+
+    .awards-icon_container {
+        img {
+            width: 10% !important;
+        }
     }
 }
