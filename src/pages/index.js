@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import couple from '../images/Couple.png'
 
 const IndexPage = () => (
   <Layout>
@@ -34,9 +33,78 @@ const IndexPage = () => (
         <h2 className="section_subtitle">Over 40 years of experience in the courtroom</h2>
         <p className="section_paragraph">Not every lawyer has been through a trial. We know how to try cases. Our expertise allows us to get recoveries from the most complex and challenging cases. We work on cases all across the country.</p>
         <div className="results-table_container">
-          <p>table</p>
-          <p>table</p>
-          <p>table</p>
+          <table className="results-table">
+            <tr className="results-table_won">
+              <th>We Won:</th>
+              <td>$46,500,000</td>
+            </tr>
+            <tr className="results-table_offer">
+              <th>Pre-Trial Offer:</th>
+              <td>$1,065,000</td>
+            </tr>
+            <div className="results-table_details">
+              <tr>
+                <th>Case:</th>
+                <td>Monsanto</td>
+              </tr>
+              <tr>
+                <th>Attorney:</th>
+                <td>Steve Kherkher</td>
+              </tr>
+              <tr>
+                <th>Summary:</th>
+                <td>Monsanto used cancer-causing chemicals in their product</td>
+              </tr>
+            </div>
+          </table>
+          <table className="results-table">
+            <tr className="results-table_won">
+              <th>We Won:</th>
+              <td>$46,500,000</td>
+            </tr>
+            <tr className="results-table_offer">
+              <th>Pre-Trial Offer:</th>
+              <td>$1,065,000</td>
+            </tr>
+            <div className="results-table_details">
+              <tr>
+                <th>Case:</th>
+                <td>Monsanto</td>
+              </tr>
+              <tr>
+                <th>Attorney:</th>
+                <td>Steve Kherkher</td>
+              </tr>
+              <tr>
+                <th>Summary:</th>
+                <td>Monsanto used cancer-causing chemicals in their product</td>
+              </tr>
+            </div>
+          </table>
+          <table className="results-table">
+            <tr className="results-table_won">
+              <th>We Won:</th>
+              <td>$46,500,000</td>
+            </tr>
+            <tr className="results-table_offer">
+              <th>Pre-Trial Offer:</th>
+              <td>$1,065,000</td>
+            </tr>
+            <div className="results-table_details">
+              <tr>
+                <th>Case:</th>
+                <td>Monsanto</td>
+              </tr>
+              <tr>
+                <th>Attorney:</th>
+                <td>Steve Kherkher</td>
+              </tr>
+              <tr>
+                <th>Summary:</th>
+                <td>Monsanto used cancer-causing chemicals in their product</td>
+              </tr>
+            </div>
+          </table>
         </div>
         <button>See More Victories ➝</button>
       </section>
