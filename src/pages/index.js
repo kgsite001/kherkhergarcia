@@ -144,8 +144,42 @@ const IndexPage = () => (
         </div>
         <button>Read More Reviews ➝</button>
       </section>
-      <section></section>
-      <section></section>
+      <section className="questions_container">
+        <div className="questions_introduction">
+          <h1 className="section_title">Common Questions</h1>
+          <h2 className="section_subtitle">Remember to ask these questions.</h2>
+          <p className="section_paragraph">When you are injured and need help it is important to get answers that can help you receive the justice you deserve. These are frequently asked questions we receive from our clients.</p>
+          <button>See More Common Questions ➝</button>
+        </div>
+        <div className="questions_list">
+          <p>Question</p>
+          <p>Question</p>
+          <p>Question</p>
+          <p>Question</p>
+          <p>Question</p>
+        </div>
+      </section>
+      <section className="news_container">
+        <h1 className="section_title">Latest News</h1>
+        <div className="news-story_flexcontainer">
+          <div className="news-story">
+            <h1 className="news-story_title">Two injured in Galveston oil explosion</h1>
+            <p className="news-story_excerpt">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
+            <p className="news-story_link">Read More ➝</p>
+          </div>
+          <div className="news-story">
+            <h1 className="news-story_title">Two injured in Galveston oil explosion</h1>
+            <p className="news-story_excerpt">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
+            <p className="news-story_link">Read More ➝</p>
+          </div>
+          <div className="news-story">
+            <h1 className="news-story_title">Two injured in Galveston oil explosion</h1>
+            <p className="news-story_excerpt">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
+            <p className="news-story_link">Read More ➝</p>
+          </div>
+        </div>
+        <button>See More Updates ➝</button>
+      </section>
       <section></section>
       <section></section>
     </div>

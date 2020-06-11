@@ -206,6 +206,56 @@
             flex-direction: row;
         }
     }
+
+    .questions_container {
+        display: flex;
+        flex-direction: row;
+
+        .questions_introduction,
+        .questions_list {
+            display: flex;
+            flex-direction: column;
+            width: 50%; //media-query 40/60 on desktop
+        }
+    }
+
+    .news_container {
+        background-color: #fffbf0;
+        text-align: center;
+
+        .news-story_flexcontainer {
+            display: flex;
+            flex-direction: row; //media-query switch to columns on small devices
+
+            .news-story {
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+                box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+                background-color: white;
+                width: 300px;
+                margin: 20px;
+                padding: 20px;
+
+                .news-story_title {
+                    font-size: 14px; //media-query
+                    text-align: left;
+                }
+
+                .news-story_excerpt {
+                    margin-top: 10px; 
+                    font-size: 12px; //media-query
+                    text-align: left;
+                }
+                .news-story_link {
+                    margin-top: 20px;
+                    text-align: right;
+                    font-size: 12px; //media-query
+                    font-weight: bold;
+                    color:  #e94f37;
+                }
+            }
+        }
+    }
 }
 
 .section_title {
@@ -232,7 +282,7 @@ button {
     font-weight: bold;
     padding: 5px 20px;
     margin-top: 10px;
-    background: #e94f37 0% 0% no-repeat padding-box;
+    background: #e94f37;
     opacity: 1;
     border: 0px;
 }

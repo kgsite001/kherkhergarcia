@@ -278,6 +278,71 @@
           flex-direction: row;
 }
 
+.main-flex_container .questions_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-flex_container .questions_container .questions_introduction,
+.main-flex_container .questions_container .questions_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.main-flex_container .news_container {
+  background-color: #fffbf0;
+  text-align: center;
+}
+
+.main-flex_container .news_container .news-story_flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-flex_container .news_container .news-story_flexcontainer .news-story {
+  -webkit-box-shadow: 2px 2px 5px 0px #878787;
+  box-shadow: 2px 2px 5px 0px #878787;
+  background-color: white;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.main-flex_container .news_container .news-story_flexcontainer .news-story .news-story_title {
+  font-size: 14px;
+  text-align: left;
+}
+
+.main-flex_container .news_container .news-story_flexcontainer .news-story .news-story_excerpt {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.main-flex_container .news_container .news-story_flexcontainer .news-story .news-story_link {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  color: #e94f37;
+}
+
 .section_title {
   text-transform: uppercase;
   font-weight: bold;
@@ -302,7 +367,7 @@ button {
   font-weight: bold;
   padding: 5px 20px;
   margin-top: 10px;
-  background: #e94f37 0% 0% no-repeat padding-box;
+  background: #e94f37;
   opacity: 1;
   border: 0px;
 }
