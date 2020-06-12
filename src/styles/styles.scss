@@ -8,11 +8,20 @@
     src: url(../fonts/AvenirNext-Regular.ttf);
 }
 
+$font-smaller: 10px;
+$font-small: 12px;
+$font-medium_small: 14px;
+$font-medium: 16px;
+$font-medium_large: 18px;
+$font-large: 24px;
+$font-larger: 48px;
+$font-largest: 62px;
+
 * {
     margin: 0;
     padding: 0;
     font-family: "AvenirNext-Regular", sans-serif;
-    font-size: 16px;
+    font-size: $font-medium;
 }
 
 .nav-flex_container {
@@ -29,7 +38,7 @@
     li {
         text-align: center;
         border: 0px solid black;
-        font-size: 12px;
+        font-size: $font-small;
         margin: 20px 10px;
         display: flex;
         flex-direction: column;
@@ -57,6 +66,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
+        padding: 50px 10%;
+
 
         .hero-menu_copy {
             max-width: 50%; //media-query decrease for large
@@ -65,25 +76,23 @@
         h1 {
             font-family: PoynterOSDisplay, serif;
             color: white;
-            font-size: 48px; //media-query increase for large
+            font-size: $font-larger; //media-query increase for large
             font-weight: 100;
         }
 
         h2 {
             color: white;
-            font-size: 16px; //media-query increase for large
+            font-size: $font-medium; //media-query increase for large
         }
     }
 
     .testimonials_container {
-        display: flex;
-        flex-direction: column;
-
         div {
             border: 0px solid black;
-            width: 75%;
+            //width: 75%;
             margin: auto;
-            //padding: 50px 10%;
+            padding: 50px 5%;
+
         }
     }
 
@@ -93,11 +102,9 @@
         align-items: center;
         align-self: center;
         background: #f6f7fc;
+        padding: 50px 5%;
 
         .results-table_container {
-            display: flex;
-            flex-direction: column;
-
             .results-table {
                 display: flex;
                 flex-direction: column;
@@ -132,7 +139,7 @@
 
                     th,
                     td {
-                        font-size: 14px;
+                        font-size: $font-medium_small;
                     }
                 }
 
@@ -141,7 +148,7 @@
 
                     th,
                     td {
-                        font-size: 12px;
+                        font-size: $font-small;
                         text-align: right;
                     }
 
@@ -158,42 +165,34 @@
     }
 
     .about-main_container {
-        display: flex;
-        flex-direction: column;
-
         div {
             border: 0px solid black;
             margin: auto;
         }
 
-        .about-main_copy {
-            width: 55%;
-        }
-        .about-main_media {
-            width: 45%;
-        }
+        padding: 50px 5%;
+
+
     }
     .about-sub_container {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         margin-top: 20px;
 
-    
         //padding-top: 20px;
 
         div {
             width: 55%;
             padding: 10px;
+            
         }
 
         h1 {
-            font-size: 14px;
+            font-size: $font-medium_small;
         }
 
         p {
-            font-size: 12px;
+            font-size: $font-small;
         }
     }
 
@@ -203,7 +202,7 @@
         flex-direction: column;
         align-items: center;
         background-color: #f6f7fc;
-        font-size: 16px;
+        font-size: $font-medium;
 
         .reviews_google {
             display: flex;
@@ -212,52 +211,47 @@
     }
 
     .questions_container {
-        display: flex;
-        flex-direction: column;
-        
-
         .questions_introduction,
         .questions_list {
             display: flex;
             flex-direction: column;
             align-self: center;
-            width: 55%; //media-query 40/60 on desktop
+            //width: 75%; //media-query 40/60 on desktop
+            padding: 50px 5% 0px;
         }
     }
 
     .news_container {
-        background-color: #8DA9C4;
+        background-color: #8da9c4;
         text-align: center;
-       
+
         .news-story_flexcontainer {
-            display: flex;
-            flex-direction: column; //media-query switch to columns on small devices
             align-items: center;
             .news-story {
                 -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
                 -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
                 box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
                 background-color: white;
-                width: 75%;
+                width: 50%;
                 margin: 20px;
                 padding: 20px;
 
                 .news-story_title {
-                    font-size: 14px; //media-query
+                    font-size: $font-medium_small; //media-query
                     text-align: left;
                 }
 
                 .news-story_excerpt {
-                    margin-top: 10px; 
-                    font-size: 12px; //media-query
+                    margin-top: 10px;
+                    font-size: $font-small; //media-query
                     text-align: left;
                 }
                 .news-story_link {
                     margin-top: 20px;
                     text-align: right;
-                    font-size: 12px; //media-query
+                    font-size: $font-small; //media-query
                     font-weight: bold;
-                    color:  #e94f37;
+                    color: #e94f37;
                 }
             }
         }
@@ -267,9 +261,6 @@
         text-align: center;
 
         .ask-sub_container {
-            display: flex;
-            flex-direction: column;
-
             .ask-sub_info {
                 margin: 20px;
 
@@ -279,22 +270,21 @@
 
                 .ask-sub_info-title {
                     margin: 10px;
-                    font-size: 14px;
+                    font-size: $font-medium_small;
                     font-weight: bold;
                 }
-    
+
                 .ask-sub_info-description {
-                    font-size: 12px;
+                    font-size: $font-small;
                 }
 
                 .ask-sub_info-link {
-                    font-size: 12px;
+                    font-size: $font-small;
                     font-weight: bold;
                     margin-top: 40px;
-                    color:  #e94f37;
+                    color: #e94f37;
                 }
             }
-            
         }
     }
 
@@ -302,7 +292,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: #FEC82E;
+        background-color: #fec82e;
         padding: 10px !important;
 
         .awards-icon_container {
@@ -310,15 +300,12 @@
             flex-wrap: nowrap; //media-query wrap on small devices
             flex-direction: row;
             justify-content: space-around;
-            
 
             img {
                 margin: 0px 0px;
                 width: 80px;
                 align-self: center;
             }
-            
-        
         }
     }
 }
@@ -332,18 +319,18 @@
 
 .section_subtitle {
     font-family: PoynterOSDisplay;
-    font-size: 24px;
+    font-size: $font-large;
     margin-bottom: 10px;
     color: #122a3e;
 }
 
 .section_paragraph {
-    font-size: 14px;
+    font-size: $font-medium_small;
 }
 
 button {
     color: white;
-    font-size: 16px; //media-query increase for large11
+    font-size: $font-medium; //media-query increase for large11
     font-weight: bold;
     padding: 5px 20px;
     margin-top: 10px;
@@ -356,6 +343,11 @@ section {
     padding: 50px 0%; //10%
 }
 
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+}
+
 $phone: "only screen and (max-width: 599px)";
 $tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
 $desktop: "only screen and (min-width: 1024px)";
@@ -363,96 +355,68 @@ $desktop: "only screen and (min-width: 1024px)";
 @media only screen and (min-width: 1024px) {
     .hero-menu_container {
         min-height: 80vh !important;
-        padding: 50px 10%;
+        padding: 50px 10% !important;
 
         .hero-menu_copy {
             max-width: 40%;
 
             h1 {
-                font-size: 62px;
+                font-size: $font-largest;
             }
 
             h2 {
-                font-size: 18px;
+                font-size: $font-medium_large;
             }
         }
     }
 
     .section_title {
-        font-size: 18px;
+        font-size: $font-medium + 2px;
     }
     .section_subtitle {
-        font-size: 28px;
+        font-size: $font-large + 2px;
     }
     .section_paragraph {
-        font-size: 16px;
+        font-size: $font-medium_small + 2px;
     }
 
-    .testimonials_container {
-        flex-direction: row !important;
-    }
-
-    .results-table_container {
-        flex-direction: row !important;
-    }
-
-    .about-main_container {
-        flex-direction: row !important;
-
-        
-    }
     .about-sub_container {
-        flex-direction: row !important;
         align-items: initial !important;
-        border-top: 2px solid #032dc1 !important; 
-
-
+        border-top: 2px solid #032dc1;
     }
-
-    
-    .news-story_flexcontainer {
-        flex-direction: row !important;
-    }
-
     .news-story_title {
-        font-size: 16px !important;
+        font-size: $font-medium_small + 2px !important;
     }
-
     .news-story_excerpt {
-        font-size: 14px !important;
+        font-size: $font-small + 2px !important;
     }
     .news-story_link {
-        font-size: 14px !important;
+        font-size: $font-small + 2px !important;
     }
 
-    .questions_container {
-        flex-direction: row !important;
-    }
-
-    .ask-sub_container {
-        flex-direction: row !important;
-    }
     .ask-sub_info-title {
-        font-size: 16px !important;
+        font-size: $font-medium + 2px !important;
     }
     .ask-sub_info-description {
-        font-size: 14px !important;
+        font-size: $font-small + 2px !important;
     }
     .ask-sub_info-link {
-        font-size: 14px !important;
+        font-size: $font-small + 2px !important;
     }
 
     section {
         padding: 50px 20%;
     }
+
+    .flex-layout {
+        flex-direction: row;
+    }
 }
 
 @media #{$phone} {
-    
-    
     .hero-menu_container {
         min-height: 10vh !important;
-         
+
         .hero-menu_copy {
             max-width: 100% !important;
             h1 {
@@ -467,3 +431,13 @@ $desktop: "only screen and (min-width: 1024px)";
         }
     }
 }
+
+/*
+.testimonials_container 
+.results-table_container
+.about-main_container
+.about-sub_container
+.news-story_flexcontainer
+.questions_container
+.ask-sub_container
+*/

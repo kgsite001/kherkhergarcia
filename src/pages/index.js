@@ -28,7 +28,7 @@ const IndexPage = () => (
           <button>Ask Us Anything ➝</button>
         </div>
       </section>
-      <section className="testimonials_container">
+      <section className="testimonials_container flex-layout">
         <div className="testimonials_media">
           <p>Video here</p>
         </div>
@@ -45,7 +45,7 @@ const IndexPage = () => (
         <h1 className="section_title">Results</h1>
         <h2 className="section_subtitle">Over 40 years of experience in the courtroom</h2>
         <p className="section_paragraph">Not every lawyer has been through a trial. We know how to try cases. Our expertise allows us to get recoveries from the most complex and challenging cases. We work on cases all across the country.</p>
-        <div className="results-table_container">
+        <div className="results-table_container flex-layout">
           <table className="results-table">
             <tr className="results-table_won">
               <th>We Won:</th>
@@ -122,7 +122,7 @@ const IndexPage = () => (
         <button>See More Victories ➝</button>
       </section>
       <section className="about_container">
-        <div className="about-main_container">
+        <div className="about-main_container flex-layout">
           <div className="about-main_copy">
             <h1 className="section_title">About Us</h1>
             <h2 className="section_subtitle">We are relentless in our effort to seek justice for our clients."</h2>
@@ -132,7 +132,7 @@ const IndexPage = () => (
             <p>Video</p>
           </div>
         </div>
-        <div className="about-sub_container">
+        <div className="about-sub_container flex-layout">
           <div className="about-sub_copy">
             <h1>Experienced Trial Lawyers</h1>
             <p>Our experience is great. We havve worked on cases aroudn the country for years and we're prepared to get you through this.</p>
@@ -157,7 +157,7 @@ const IndexPage = () => (
         </div>
         <button>Read More Reviews ➝</button>
       </section>
-      <section className="questions_container">
+      <section className="questions_container flex-layout">
         <div className="questions_introduction">
           <h1 className="section_title">Common Questions</h1>
           <h2 className="section_subtitle">Remember to ask these questions.</h2>
@@ -174,7 +174,7 @@ const IndexPage = () => (
       </section>
       <section className="news_container">
         <h1 className="section_title">Latest News</h1>
-        <div className="news-story_flexcontainer">
+        <div className="news-story_flexcontainer flex-layout">
           <div className="news-story">
             <h1 className="news-story_title">Two injured in Galveston oil explosion</h1>
             <p className="news-story_excerpt">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
@@ -199,21 +199,21 @@ const IndexPage = () => (
           <h2 className="section_subtitle">Let us help you find a way forward..</h2>
           <p className="section_paragraph">Use our guides to select the lawyer that is right for you.</p>
         </div>
-        <div className="ask-sub_container">
+        <div className="ask-sub_container flex-layout">
           <div className="ask-sub_info">
-            <img src={scale}></img>
+            <img src={scale} alt="Scale icon"></img>
             <h1 className="ask-sub_info-title">Know Your Rights</h1>
             <p className="ask-sub_info-description">Understand what options you have so you can take the right steps forward.</p>
             <p className="ask-sub_info-link">Read More ➝</p>
           </div>
           <div className="ask-sub_info">
-            <img src={handshake}></img>
+            <img src={handshake} alt="Handshake icon"></img>
             <h1 className="ask-sub_info-title">Know Your Rights</h1>
             <p className="ask-sub_info-description"> Understand what options you have so you can take the right steps forward.</p>
             <p className="ask-sub_info-link">Download a Free Guide ➝</p>
           </div>
           <div className="ask-sub_info">
-            <img src={phone}></img>
+            <img src={phone} alt="Cell phone texting icon"></img>
             <h1 className="ask-sub_info-title">Know Your Rights</h1>
             <p className="ask-sub_info-description">Understand what options you have so you can take the right steps forward.</p>
             <p className="ask-sub_info-link">Ask Us Anything ➝</p>
@@ -223,13 +223,13 @@ const IndexPage = () => (
       <section className="awards_container">
         <h1 className="section_title">Nationally Recognized & Awarded</h1>
         <div className="awards-icon_container">
-          <img src={award1}></img>
-          <img src={award2}></img>
-          <img src={award3}></img>
-          <img src={award4}></img>
-          <img src={award5}></img>
-          <img src={award6}></img>
-          <img src={award7}></img>
+          <img src={award1} alt="Top 25 - Motor Vehicle Trial Lawyers"></img>
+          <img src={award2} alt="The National Trial Lawyers - Top 100"></img>
+          <img src={award3} alt="Rated by Super Lawyers"></img>
+          <img src={award4} alt="American Association for Justice"></img>
+          <img src={award5} alt="National Association of Distinguished Counsel - Top One Percent"></img>
+          <img src={award6} alt="Million Dollar Advocates Forum"></img>
+          <img src={award7} alt="The National Trial Lawyers - Top 40 Under 40"></img>
           
         </div>
       </section>
