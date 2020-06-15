@@ -48,6 +48,7 @@ $font-largest: 62px;
 .main-flex_container {
     display: flex;
     flex-direction: column;
+    
 
     section {
         border: 0px solid black;
@@ -348,6 +349,24 @@ section {
     flex-direction: column;
 }
 
+.contact-top_container {
+    background: #F6F7FC;
+    margin-top: 60px;
+}
+
+.contact-bottom_container {
+    .contact-bottom_copy {
+        //text-align: end;
+        
+
+        address {
+            font-style: initial;
+        }
+    }
+}
+
+
+
 $phone: "only screen and (max-width: 599px)";
 $tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
 $desktop: "only screen and (min-width: 1024px)";
@@ -359,27 +378,23 @@ $desktop: "only screen and (min-width: 1024px)";
 
         .hero-menu_copy {
             max-width: 40%;
-
             h1 {
                 font-size: $font-largest;
             }
-
             h2 {
                 font-size: $font-medium_large;
             }
         }
     }
-
     .section_title {
         font-size: $font-medium + 2px;
     }
     .section_subtitle {
-        font-size: $font-large + 2px;
+        font-size: $font-large + 8px;
     }
     .section_paragraph {
         font-size: $font-medium_small + 2px;
     }
-
     .about-sub_container {
         align-items: initial !important;
         border-top: 2px solid #032dc1;
@@ -393,7 +408,6 @@ $desktop: "only screen and (min-width: 1024px)";
     .news-story_link {
         font-size: $font-small + 2px !important;
     }
-
     .ask-sub_info-title {
         font-size: $font-medium + 2px !important;
     }
@@ -403,14 +417,25 @@ $desktop: "only screen and (min-width: 1024px)";
     .ask-sub_info-link {
         font-size: $font-small + 2px !important;
     }
-
     section {
         padding: 50px 20%;
     }
-
     .flex-layout {
         flex-direction: row;
     }
+    
+    .contact-top_container, .contact-bottom_container {
+        div {
+            width: 50%;
+            margin: 50px;
+        }
+    }
+    .contact-bottom_container {
+        .contact-bottom_copy {
+            text-align: end;
+        }
+    }
+    
 }
 
 @media #{$phone} {
@@ -424,7 +449,6 @@ $desktop: "only screen and (min-width: 1024px)";
             }
         }
     }
-
     .awards-icon_container {
         img {
             width: 10% !important;

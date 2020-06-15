@@ -403,6 +403,15 @@ section {
           flex-direction: column;
 }
 
+.contact-top_container {
+  background: #F6F7FC;
+  margin-top: 60px;
+}
+
+.contact-bottom_container .contact-bottom_copy address {
+  font-style: initial;
+}
+
 @media only screen and (min-width: 1024px) {
   .hero-menu_container {
     min-height: 80vh !important;
@@ -421,7 +430,7 @@ section {
     font-size: 18px;
   }
   .section_subtitle {
-    font-size: 26px;
+    font-size: 32px;
   }
   .section_paragraph {
     font-size: 16px;
@@ -458,6 +467,13 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .contact-top_container div, .contact-bottom_container div {
+    width: 50%;
+    margin: 50px;
+  }
+  .contact-bottom_container .contact-bottom_copy {
+    text-align: end;
   }
 }
 
