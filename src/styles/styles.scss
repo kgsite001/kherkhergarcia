@@ -34,6 +34,7 @@ $font-largest: 62px;
     background-color: white;
     position: fixed;
     width: 100%;
+    z-index: 1;
 
     li {
         text-align: center;
@@ -365,6 +366,26 @@ section {
     }
 }
 
+footer {
+    padding: 5%;
+    background-color: #F6F7FC;
+
+    img {
+        width: 20%;
+        align-self: center;
+    }
+
+    div {
+        width: 80%;
+        margin-left: 50px;
+        p {
+            font-size: $font-smaller;
+            margin-top: 10px;
+            color: #707070;
+        }
+    }
+}
+
 
 
 $phone: "only screen and (max-width: 599px)";
@@ -433,6 +454,21 @@ $desktop: "only screen and (min-width: 1024px)";
     .contact-bottom_container {
         .contact-bottom_copy {
             text-align: end;
+        }
+    }
+
+    footer {
+        img {
+            width: 8%;
+        }
+    
+        div {
+            width: 80%;
+            margin-left: 50px;
+            p {
+                font-size: $font-medium_small;
+                margin-top: 10px;
+            }
         }
     }
     

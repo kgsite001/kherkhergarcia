@@ -31,6 +31,7 @@
   background-color: white;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-flex_container li {
@@ -412,6 +413,29 @@ section {
   font-style: initial;
 }
 
+footer {
+  padding: 5%;
+  background-color: #F6F7FC;
+}
+
+footer img {
+  width: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer div {
+  width: 80%;
+  margin-left: 50px;
+}
+
+footer div p {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #707070;
+}
+
 @media only screen and (min-width: 1024px) {
   .hero-menu_container {
     min-height: 80vh !important;
@@ -474,6 +498,17 @@ section {
   }
   .contact-bottom_container .contact-bottom_copy {
     text-align: end;
+  }
+  footer img {
+    width: 8%;
+  }
+  footer div {
+    width: 80%;
+    margin-left: 50px;
+  }
+  footer div p {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 
