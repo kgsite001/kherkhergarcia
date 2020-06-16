@@ -405,7 +405,7 @@ section {
 }
 
 .contact-top_container {
-  background: #F6F7FC;
+  background: #f6f7fc;
   margin-top: 60px;
 }
 
@@ -415,7 +415,7 @@ section {
 
 footer {
   padding: 5%;
-  background-color: #F6F7FC;
+  background-color: #f6f7fc;
 }
 
 footer img {
@@ -436,6 +436,74 @@ footer div p {
   color: #707070;
 }
 
+.aboutpage-introduction_container .aboutpage-kg_profiles {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.aboutpage-introduction_container .aboutpage-kg_profiles div {
+  margin: auto;
+  text-align: center;
+}
+
+.aboutpage-introduction_container .aboutpage-kg_profiles div img {
+  max-width: 75%;
+  min-width: 50%;
+  border: 5px solid #eef0f2;
+}
+
+.aboutpage-attorneys_container {
+  border: 100px solid black;
+  background-color: #F6F7FC;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutpage-attorneys_container .aboutpage-attorneys_directory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutpage-attorneys_container .aboutpage-attorneys_directory div {
+  margin: auto;
+}
+
+.aboutpage-attorneys_container .aboutpage-attorneys_directory div img {
+  max-width: 100%;
+  min-width: 80%;
+}
+
+/*
+<section className="aboutpage-attorneys_container flex-layout">
+            <h1 className="section_subtitle">Meet Our Team:</h1>
+            <div className="aboutpage-attorneys_directory">
+                <div aboutpage-attorneys_profile>
+                    <img></img>
+                </div>
+            </div>
+        </section>
+*/
 @media only screen and (min-width: 1024px) {
   .hero-menu_container {
     min-height: 80vh !important;
@@ -483,16 +551,19 @@ footer div p {
   .ask-sub_info-link {
     font-size: 14px !important;
   }
-  section {
-    padding: 50px 20%;
-  }
+  /*
+    section {
+        padding: 50px 20%;
+    }
+    */
   .flex-layout {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .contact-top_container div, .contact-bottom_container div {
+  .contact-top_container div,
+  .contact-bottom_container div {
     width: 50%;
     margin: 50px;
   }
