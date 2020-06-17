@@ -9,10 +9,11 @@ const Header = ({ siteTitle }) => (
     <nav>
       <ul className="nav-flex_container">
         <li>Logo</li>
-        <li>Our Team</li>
+        <li>About Us</li>
+        <li>What We Do</li>
         <li>Results</li>
         <li>What Our Clients Say</li>
-        <li>What You Should Know</li>
+        <li>What You Need to Know</li>
         <li>Contact Us</li>
         <li>Espanol</li>
         <li>Button</li>

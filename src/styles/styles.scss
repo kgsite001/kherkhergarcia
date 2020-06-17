@@ -8,6 +8,11 @@
     src: url(../fonts/AvenirNext-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
 $font-smaller: 10px;
 $font-small: 12px;
 $font-medium_small: 14px;
@@ -17,6 +22,8 @@ $font-large: 24px;
 $font-larger: 48px;
 $font-largest: 62px;
 
+$nav-height: 60px;
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +31,93 @@ $font-largest: 62px;
     font-size: $font-medium;
 }
 
+//MODULES
+
+.header-top {
+    font-family: PoynterOSDisplay, serif;
+    font-size: $font-larger;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.header-grey {
+    font-family: PoynterOSDisplay, serif;
+    font-size: $font-large;
+    margin-bottom: 10px;
+    color: #122a3e;
+}
+
+.header-white,
+.header-blue {
+    font-family: PoynterOSDisplay, serif;
+    font-size: $font-large;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.header-blue {
+    color: #032dc1;
+}
+
+.header-uppercase-grey,
+.header-uppercase-white {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-uppercase-grey {
+    color: #122a3e;
+    opacity: 25%;
+}
+
+.header-uppercase-white {
+    color: white;
+    opacity: 100%;
+}
+
+.paragraph-large {
+    font-size: $font-medium_large;
+    color: white;
+}
+
+.paragraph-medium_small {
+    font-size: $font-medium_small;
+}
+
+.paragraph-small {
+    font-size: $font-small;
+}
+
+.paragraph-smaller {
+    font-size: $font-smaller;
+}
+
+.paragraph-small-red {
+    text-align: right;
+    font-size: $font-small;
+    font-weight: bold;
+    color: #e94f37;
+}
+
+.paragraph-medium_small-red {
+    font-size: $font-medium_small;
+    font-weight: bold;
+    color: #e94f37;
+}
+
+.padding-small {
+    padding: 50px 5%;
+}
+
+.padding-medium {
+    padding: 50px 10%;
+}
+
+.padding-large {
+    padding: 50px 20%;
+}
+
+// MAIN
 .nav-flex_container {
     display: flex;
     flex-direction: row;
@@ -35,12 +129,12 @@ $font-largest: 62px;
     position: fixed;
     width: 100%;
     z-index: 1;
+    height: $nav-height;
 
     li {
         text-align: center;
-        border: 0px solid black;
-        font-size: $font-small;
         margin: 20px 10px;
+        font-size: $font-small;
         display: flex;
         flex-direction: column;
     }
@@ -49,17 +143,13 @@ $font-largest: 62px;
 .main-flex_container {
     display: flex;
     flex-direction: column;
-
-    section {
-        border: 0px solid black;
-        //height: 200px;
-    }
+   }
 
     .hero-menu_container {
-        margin-top: 60px;
+        margin-top: $nav-height;
         background-image: url(../images/HeroIMG-Jesus.png);
         background-size: cover;
-        min-height: 50vh; //media-query-- 100vh at large
+        min-height: 50vh;
         background-color: #60a3ff;
         background-blend-mode: multiply;
         opacity: 1;
@@ -67,266 +157,189 @@ $font-largest: 62px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
-        padding: 50px 10%;
 
         .hero-menu_copy {
-            max-width: 50%; //media-query decrease for large
-        }
-
-        h1 {
-            font-family: PoynterOSDisplay, serif;
-            color: white;
-            font-size: $font-larger; //media-query increase for large
-            font-weight: 100;
-        }
-
-        h2 {
-            color: white;
-            font-size: $font-medium; //media-query increase for large
+            max-width: 50%;
         }
     }
 
-    .testimonials_container {
-        div {
-            border: 0px solid black;
-            //width: 75%;
-            margin: auto;
-            padding: 50px 5%;
-        }
+
+.testimonials_container {
+    div {
+        margin: auto;
     }
+}
 
-    .results_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-self: center;
-        background: #f6f7fc;
-        padding: 50px 5%;
+.results_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background: #f6f7fc;
 
-        .results-table_container {
-            .results-table {
-                display: flex;
-                flex-direction: column;
-                border: 1px solid black;
-                margin: 20px;
-                width: 200px;
-                border: 0px;
-                -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-                -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-                box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+    .results-table_container {
+        .results-table {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin: 20px;
+            width: 200px;
+            border: 0px;
+            -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
 
-                tr {
-                    padding: 5px 4px;
-                }
+            tr {
+                padding: 5px 4px;
+            }
+
+            th,
+            td {
+                width: 50%;
+            }
+
+            td {
+                text-align: right;
+            }
+
+            .results-table_won {
+                background-color: #032dc1;
+                color: white;
+            }
+
+            .results-table_offer {
+                background-color: #f6f7fc;
 
                 th,
                 td {
-                    width: 50%;
+                    font-size: $font-medium_small;
+                }
+            }
+
+            .results-table_details {
+                background-color: white;
+
+                th,
+                td {
+                    font-size: $font-small;
+                    text-align: right;
+                }
+
+                th {
+                    padding-right: 25px;
                 }
 
                 td {
-                    text-align: right;
-                }
-
-                .results-table_won {
-                    background-color: #032dc1;
-                    color: white;
-                }
-
-                .results-table_offer {
-                    background-color: #f6f7fc;
-
-                    th,
-                    td {
-                        font-size: $font-medium_small;
-                    }
-                }
-
-                .results-table_details {
-                    background-color: white;
-
-                    th,
-                    td {
-                        font-size: $font-small;
-                        text-align: right;
-                    }
-
-                    th {
-                        padding-right: 25px;
-                    }
-
-                    td {
-                        text-align: left;
-                    }
-                }
-            }
-        }
-    }
-
-    .about-main_container {
-        div {
-            border: 0px solid black;
-            margin: auto;
-        }
-
-        padding: 50px 5%;
-    }
-    .about-sub_container {
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 20px;
-
-        //padding-top: 20px;
-
-        div {
-            width: 55%;
-            padding: 10px;
-        }
-
-        h1 {
-            font-size: $font-medium_small;
-        }
-
-        p {
-            font-size: $font-small;
-        }
-    }
-
-    .reviews_container {
-        padding: 50px 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f6f7fc;
-        font-size: $font-medium;
-
-        .reviews_google {
-            display: flex;
-            flex-direction: row;
-        }
-    }
-
-    .questions_container {
-        .questions_introduction,
-        .questions_list {
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-            //width: 75%; //media-query 40/60 on desktop
-            padding: 50px 5% 0px;
-        }
-    }
-
-    .news_container {
-        background-color: #8da9c4;
-        text-align: center;
-
-        .news-story_flexcontainer {
-            align-items: center;
-            .news-story {
-                -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-                -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-                box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-                background-color: white;
-                width: 50%;
-                margin: 20px;
-                padding: 20px;
-
-                .news-story_title {
-                    font-size: $font-medium_small; //media-query
                     text-align: left;
                 }
-
-                .news-story_excerpt {
-                    margin-top: 10px;
-                    font-size: $font-small; //media-query
-                    text-align: left;
-                }
-                .news-story_link {
-                    margin-top: 20px;
-                    text-align: right;
-                    font-size: $font-small; //media-query
-                    font-weight: bold;
-                    color: #e94f37;
-                }
             }
         }
     }
+}
 
-    .ask_container {
-        text-align: center;
-
-        .ask-sub_container {
-            .ask-sub_info {
-                margin: 20px;
-
-                img {
-                    width: 60px;
-                }
-
-                .ask-sub_info-title {
-                    margin: 10px;
-                    font-size: $font-medium_small;
-                    font-weight: bold;
-                }
-
-                .ask-sub_info-description {
-                    font-size: $font-small;
-                }
-
-                .ask-sub_info-link {
-                    font-size: $font-small;
-                    font-weight: bold;
-                    margin-top: 40px;
-                    color: #e94f37;
-                }
-            }
-        }
+.about-main_container {
+    div {
+        margin: auto;
+        padding-bottom: 10px;
     }
+}
+.about-sub_container {
+    align-items: center;
+    justify-content: space-between;
+    border-top: 5px solid #eef0f2;
+    padding-top: 10px;
 
-    .awards_container {
+    div {
+        width: 55%;
+        padding: 10px;
+    }
+}
+
+.reviews_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f7fc;
+}
+
+.questions_container {
+    .questions_introduction,
+    .questions_list {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        background-color: #fec82e;
-        padding: 10px !important;
+        align-self: center;
+    }
+}
 
-        .awards-icon_container {
-            display: flex;
-            flex-wrap: nowrap; //media-query wrap on small devices
-            flex-direction: row;
-            justify-content: space-around;
+.news_container {
+    background-color: #8da9c4;
+    text-align: center;
+
+    .news-story_flexcontainer {
+        align-items: center;
+        .news-story {
+            -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            background-color: white;
+            width: 50%;
+            margin: 20px 10px 0;
+            padding: 20px;
+
+            .news-story_title,
+            .news-story_excerpt {
+                text-align: left;
+                margin: 10px 0px 20px;
+            }
+
+           
+        }
+    }
+}
+
+.ask_container {
+    text-align: center;
+
+    .ask-sub_container {
+        .ask-sub_info {
+            margin: 20px;
 
             img {
-                margin: 0px 0px;
-                width: 80px;
-                align-self: center;
+                width: 60px;
+                padding-bottom: 10px;
+            }
+             
+            p {
+                padding: 2%;
             }
         }
     }
 }
 
-.section_title {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #122a3e;
-    opacity: 25%;
-}
+.awards_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fec82e;
 
-.section_subtitle {
-    font-family: PoynterOSDisplay;
-    font-size: $font-large;
-    margin-bottom: 10px;
-    color: #122a3e;
-}
+    .awards-icon_container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
 
-.section_paragraph {
-    font-size: $font-medium_small;
+        img {
+            margin: 0px 0px;
+            width: 80px;
+            align-self: center;
+        }
+    }
 }
 
 button {
     color: white;
-    font-size: $font-medium; //media-query increase for large11
+    font-family: Montserrat, serif;
+    font-size: $font-medium_small;
     font-weight: bold;
     padding: 5px 20px;
     margin-top: 10px;
@@ -335,11 +348,7 @@ button {
     border: 0px;
 }
 
-section {
-    padding: 50px 0%; //10%
-}
-
-.flex-layout {
+.responsive-flex {
     display: flex;
     flex-direction: column;
 }
@@ -360,7 +369,6 @@ section {
 }
 
 footer {
-    padding: 5%;
     background-color: #f6f7fc;
 
     img {
@@ -371,11 +379,10 @@ footer {
     div {
         width: 80%;
         margin-left: 50px;
-        p {
-            font-size: $font-smaller;
+    }
+    p {
             margin-top: 10px;
             color: #707070;
-        }
     }
 }
 
@@ -398,7 +405,7 @@ footer {
 }
 .aboutpage-attorneys_container {
     border: 100px solid black;
-    background-color: #F6F7FC;
+    background-color: #f6f7fc;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -410,26 +417,16 @@ footer {
         //padding: 0 10%;
         div {
             margin: auto;
-            
+
             img {
                 max-width: 100%;
                 min-width: 80%;
             }
         }
-        
     }
 }
 
-/*
-<section className="aboutpage-attorneys_container flex-layout">
-            <h1 className="section_subtitle">Meet Our Team:</h1>
-            <div className="aboutpage-attorneys_directory">
-                <div aboutpage-attorneys_profile>
-                    <img></img>
-                </div>
-            </div>
-        </section>
-*/
+// MEDIA QUERIES
 
 $phone: "only screen and (max-width: 599px)";
 $tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
@@ -438,55 +435,30 @@ $desktop: "only screen and (min-width: 1024px)";
 @media only screen and (min-width: 1024px) {
     .hero-menu_container {
         min-height: 80vh !important;
-        padding: 50px 10% !important;
 
         .hero-menu_copy {
             max-width: 40%;
-            h1 {
-                font-size: $font-largest;
-            }
-            h2 {
-                font-size: $font-medium_large;
-            }
         }
     }
-    .section_title {
-        font-size: $font-medium + 2px;
+    .testimonials_container {
+        div {
+            width: 50%;
+        }
     }
-    .section_subtitle {
-        font-size: $font-large + 8px;
-    }
-    .section_paragraph {
-        font-size: $font-medium_small + 2px;
+    .about-main_container {
+        div {
+            width: 50%;
+        }
     }
     .about-sub_container {
-        align-items: initial !important;
-        border-top: 2px solid #032dc1;
+        align-items: initial;
     }
-    .news-story_title {
-        font-size: $font-medium_small + 2px !important;
+
+    .questions_introduction {
+        width: 40%;
     }
-    .news-story_excerpt {
-        font-size: $font-small + 2px !important;
-    }
-    .news-story_link {
-        font-size: $font-small + 2px !important;
-    }
-    .ask-sub_info-title {
-        font-size: $font-medium + 2px !important;
-    }
-    .ask-sub_info-description {
-        font-size: $font-small + 2px !important;
-    }
-    .ask-sub_info-link {
-        font-size: $font-small + 2px !important;
-    }
-    /*
-    section {
-        padding: 50px 20%;
-    }
-    */
-    .flex-layout {
+
+    .responsive-flex {
         flex-direction: row;
     }
 
@@ -511,10 +483,6 @@ $desktop: "only screen and (min-width: 1024px)";
         div {
             width: 80%;
             margin-left: 50px;
-            p {
-                font-size: $font-medium_small;
-                margin-top: 10px;
-            }
         }
     }
 }
@@ -525,9 +493,6 @@ $desktop: "only screen and (min-width: 1024px)";
 
         .hero-menu_copy {
             max-width: 100% !important;
-            h1 {
-                font-size: 26px;
-            }
         }
     }
     .awards-icon_container {
@@ -536,13 +501,3 @@ $desktop: "only screen and (min-width: 1024px)";
         }
     }
 }
-
-/*
-.testimonials_container 
-.results-table_container
-.about-main_container
-.about-sub_container
-.news-story_flexcontainer
-.questions_container
-.ask-sub_container
-*/
