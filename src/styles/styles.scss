@@ -31,6 +31,10 @@ $nav-height: 60px;
     font-size: $font-medium;
 }
 
+p {
+    color: #7F7F81
+}
+
 //MODULES
 
 .header-top {
@@ -115,6 +119,11 @@ $nav-height: 60px;
 
 .padding-large {
     padding: 50px 20%;
+}
+
+.blue-bold {
+    color: #032dc1;
+    font-weight: bold;
 }
 
 // MAIN
@@ -360,8 +369,6 @@ button {
 
 .contact-bottom_container {
     .contact-bottom_copy {
-        //text-align: end;
-
         address {
             font-style: initial;
         }
@@ -387,6 +394,10 @@ footer {
 }
 
 .aboutpage-introduction_container {
+    margin-top: $nav-height;
+    div {
+        margin: 10px;
+    }
     .aboutpage-kg_profiles {
         align-items: center;
         display: flex;
@@ -396,17 +407,25 @@ footer {
             margin: auto;
             text-align: center;
             img {
-                max-width: 75%;
-                min-width: 50%;
+                max-width: 250px;
+                margin: 0 5px;
                 border: 5px solid #eef0f2;
             }
         }
     }
 }
+
+.aboutpage-mission_container {
+    div {
+        margin: 10px;
+       
+        img{
+            max-width: 100%
+        }
+    }
+}
 .aboutpage-attorneys_container {
-    border: 100px solid black;
     background-color: #f6f7fc;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -414,14 +433,57 @@ footer {
     .aboutpage-attorneys_directory {
         display: flex;
         flex-wrap: wrap;
-        //padding: 0 10%;
         div {
             margin: auto;
 
             img {
-                max-width: 100%;
-                min-width: 80%;
+                max-width: 200px;
             }
+        }
+    }
+}
+
+.partner-profile_container {
+    margin-top: $nav-height;
+    
+    .partner-profile_sidebar {
+        text-align: center;
+        img {
+            max-width: 250px;
+            border: 5px solid #F6F7FC;
+        }
+        div {
+            .partner-profile_icons {
+                img {
+                    border: 0px;
+                    width: 25px;
+                    margin: 10px 10px 10px 0px;
+                }
+            }
+            button {
+                width: initial;
+            }
+        }
+    }
+    .partner-profile_main {
+        h3 {
+            font-family: PoynterOSDisplay, serif;
+            font-style: italic;
+            font-size: $font-large;
+            font-weight: normal;
+            border-bottom: 2px solid #60A3FF;
+
+        }
+        h4 {
+            font-family: PoynterOSDisplay, serif;
+            font-size: $font-medium_large;
+            margin-top: 10px;
+            border-bottom: 2px solid #60A3FF;
+
+        }
+        p {
+            font-size: $font-medium_small;
+            margin-top: 10px;
         }
     }
 }
@@ -432,7 +494,58 @@ $phone: "only screen and (max-width: 599px)";
 $tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
 $desktop: "only screen and (min-width: 1024px)";
 
-@media only screen and (min-width: 1024px) {
+@media #{$desktop} {
+    .header-top {
+        font-family: PoynterOSDisplay, serif;
+        font-size: $font-larger + 8px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .header-grey {
+        font-family: PoynterOSDisplay, serif;
+        font-size: $font-large + 8px;
+        margin-bottom: 10px;
+        color: #122a3e;
+    }
+    .header-white,
+    .header-blue {
+        font-family: PoynterOSDisplay, serif;
+        font-size: $font-large + 8px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .header-blue {
+        color: #032dc1;
+    }
+    .header-uppercase-grey,
+    .header-uppercase-white {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .header-uppercase-grey {
+        color: #122a3e;
+        opacity: 25%;
+    }
+    .header-uppercase-white {
+        color: white;
+        opacity: 100%;
+    }
+    .paragraph-large {
+        font-size: $font-medium_large + 8px;
+        color: white;
+    }
+ 
+
+    .padding-small {
+        padding: 50px 10%;
+    }
+    .padding-medium {
+        padding: 50px 15%;
+    }
+    .padding-large {
+        padding: 50px 25%;
+    }
+
     .hero-menu_container {
         min-height: 80vh !important;
 
@@ -461,6 +574,12 @@ $desktop: "only screen and (min-width: 1024px)";
     .responsive-flex {
         flex-direction: row;
     }
+    .aboutpage-mission_container {
+        div {
+            width: 50%;
+        }
+    }
+    
 
     .contact-top_container,
     .contact-bottom_container {
@@ -473,6 +592,20 @@ $desktop: "only screen and (min-width: 1024px)";
         .contact-bottom_copy {
             text-align: end;
         }
+    }
+
+    .partner-profile_sidebar {
+        text-align: initial !important;
+        div {
+            
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+    .partner-profile_main {
+        width: 50%;
+        margin-left: 50px;
     }
 
     footer {

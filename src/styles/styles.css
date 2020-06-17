@@ -20,6 +20,10 @@
   font-size: 16px;
 }
 
+p {
+  color: #7F7F81;
+}
+
 .header-top {
   font-family: PoynterOSDisplay, serif;
   font-size: 48px;
@@ -102,6 +106,11 @@
 
 .padding-large {
   padding: 50px 20%;
+}
+
+.blue-bold {
+  color: #032dc1;
+  font-weight: bold;
 }
 
 .nav-flex_container {
@@ -432,6 +441,14 @@ footer p {
   color: #707070;
 }
 
+.aboutpage-introduction_container {
+  margin-top: 60px;
+}
+
+.aboutpage-introduction_container div {
+  margin: 10px;
+}
+
 .aboutpage-introduction_container .aboutpage-kg_profiles {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -452,15 +469,21 @@ footer p {
 }
 
 .aboutpage-introduction_container .aboutpage-kg_profiles div img {
-  max-width: 75%;
-  min-width: 50%;
+  max-width: 250px;
+  margin: 0 5px;
   border: 5px solid #eef0f2;
 }
 
+.aboutpage-mission_container div {
+  margin: 10px;
+}
+
+.aboutpage-mission_container div img {
+  max-width: 100%;
+}
+
 .aboutpage-attorneys_container {
-  border: 100px solid black;
   background-color: #f6f7fc;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,11 +509,101 @@ footer p {
 }
 
 .aboutpage-attorneys_container .aboutpage-attorneys_directory div img {
-  max-width: 100%;
-  min-width: 80%;
+  max-width: 200px;
+}
+
+.partner-profile_container {
+  margin-top: 60px;
+}
+
+.partner-profile_container .partner-profile_sidebar {
+  text-align: center;
+}
+
+.partner-profile_container .partner-profile_sidebar img {
+  max-width: 250px;
+  border: 5px solid #F6F7FC;
+}
+
+.partner-profile_container .partner-profile_sidebar div .partner-profile_icons img {
+  border: 0px;
+  width: 25px;
+  margin: 10px 10px 10px 0px;
+}
+
+.partner-profile_container .partner-profile_sidebar div button {
+  width: initial;
+}
+
+.partner-profile_container .partner-profile_main h3 {
+  font-family: PoynterOSDisplay, serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: normal;
+  border-bottom: 2px solid #60A3FF;
+}
+
+.partner-profile_container .partner-profile_main h4 {
+  font-family: PoynterOSDisplay, serif;
+  font-size: 18px;
+  margin-top: 10px;
+  border-bottom: 2px solid #60A3FF;
+}
+
+.partner-profile_container .partner-profile_main p {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 1024px) {
+  .header-top {
+    font-family: PoynterOSDisplay, serif;
+    font-size: 56px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .header-grey {
+    font-family: PoynterOSDisplay, serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #122a3e;
+  }
+  .header-white,
+  .header-blue {
+    font-family: PoynterOSDisplay, serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .header-blue {
+    color: #032dc1;
+  }
+  .header-uppercase-grey,
+  .header-uppercase-white {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .header-uppercase-grey {
+    color: #122a3e;
+    opacity: 25%;
+  }
+  .header-uppercase-white {
+    color: white;
+    opacity: 100%;
+  }
+  .paragraph-large {
+    font-size: 26px;
+    color: white;
+  }
+  .padding-small {
+    padding: 50px 10%;
+  }
+  .padding-medium {
+    padding: 50px 15%;
+  }
+  .padding-large {
+    padding: 50px 25%;
+  }
   .hero-menu_container {
     min-height: 80vh !important;
   }
@@ -517,6 +630,9 @@ footer p {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .aboutpage-mission_container div {
+    width: 50%;
+  }
   .contact-top_container div,
   .contact-bottom_container div {
     width: 50%;
@@ -524,6 +640,16 @@ footer p {
   }
   .contact-bottom_container .contact-bottom_copy {
     text-align: end;
+  }
+  .partner-profile_sidebar {
+    text-align: initial !important;
+  }
+  .partner-profile_sidebar div button {
+    width: 100% !important;
+  }
+  .partner-profile_main {
+    width: 50%;
+    margin-left: 50px;
   }
   footer img {
     width: 8%;

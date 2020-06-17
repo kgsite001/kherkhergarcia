@@ -134,16 +134,16 @@ const IndexPage = () => (
         </div>
         <div className="about-sub_container responsive-flex">
           <div className="about-sub_copy">
-            <h4>Experienced Trial Lawyers</h4>
-            <p>Our experience is great. We havve worked on cases aroudn the country for years and we're prepared to get you through this.</p>
+            <h4 className="paragraph-medium_small blue-bold">Experienced Trial Lawyers</h4>
+            <p className="paragraph-medium_small">Our experience is great. We havve worked on cases aroudn the country for years and we're prepared to get you through this.</p>
           </div>
           <div className="about-sub_copy">
-            <h4>Service Comes First</h4>
-            <p>We are focused first on our clients</p>
+            <h4 className="paragraph-medium_small blue-bold">Service Comes First</h4>
+            <p className="paragraph-medium_small">We are focused first on our clients</p>
           </div>
           <div className="about-sub_copy">
-            <h4>Ask Us Anything</h4>
-            <p>We want you to make the best decision for you and your family Call one of our lawyers for a free consultation and get the answers you need to choose the right law firm.</p>
+            <h4 className="paragraph-medium_small blue-bold">Ask Us Anything</h4>
+            <p className="paragraph-medium_small">We want you to make the best decision for you and your family Call one of our lawyers for a free consultation and get the answers you need to choose the right law firm.</p>
           </div>
         </div>
       </section>
