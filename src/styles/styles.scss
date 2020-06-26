@@ -32,7 +32,7 @@ $nav-height: 60px;
 }
 
 p {
-    color: #7F7F81
+    color: #7f7f81;
 }
 
 //MODULES
@@ -92,6 +92,8 @@ p {
     font-size: $font-small;
 }
 
+
+
 .paragraph-smaller {
     font-size: $font-smaller;
 }
@@ -107,6 +109,12 @@ p {
     font-size: $font-medium_small;
     font-weight: bold;
     color: #e94f37;
+}
+
+.paragraph-small-white {
+    font-size: $font-small;
+    color: white;
+    font-weight: initial;
 }
 
 .padding-small {
@@ -127,13 +135,23 @@ p {
 }
 
 // MAIN
+
+nav {
+    #menuToggle {
+        input {
+            display: none;
+        }
+    }
+}
+
 .nav-flex_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
     border: 0px solid black;
-    margin: 0;
+    margin: 0px;
+    padding: 10px 0px;
     background-color: white;
     position: fixed;
     width: 100%;
@@ -142,36 +160,63 @@ p {
 
     li {
         text-align: center;
-        margin: 20px 10px;
+        margin: 25px -20px;
         font-size: $font-small;
+        font-weight: bold;
         display: flex;
         flex-direction: column;
+    }
+
+    .icon_large {
+        max-width: 75px;
+    }
+
+    .icon_small {
+        max-width: 20px;
+    }
+
+    button {
+        background-color: #032DC1;
+        width: 220px;
+        height: 60px;
+        margin-top: 0px;
+        border: 0px;
+
+        p {
+            font-size: $font-smaller;
+            color: white;
+        }
+
+        address {
+            font-style: initial;
+            font-family: montserrat, sans-serif;
+            font-size: $font-medium;
+        }
     }
 }
 
 .main-flex_container {
     display: flex;
     flex-direction: column;
-   }
+}
 
-    .hero-menu_container {
-        margin-top: $nav-height;
-        background-image: url(../images/HeroIMG-Jesus.png);
-        background-size: cover;
-        min-height: 50vh;
-        background-color: #60a3ff;
-        background-blend-mode: multiply;
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
+.hero-menu_container {
+    margin-top: $nav-height;
+    background-image: url(../images/HeroIMG-Jesus.png);
+    background-size: cover;
+    min-height: 50vh;
+    background-color: #60a3ff;
+    background-blend-mode: multiply;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
 
-        .hero-menu_copy {
-            max-width: 50%;
-        }
+    .hero-menu_copy {
+        max-width: 50%;
     }
-
+}
 
 .testimonials_container {
     div {
@@ -300,8 +345,6 @@ p {
                 text-align: left;
                 margin: 10px 0px 20px;
             }
-
-           
         }
     }
 }
@@ -317,7 +360,7 @@ p {
                 width: 60px;
                 padding-bottom: 10px;
             }
-             
+
             p {
                 padding: 2%;
             }
@@ -388,8 +431,8 @@ footer {
         margin-left: 50px;
     }
     p {
-            margin-top: 10px;
-            color: #707070;
+        margin-top: 10px;
+        color: #707070;
     }
 }
 
@@ -404,11 +447,9 @@ footer {
         flex-direction: row;
         width: 100%;
         div {
-            margin: auto;
-            text-align: center;
+            text-align: left;
             img {
-                max-width: 250px;
-                margin: 0 5px;
+                max-width: 100%;
                 border: 5px solid #eef0f2;
             }
         }
@@ -418,9 +459,9 @@ footer {
 .aboutpage-mission_container {
     div {
         margin: 10px;
-       
-        img{
-            max-width: 100%
+
+        img {
+            max-width: 100%;
         }
     }
 }
@@ -437,7 +478,7 @@ footer {
             margin: auto;
 
             img {
-                max-width: 200px;
+                max-width: 250px; //media-query smaller on phones
             }
         }
     }
@@ -445,12 +486,12 @@ footer {
 
 .partner-profile_container {
     margin-top: $nav-height;
-    
+
     .partner-profile_sidebar {
         text-align: center;
         img {
             max-width: 250px;
-            border: 5px solid #F6F7FC;
+            border: 5px solid #f6f7fc;
         }
         div {
             .partner-profile_icons {
@@ -471,15 +512,13 @@ footer {
             font-style: italic;
             font-size: $font-large;
             font-weight: normal;
-            border-bottom: 2px solid #60A3FF;
-
+            border-bottom: 2px solid #60a3ff;
         }
         h4 {
             font-family: PoynterOSDisplay, serif;
             font-size: $font-medium_large;
             margin-top: 10px;
-            border-bottom: 2px solid #60A3FF;
-
+            border-bottom: 2px solid #60a3ff;
         }
         p {
             font-size: $font-medium_small;
@@ -531,10 +570,9 @@ $desktop: "only screen and (min-width: 1024px)";
         opacity: 100%;
     }
     .paragraph-large {
-        font-size: $font-medium_large + 8px;
+        font-size: $font-medium_large + 2px;
         color: white;
     }
- 
 
     .padding-small {
         padding: 50px 10%;
@@ -547,7 +585,7 @@ $desktop: "only screen and (min-width: 1024px)";
     }
 
     .hero-menu_container {
-        min-height: 80vh !important;
+        min-height: 95vh !important;
 
         .hero-menu_copy {
             max-width: 40%;
@@ -569,6 +607,7 @@ $desktop: "only screen and (min-width: 1024px)";
 
     .questions_introduction {
         width: 40%;
+        margin-right: 20px;
     }
 
     .responsive-flex {
@@ -579,7 +618,6 @@ $desktop: "only screen and (min-width: 1024px)";
             width: 50%;
         }
     }
-    
 
     .contact-top_container,
     .contact-bottom_container {
@@ -597,7 +635,6 @@ $desktop: "only screen and (min-width: 1024px)";
     .partner-profile_sidebar {
         text-align: initial !important;
         div {
-            
             button {
                 width: 100% !important;
             }
@@ -621,6 +658,13 @@ $desktop: "only screen and (min-width: 1024px)";
 }
 
 @media #{$phone} {
+
+    .header-top {
+        font-size: $font-large;
+    }
+    .paragraph-large {
+        font-size: $font-medium_small;
+    }
     .hero-menu_container {
         min-height: 10vh !important;
 
@@ -632,5 +676,170 @@ $desktop: "only screen and (min-width: 1024px)";
         img {
             width: 10% !important;
         }
+    }
+    .padding-small {
+        padding: 50px 5%;
+    }
+    .padding-medium {
+        padding: 50px 10%;
+    }
+    .padding-large {
+        padding: 50px 20%;
+    }
+
+    
+    .news_container {
+        .news-story_flexcontainer {
+            .news-story {
+                width: 80%;
+            }
+        }
+    }
+    //HAMBURGER MENU
+
+    nav {
+        #menuToggle {
+            input {
+                display: initial;
+            }
+        }
+    }
+
+
+    .nav-flex_container {
+        flex-direction: column;
+    }
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 30px;
+        padding-left: 40px;
+
+        z-index: 2;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+        color: tomato;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: 36px;
+
+        cursor: pointer;
+
+        opacity: 0; /* hide this */
+        z-index: 3; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    /*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: black;
+        border-radius: 3px;
+
+        z-index: 2;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input {
+        z-index: 2;
+    }
+
+    /*
+ * But let's hide the middle one.
+ */
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        width: 86vw;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: white;
+        height: 100vh;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /*tostopflickeringoftextinsafari*/
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        -webkit-transform: translate(-100%, 0);
+        -moz-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+        -o-transform: translate(-100%, 0);
+    }
+
+    #menu li {
+        padding: 0px 0;
+        font-size: 22px;
+    }
+
+    /*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked ~ ul {
+        transform: none;
     }
 }

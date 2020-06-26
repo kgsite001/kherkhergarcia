@@ -21,7 +21,7 @@
 }
 
 p {
-  color: #7F7F81;
+  color: #7f7f81;
 }
 
 .header-top {
@@ -96,6 +96,12 @@ p {
   color: #e94f37;
 }
 
+.paragraph-small-white {
+  font-size: 12px;
+  color: white;
+  font-weight: initial;
+}
+
 .padding-small {
   padding: 50px 5%;
 }
@@ -113,6 +119,10 @@ p {
   font-weight: bold;
 }
 
+nav #menuToggle input {
+  display: none;
+}
+
 .nav-flex_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +135,8 @@ p {
       justify-content: space-around;
   list-style: none;
   border: 0px solid black;
-  margin: 0;
+  margin: 0px;
+  padding: 10px 0px;
   background-color: white;
   position: fixed;
   width: 100%;
@@ -135,8 +146,9 @@ p {
 
 .nav-flex_container li {
   text-align: center;
-  margin: 20px 10px;
+  margin: 25px -20px;
   font-size: 12px;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +156,33 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.nav-flex_container .icon_large {
+  max-width: 75px;
+}
+
+.nav-flex_container .icon_small {
+  max-width: 20px;
+}
+
+.nav-flex_container button {
+  background-color: #032DC1;
+  width: 220px;
+  height: 60px;
+  margin-top: 0px;
+  border: 0px;
+}
+
+.nav-flex_container button p {
+  font-size: 10px;
+  color: white;
+}
+
+.nav-flex_container button address {
+  font-style: initial;
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
 }
 
 .main-flex_container {
@@ -464,13 +503,11 @@ footer p {
 }
 
 .aboutpage-introduction_container .aboutpage-kg_profiles div {
-  margin: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .aboutpage-introduction_container .aboutpage-kg_profiles div img {
-  max-width: 250px;
-  margin: 0 5px;
+  max-width: 100%;
   border: 5px solid #eef0f2;
 }
 
@@ -509,7 +546,7 @@ footer p {
 }
 
 .aboutpage-attorneys_container .aboutpage-attorneys_directory div img {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .partner-profile_container {
@@ -522,7 +559,7 @@ footer p {
 
 .partner-profile_container .partner-profile_sidebar img {
   max-width: 250px;
-  border: 5px solid #F6F7FC;
+  border: 5px solid #f6f7fc;
 }
 
 .partner-profile_container .partner-profile_sidebar div .partner-profile_icons img {
@@ -540,14 +577,14 @@ footer p {
   font-style: italic;
   font-size: 24px;
   font-weight: normal;
-  border-bottom: 2px solid #60A3FF;
+  border-bottom: 2px solid #60a3ff;
 }
 
 .partner-profile_container .partner-profile_main h4 {
   font-family: PoynterOSDisplay, serif;
   font-size: 18px;
   margin-top: 10px;
-  border-bottom: 2px solid #60A3FF;
+  border-bottom: 2px solid #60a3ff;
 }
 
 .partner-profile_container .partner-profile_main p {
@@ -592,7 +629,7 @@ footer p {
     opacity: 100%;
   }
   .paragraph-large {
-    font-size: 26px;
+    font-size: 20px;
     color: white;
   }
   .padding-small {
@@ -605,7 +642,7 @@ footer p {
     padding: 50px 25%;
   }
   .hero-menu_container {
-    min-height: 80vh !important;
+    min-height: 95vh !important;
   }
   .hero-menu_container .hero-menu_copy {
     max-width: 40%;
@@ -623,6 +660,7 @@ footer p {
   }
   .questions_introduction {
     width: 40%;
+    margin-right: 20px;
   }
   .responsive-flex {
     -webkit-box-orient: horizontal;
@@ -661,6 +699,12 @@ footer p {
 }
 
 @media only screen and (max-width: 599px) {
+  .header-top {
+    font-size: 24px;
+  }
+  .paragraph-large {
+    font-size: 14px;
+  }
   .hero-menu_container {
     min-height: 10vh !important;
   }
@@ -669,6 +713,154 @@ footer p {
   }
   .awards-icon_container img {
     width: 10% !important;
+  }
+  .padding-small {
+    padding: 50px 5%;
+  }
+  .padding-medium {
+    padding: 50px 10%;
+  }
+  .padding-large {
+    padding: 50px 20%;
+  }
+  .news_container .news-story_flexcontainer .news-story {
+    width: 80%;
+  }
+  nav #menuToggle input {
+    display: initial;
+  }
+  .nav-flex_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 30px;
+    padding-left: 40px;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+  }
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #menuToggle a:hover {
+    color: tomato;
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: 36px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 3;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    border-radius: 3px;
+    z-index: 2;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+            transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  #menuToggle input {
+    z-index: 2;
+  }
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+            transform: rotate(-45deg) translate(0, -1px);
+  }
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu {
+    position: absolute;
+    width: 86vw;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: white;
+    height: 100vh;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /*tostopflickeringoftextinsafari*/
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+  }
+  #menu li {
+    padding: 0px 0;
+    font-size: 22px;
+  }
+  /*
+ * And let's slide it in from the left
+ */
+  #menuToggle input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
