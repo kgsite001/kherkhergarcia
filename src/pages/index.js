@@ -27,6 +27,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="main-flex_container">
+      <div></div>
       <section className="hero-menu_container">
         <span role="img" aria-label="Man in business attire points to document in front of a seated woman in business attire. Another man in business attire sits in the background."></span>
         <div className="hero-menu_copy padding-medium">
