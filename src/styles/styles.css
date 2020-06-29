@@ -63,7 +63,7 @@ p {
 
 .header-uppercase-grey {
   color: #122a3e;
-  opacity: 0.8;
+  opacity: 0.25;
 }
 
 .header-uppercase-white {
@@ -691,41 +691,21 @@ footer p {
     font-family: PoynterOSDisplay, serif;
     font-size: 56px;
     margin-bottom: 10px;
-    color: white;
   }
   .header-grey {
     font-family: PoynterOSDisplay, serif;
     font-size: 32px;
     margin-bottom: 10px;
-    color: #122a3e;
   }
   .header-white,
   .header-blue {
     font-family: PoynterOSDisplay, serif;
     font-size: 32px;
     margin-bottom: 10px;
-    color: white;
-  }
-  .header-blue {
-    color: #032dc1;
-  }
-  .header-uppercase-grey,
-  .header-uppercase-white {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  .header-uppercase-grey {
-    color: #122a3e;
-    opacity: 0.9;
-  }
-  .header-uppercase-white {
-    color: white;
-    opacity: 1;
   }
   .paragraph-large {
     font-size: 20px;
     color: white;
-    opacity: 0.8;
   }
   .padding-small {
     padding: 50px 10%;

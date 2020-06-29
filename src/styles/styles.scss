@@ -76,7 +76,7 @@ p {
 
 .header-uppercase-grey {
     color: #122a3e;
-    opacity: 0.8;
+    opacity: 0.25;
 }
 
 .header-uppercase-white {
@@ -630,42 +630,25 @@ $desktop: "only screen and (min-width: 1024px)";
         font-family: PoynterOSDisplay, serif;
         font-size: $font-larger + 8px;
         margin-bottom: 10px;
-        color: white;
     }
     .header-grey {
         font-family: PoynterOSDisplay, serif;
         font-size: $font-large + 8px;
         margin-bottom: 10px;
-        color: #122a3e;
     }
     .header-white,
     .header-blue {
         font-family: PoynterOSDisplay, serif;
         font-size: $font-large + 8px;
         margin-bottom: 10px;
-        color: white;
     }
-    .header-blue {
-        color: #032dc1;
-    }
-    .header-uppercase-grey,
-    .header-uppercase-white {
-        text-transform: uppercase;
-        font-weight: bold;
-    }
+    
 
-    .header-uppercase-grey {
-        color: #122a3e;
-        opacity: 0.9;
-    }
-    .header-uppercase-white {
-        color: white;
-        opacity: 1;
-    }
+    
+    
     .paragraph-large {
         font-size: $font-medium_large + 2px;
         color: white;
-        opacity: 0.8;
     }
 
     .padding-small {
