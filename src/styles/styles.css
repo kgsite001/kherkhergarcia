@@ -63,12 +63,12 @@ p {
 
 .header-uppercase-grey {
   color: #122a3e;
-  opacity: 25%;
+  opacity: 0.8;
 }
 
 .header-uppercase-white {
   color: white;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .paragraph-large {
@@ -224,7 +224,7 @@ nav #menuToggle input {
   min-height: 50vh;
   background-color: #4e505c;
   background-blend-mode: multiply;
-  opacity: 1%;
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,16 +716,16 @@ footer p {
   }
   .header-uppercase-grey {
     color: #122a3e;
-    opacity: 25%;
+    opacity: 0.9;
   }
   .header-uppercase-white {
     color: white;
-    opacity: 100%;
+    opacity: 1;
   }
   .paragraph-large {
     font-size: 20px;
     color: white;
-    opacity: 75%;
+    opacity: 0.8;
   }
   .padding-small {
     padding: 50px 10%;

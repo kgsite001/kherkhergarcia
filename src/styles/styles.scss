@@ -76,12 +76,12 @@ p {
 
 .header-uppercase-grey {
     color: #122a3e;
-    opacity: 25%;
+    opacity: 0.8;
 }
 
 .header-uppercase-white {
     color: white;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .paragraph-large {
@@ -227,7 +227,7 @@ nav {
     min-height: 50vh;
     background-color: #4e505c;
     background-blend-mode: multiply;
-    opacity: 1%;
+    opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -656,16 +656,16 @@ $desktop: "only screen and (min-width: 1024px)";
 
     .header-uppercase-grey {
         color: #122a3e;
-        opacity: 25%;
+        opacity: 0.9;
     }
     .header-uppercase-white {
         color: white;
-        opacity: 100%;
+        opacity: 1;
     }
     .paragraph-large {
         font-size: $font-medium_large + 2px;
         color: white;
-        opacity: 75%;
+        opacity: 0.8;
     }
 
     .padding-small {
