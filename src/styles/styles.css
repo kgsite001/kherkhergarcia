@@ -224,7 +224,7 @@ nav #menuToggle input {
   min-height: 50vh;
   background-color: #4e505c;
   background-blend-mode: multiply;
-  opacity: 100%;
+  opacity: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
