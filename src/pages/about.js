@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -45,46 +46,55 @@ const AboutPage = () => (
                 <h1 className="header-grey">Meet Our Team:</h1>
                 <div className="aboutpage-attorneys_directory">
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                     <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
-                    </div>
-                    <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
-                    </div>
-                    <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
-                    </div>
-                    <div aboutpage-attorneys_profile>
-                        <img src={attorney}></img>
+                        <Link to="/partner">
+                            <img src={attorney}></img>
+                        </Link>
                     </div>
                 </div>
             </section>
 
-        </div>
-    </Layout>
+        </div >
+    </Layout >
 )
 
 export default AboutPage

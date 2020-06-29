@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import map from '../images/map_placeholder.png'
 
 const ContactPage = () => (
     <Layout>
@@ -31,7 +32,7 @@ const ContactPage = () => (
                     </address>
                 </div>
                 <div className="contact-bottom_map">
-                    <p>Map here</p>
+                   <img src={map}></img>
                 </div>
             </section>
         </div>

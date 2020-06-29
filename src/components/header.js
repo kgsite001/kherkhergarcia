@@ -17,14 +17,14 @@ const Header = () => (
         <span></span>
         <ul className="nav-flex_container" id="menu">
           <img className="icon_large" src={Logo}></img>
-          <img className="icon_small" src={Home}></img>
-          <li>About Us</li>
-          <li>What We Do</li>
-          <li>Results</li>
-          <li>What Our Clients Say</li>
-          <li>What You Need to Know</li>
-          <li>Contact Us</li>
-          <li>Espanol</li>
+          <Link to="/"><img className="icon_small" src={Home}></img></Link>
+          <li><Link to="/about">About Us</Link></li>
+          <li><a>What We Do</a></li>
+          <li><a>Results</a></li>
+          <li><a href="#reviews">What Our Clients Say</a></li>
+          <li><a>What You Need to Know</a></li>
+          <li><Link to ="/contact">Contact Us</Link></li>
+          <li><a>Espanol</a></li>
           <button className="call_button">
             <p>Call or Text 24/7:</p>
             <address>(888) 123-4567</address>

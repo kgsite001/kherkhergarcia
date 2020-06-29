@@ -3,9 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import quotationMark from "../images/quotation_mark.svg"
 import scale from "../images/scale.svg"
 import handshake from "../images/handshake.svg"
 import phone from "../images/phone.svg"
+
+import review1 from '../images/review1.png'
+import review2 from '../images/review2.png'
+
 
 import award1 from '../images/award-top_25.png'
 import award2 from '../images/award-ntl_top_100.png'
@@ -14,6 +19,8 @@ import award4 from '../images/award-association_for_justice.png'
 import award5 from '../images/award-top_percent.png'
 import award6 from '../images/award-million_dollar.png'
 import award7 from '../images/award-top_40.png'
+
+import videoPlaceholder from '../images/video_placeholder.png'
 
 
 const IndexPage = () => (
@@ -24,13 +31,13 @@ const IndexPage = () => (
         <span role="img" aria-label="Man in business attire points to document in front of a seated woman in business attire. Another man in business attire sits in the background."></span>
         <div className="hero-menu_copy padding-medium">
           <h1 className="header-top">We are with you all the way.</h1>
-          <p className="paragraph-large">Our reputation is built on our commitment to service and a strong record of success</p>
+          <p className="paragraph-large">We are trial lawyers dedicated to seeking justice for our clients. Our reputation is built on our commitment to service and a strong record of success.</p>
           <button>Ask Us Anything ➝</button>
         </div>
       </section>
       <section className="testimonials_container responsive-flex padding-medium">
         <div className="testimonials_media">
-          <p>Video here</p>
+          <img src={videoPlaceholder}></img>
         </div>
         <div className="testimonials_copy">
           <h2 className="header-uppercase-grey">Testimonials</h2>
@@ -68,6 +75,34 @@ const IndexPage = () => (
                 <th>Summary:</th>
                 <td>Monsanto used cancer-causing chemicals in their product</td>
               </tr>
+              <p className="paragraph-small-red">Read More ➝</p>
+            </div>
+
+          </table>
+          <table className="results-table">
+            <tr className="results-table_won">
+              <th>We Won:</th>
+              <td>$46,500,000</td>
+            </tr>
+            <tr className="results-table_offer">
+              <th>Pre-Trial Offer:</th>
+              <td>$1,065,000</td>
+            </tr>
+            <div className="results-table_details">
+              <tr>
+                <th>Case:</th>
+                <td>Monsanto</td>
+              </tr>
+              <tr>
+                <th>Attorney:</th>
+                <td>Steve Kherkher</td>
+              </tr>
+              <tr>
+                <th>Summary:</th>
+                <td>Monsanto used cancer-causing chemicals in their product</td>
+              </tr>
+              <p className="paragraph-small-red">Read More ➝</p>
+
             </div>
           </table>
           <table className="results-table">
@@ -92,32 +127,11 @@ const IndexPage = () => (
                 <th>Summary:</th>
                 <td>Monsanto used cancer-causing chemicals in their product</td>
               </tr>
+              <p className="paragraph-small-red">Read More ➝</p>
+
             </div>
           </table>
-          <table className="results-table">
-            <tr className="results-table_won">
-              <th>We Won:</th>
-              <td>$46,500,000</td>
-            </tr>
-            <tr className="results-table_offer">
-              <th>Pre-Trial Offer:</th>
-              <td>$1,065,000</td>
-            </tr>
-            <div className="results-table_details">
-              <tr>
-                <th>Case:</th>
-                <td>Monsanto</td>
-              </tr>
-              <tr>
-                <th>Attorney:</th>
-                <td>Steve Kherkher</td>
-              </tr>
-              <tr>
-                <th>Summary:</th>
-                <td>Monsanto used cancer-causing chemicals in their product</td>
-              </tr>
-            </div>
-          </table>
+
         </div>
         <button>See More Victories ➝</button>
       </section>
@@ -126,10 +140,12 @@ const IndexPage = () => (
           <div className="about-main_copy">
             <h2 className="header-uppercase-grey">About Us</h2>
             <h3 className="header-grey">We are relentless in our effort to seek justice for our clients."</h3>
+            <img src={quotationMark}></img>
+            <p className="about-main_copy-quote_attribution">- Steve Kherkher, Founding Partner</p>
             <p className="section_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div className="about-main_media">
-            <p>Video</p>
+            <img src={videoPlaceholder}></img>
           </div>
         </div>
         <div className="about-sub_container responsive-flex">
@@ -147,13 +163,13 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <section className="reviews_container padding-medium">
+      <section id="reviews" className="reviews_container padding-medium">
         <h2 className="header-uppercase-grey">Reviews</h2>
-        <h3 className="header-blue">What our clients say about us:</h3>
+        <h3 className="header-grey">What our clients say about us:</h3>
         <p className="section_paragraph">Better service means better recovery for our clients.</p>
-        <div>
-          <p>Review</p>
-          <p>Review</p>
+        <div className="responsive-flex">
+          <img src={review1}></img>
+          <img src={review2}></img>
         </div>
         <button>Read More Reviews ➝</button>
       </section>

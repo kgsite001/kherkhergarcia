@@ -1,11 +1,16 @@
 @font-face {
     font-family: "PoynterOSDisplay";
-    src: url(../fonts/PoynterOSDisplay.otf);
+    src: url(../fonts/PoynterOSDisplay.ttf);
 }
 
 @font-face {
     font-family: "AvenirNext-Regular";
     src: url(../fonts/AvenirNext-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AvenirNext-Bold";
+    src: url(../fonts/AvenirNext-Bold.ttf);
 }
 
 @font-face {
@@ -65,8 +70,8 @@ p {
 
 .header-uppercase-grey,
 .header-uppercase-white {
+    font-family: "AvenirNext-Bold", sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .header-uppercase-grey {
@@ -117,6 +122,7 @@ p {
     font-weight: initial;
 }
 
+
 .padding-small {
     padding: 50px 5%;
 }
@@ -160,19 +166,32 @@ nav {
 
     li {
         text-align: center;
-        margin: 25px -20px;
-        font-size: $font-small;
-        font-weight: bold;
+        margin: 25px 10px; // desktop 25px 20px
         display: flex;
         flex-direction: column;
+        height: 15px;
+    
+        
+
+        a {
+            font-size: $font-smaller; //desktop font-small 
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            &:hover  {
+                border-bottom:  5px solid #FEC82E;
+            }
+            }
     }
 
     .icon_large {
-        max-width: 75px;
+        max-width: 70px;
+        margin-left: 10px;
     }
 
     .icon_small {
-        max-width: 20px;
+        margin: 20px 10px;
+        width: 20px;
     }
 
     button {
@@ -180,7 +199,8 @@ nav {
         width: 220px;
         height: 60px;
         margin-top: 0px;
-        border: 0px;
+        border: 2px solid #3772FC;
+        margin-right: 10px;
 
         p {
             font-size: $font-smaller;
@@ -190,7 +210,7 @@ nav {
         address {
             font-style: initial;
             font-family: montserrat, sans-serif;
-            font-size: $font-medium;
+            font-size: $font-medium_small;
         }
     }
 }
@@ -202,12 +222,12 @@ nav {
 
 .hero-menu_container {
     margin-top: $nav-height;
-    background-image: url(../images/HeroIMG-Jesus.png);
+    background-image: url(../images/HeroIMG_worker2.png); //url(../images/HeroIMG-Jesus.png);
     background-size: cover;
     min-height: 50vh;
-    background-color: #60a3ff;
+    background-color: #4e505c;
     background-blend-mode: multiply;
-    opacity: 1;
+    opacity: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -222,6 +242,10 @@ nav {
     div {
         margin: auto;
     }
+
+    img {
+        width: 100%;
+    }
 }
 
 .results_container {
@@ -235,56 +259,64 @@ nav {
         .results-table {
             display: flex;
             flex-direction: column;
-            border: 1px solid black;
             margin: 20px;
-            width: 200px;
+            width: 250px;
             border: 0px;
             -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
             -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
             box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
 
             tr {
-                padding: 5px 4px;
+                padding: 5px 0px;
+            }
+
+            th {
+                text-align: right;
+                padding-left: 10px;
+            }
+
+            td {
+                padding-left: 30%;
             }
 
             th,
             td {
-                width: 50%;
-            }
-
-            td {
-                text-align: right;
+                color: #122a3e
             }
 
             .results-table_won {
                 background-color: #032dc1;
-                color: white;
+                
+                th, td {
+                    color: white;
+                    font-weight: bold;
+                }
+                
             }
 
             .results-table_offer {
-                background-color: #f6f7fc;
+                background-color: #8DA9C4;
 
                 th,
                 td {
-                    font-size: $font-medium_small;
+                    font-size: $font-small;
                 }
             }
 
             .results-table_details {
                 background-color: white;
-
+                padding-top: 10px;
                 th,
                 td {
                     font-size: $font-small;
-                    text-align: right;
-                }
-
-                th {
-                    padding-right: 25px;
                 }
 
                 td {
-                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                p {
+                    margin: 10px 10px;
                 }
             }
         }
@@ -296,7 +328,25 @@ nav {
         margin: auto;
         padding-bottom: 10px;
     }
+
+    img {
+        width: 100%;
+    }
+    .about-main_copy {
+        img {
+            position: absolute;
+            width: 6%;
+            margin: -10% -7%;
+        }
+        .about-main_copy-quote_attribution {
+            font-size: $font-small;
+            color: #1C1D21;
+            margin-bottom: 10px;
+        }
+
+    }
 }
+
 .about-sub_container {
     align-items: center;
     justify-content: space-between;
@@ -313,7 +363,14 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f6f7fc;
+    background-color: #FFFBEB;
+
+    div {
+        img {
+            width: 400px;
+            margin: 20px;
+        }
+    }
 }
 
 .questions_container {
@@ -326,7 +383,7 @@ nav {
 }
 
 .news_container {
-    background-color: #8da9c4;
+    background-color: #F7F8FD;
     text-align: center;
 
     .news-story_flexcontainer {
@@ -411,6 +468,9 @@ button {
 }
 
 .contact-bottom_container {
+    img {
+        width: 100%;
+    }
     .contact-bottom_copy {
         address {
             font-style: initial;
@@ -438,6 +498,7 @@ footer {
 
 .aboutpage-introduction_container {
     margin-top: $nav-height;
+    background-color: #F7F8FD;
     div {
         margin: 10px;
     }
@@ -450,7 +511,7 @@ footer {
             text-align: left;
             img {
                 max-width: 100%;
-                border: 5px solid #eef0f2;
+                border: 5px solid white;
             }
         }
     }
@@ -510,8 +571,8 @@ footer {
         h3 {
             font-family: PoynterOSDisplay, serif;
             font-style: italic;
+            font-weight: 200 !important;
             font-size: $font-large;
-            font-weight: normal;
             border-bottom: 2px solid #60a3ff;
         }
         h4 {
@@ -561,6 +622,7 @@ $desktop: "only screen and (min-width: 1024px)";
         text-transform: uppercase;
         font-weight: bold;
     }
+
     .header-uppercase-grey {
         color: #122a3e;
         opacity: 25%;
@@ -572,7 +634,9 @@ $desktop: "only screen and (min-width: 1024px)";
     .paragraph-large {
         font-size: $font-medium_large + 2px;
         color: white;
+        opacity: 75%;
     }
+
 
     .padding-small {
         padding: 50px 10%;
@@ -582,6 +646,16 @@ $desktop: "only screen and (min-width: 1024px)";
     }
     .padding-large {
         padding: 50px 25%;
+    }
+
+    .nav-flex_container {
+        li {
+            margin: 25px 0px;
+
+            a {
+                font-size: $font-small;
+            }
+        }
     }
 
     .hero-menu_container {
@@ -595,11 +669,21 @@ $desktop: "only screen and (min-width: 1024px)";
         div {
             width: 50%;
         }
+
+        img {
+            width: 80%;
+        }
     }
     .about-main_container {
         div {
             width: 50%;
+            margin: 25px 20px;
         }
+
+        img {
+            width: 80%;
+        }
+        
     }
     .about-sub_container {
         align-items: initial;
@@ -708,12 +792,33 @@ $desktop: "only screen and (min-width: 1024px)";
 
     .nav-flex_container {
         flex-direction: column;
+        .icon_large {
+            margin: 0 auto;
+        }
+
+        a {
+            text-align: center;
+        }
+        
+        li {
+            margin: 10px 0px;
+            a {
+                font-size: $font-medium;
+                &:hover {
+                    border-bottom: 0px;
+                }
+            }
+        }
+        button {
+            margin: auto;
+        }
     }
     #menuToggle {
         display: block;
         position: relative;
         top: 30px;
         padding-left: 40px;
+        
 
         z-index: 2;
 
@@ -724,13 +829,14 @@ $desktop: "only screen and (min-width: 1024px)";
     #menuToggle a {
         text-decoration: none;
         color: #232323;
-
         transition: color 0.3s ease;
-    }
+        -webkit-transition: color 0.3s ease;
+        -moz-transition: color 0.3s ease;
+        -ms-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+}
 
-    #menuToggle a:hover {
-        color: tomato;
-    }
+    
 
     #menuToggle input {
         display: block;
@@ -739,6 +845,7 @@ $desktop: "only screen and (min-width: 1024px)";
         position: absolute;
         top: -7px;
         left: 36px;
+        border: 1px solid black;
 
         cursor: pointer;
 
@@ -761,7 +868,7 @@ $desktop: "only screen and (min-width: 1024px)";
         background: black;
         border-radius: 3px;
 
-        z-index: 2;
+        z-index: 0;
 
         transform-origin: 4px 0px;
 
@@ -785,6 +892,8 @@ $desktop: "only screen and (min-width: 1024px)";
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: #232323;
+        z-index: 2;
+
     }
 
     #menuToggle input {
