@@ -19,9 +19,9 @@ const Header = () => (
           <img className="icon_large" src={Logo}></img>
           <Link to="/"><img className="icon_small" src={Home}></img></Link>
           <li><Link to="/about">About Us</Link></li>
-          <li><a>What We Do</a></li>
-          <li><a>Results</a></li>
-          <li><a href="#reviews">What Our Clients Say</a></li>
+          <li><a href="/#aboutus">What We Do</a></li>
+          <li><a href="/#results">Results</a></li>
+          <li><a href="/#reviews">What Our Clients Say</a></li>
           <li><a>What You Need to Know</a></li>
           <li><Link to ="/contact">Contact Us</Link></li>
           <li><a>Espanol</a></li>

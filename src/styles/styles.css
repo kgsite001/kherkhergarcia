@@ -124,6 +124,10 @@ p {
   font-weight: bold;
 }
 
+.main-flex_container {
+  width: 100%;
+}
+
 nav #menuToggle input {
   display: none;
 }
@@ -144,7 +148,7 @@ nav #menuToggle input {
   padding: 10px 0px;
   background-color: white;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   height: 60px;
 }
@@ -170,7 +174,7 @@ nav #menuToggle input {
 }
 
 .nav-flex_container li a:hover {
-  border-bottom: 5px solid #FEC82E;
+  border-bottom: 5px solid #fec82e;
 }
 
 .nav-flex_container .icon_large {
@@ -184,11 +188,11 @@ nav #menuToggle input {
 }
 
 .nav-flex_container button {
-  background-color: #032DC1;
+  background-color: #032dc1;
   width: 220px;
   height: 60px;
   margin-top: 0px;
-  border: 2px solid #3772FC;
+  border: 2px solid #3772fc;
   margin-right: 10px;
 }
 
@@ -301,13 +305,14 @@ nav #menuToggle input {
   background-color: #032dc1;
 }
 
-.results_container .results-table_container .results-table .results-table_won th, .results_container .results-table_container .results-table .results-table_won td {
+.results_container .results-table_container .results-table .results-table_won th,
+.results_container .results-table_container .results-table .results-table_won td {
   color: white;
   font-weight: bold;
 }
 
 .results_container .results-table_container .results-table .results-table_offer {
-  background-color: #8DA9C4;
+  background-color: #8da9c4;
 }
 
 .results_container .results-table_container .results-table .results-table_offer th,
@@ -350,7 +355,7 @@ nav #menuToggle input {
 
 .about-main_container .about-main_copy .about-main_copy-quote_attribution {
   font-size: 12px;
-  color: #1C1D21;
+  color: #1c1d21;
   margin-bottom: 10px;
 }
 
@@ -381,7 +386,7 @@ nav #menuToggle input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFFBEB;
+  background-color: #fffbeb;
 }
 
 .reviews_container div img {
@@ -402,8 +407,24 @@ nav #menuToggle input {
       align-self: center;
 }
 
+.questions_container .questions_list button {
+  background-color: blue;
+  text-align: left;
+  font-family: AvenirNext-Regular, sans-serif;
+  font-size: 12px;
+  padding: 10px 100px 10px 10px;
+  width: 100%;
+}
+
+.questions_container .questions_list label {
+  margin-top: -29px;
+  padding-bottom: 8px;
+  margin-left: 92%;
+  color: white;
+}
+
 .news_container {
-  background-color: #F7F8FD;
+  background-color: #f7f8fd;
   text-align: center;
 }
 
@@ -537,7 +558,7 @@ footer p {
 
 .aboutpage-introduction_container {
   margin-top: 60px;
-  background-color: #F7F8FD;
+  background-color: #f7f8fd;
 }
 
 .aboutpage-introduction_container div {
@@ -597,12 +618,28 @@ footer p {
       flex-wrap: wrap;
 }
 
-.aboutpage-attorneys_container .aboutpage-attorneys_directory div {
-  margin: auto;
+.aboutpage-attorneys_container .aboutpage-attorneys_directory a {
+  margin: 10px auto;
+  text-decoration: none;
+  color: black;
 }
 
-.aboutpage-attorneys_container .aboutpage-attorneys_directory div img {
-  max-width: 250px;
+.aboutpage-attorneys_container .aboutpage-attorneys_directory a:hover {
+  color: #032dc1;
+}
+
+.aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile {
+  background-color: white;
+  padding: 10px;
+}
+
+.aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile img {
+  max-width: 200px;
+}
+
+.aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile h3 {
+  color: #7f7f81;
+  font-weight: initial;
 }
 
 .partner-profile_container {
@@ -629,7 +666,7 @@ footer p {
 }
 
 .partner-profile_container .partner-profile_main h3 {
-  font-family: PoynterOSDisplay, serif;
+  font-family: serif;
   font-style: italic;
   font-weight: 200 !important;
   font-size: 24px;
@@ -646,6 +683,7 @@ footer p {
 .partner-profile_container .partner-profile_main p {
   font-size: 14px;
   margin-top: 10px;
+  color: black;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -768,7 +806,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 710px) {
   .header-top {
     font-size: 24px;
   }
@@ -795,6 +833,9 @@ footer p {
   }
   .news_container .news-story_flexcontainer .news-story {
     width: 80%;
+  }
+  .reviews_container div img {
+    width: 300px;
   }
   nav #menuToggle input {
     display: initial;

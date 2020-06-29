@@ -48,7 +48,7 @@ const IndexPage = () => (
         </div>
 
       </section>
-      <section className="results_container padding-medium">
+      <section id="results" className="results_container padding-medium">
         <h2 className="header-uppercase-grey">Results</h2>
         <h3 className="header-blue">Over 40 years of experience in the courtroom</h3>
         <p className="section_paragraph">Not every lawyer has been through a trial. We know how to try cases. Our expertise allows us to get recoveries from the most complex and challenging cases. We work on cases all across the country.</p>
@@ -135,7 +135,7 @@ const IndexPage = () => (
         </div>
         <button>See More Victories ➝</button>
       </section>
-      <section className="about_container padding-medium">
+      <section  id="aboutus" className="about_container padding-medium">
         <div className="about-main_container responsive-flex">
           <div className="about-main_copy">
             <h2 className="header-uppercase-grey">About Us</h2>
@@ -181,11 +181,20 @@ const IndexPage = () => (
           <button>See More Common Questions ➝</button>
         </div>
         <div className="questions_list">
-          <p>Question</p>
-          <p>Question</p>
-          <p>Question</p>
-          <p>Question</p>
-          <p>Question</p>
+          <button>What is the first thing I should do after a workplace accident? </button>
+          <label>▲</label>
+          <button>Can I recover if I had a prior work injury?</button>
+          <label>▲</label>
+
+          <button>They offered me a settlement. Should I accept it?</button>
+          <label>▲</label>
+
+          <button>How much time do I have to file a lawsuit after a truck accident?</button>
+          <label>▲</label>
+
+          <button>They offered me a settlement. Should I accept it?</button>
+          <label>▲</label>
+
         </div>
       </section>
       <section className="news_container padding-medium">

@@ -97,8 +97,6 @@ p {
     font-size: $font-small;
 }
 
-
-
 .paragraph-smaller {
     font-size: $font-smaller;
 }
@@ -122,7 +120,6 @@ p {
     font-weight: initial;
 }
 
-
 .padding-small {
     padding: 50px 5%;
 }
@@ -142,6 +139,10 @@ p {
 
 // MAIN
 
+.main-flex_container {
+    width: 100%;
+}
+
 nav {
     #menuToggle {
         input {
@@ -160,7 +161,8 @@ nav {
     padding: 10px 0px;
     background-color: white;
     position: fixed;
-    width: 100%;
+    width: 100vw;
+
     z-index: 1;
     height: $nav-height;
 
@@ -170,18 +172,16 @@ nav {
         display: flex;
         flex-direction: column;
         height: 15px;
-    
-        
 
         a {
-            font-size: $font-smaller; //desktop font-small 
+            font-size: $font-smaller; //desktop font-small
             font-weight: bold;
             text-decoration: none;
             color: black;
-            &:hover  {
-                border-bottom:  5px solid #FEC82E;
+            &:hover {
+                border-bottom: 5px solid #fec82e;
             }
-            }
+        }
     }
 
     .icon_large {
@@ -195,11 +195,11 @@ nav {
     }
 
     button {
-        background-color: #032DC1;
+        background-color: #032dc1;
         width: 220px;
         height: 60px;
         margin-top: 0px;
-        border: 2px solid #3772FC;
+        border: 2px solid #3772fc;
         margin-right: 10px;
 
         p {
@@ -281,21 +281,21 @@ nav {
 
             th,
             td {
-                color: #122a3e
+                color: #122a3e;
             }
 
             .results-table_won {
                 background-color: #032dc1;
-                
-                th, td {
+
+                th,
+                td {
                     color: white;
                     font-weight: bold;
                 }
-                
             }
 
             .results-table_offer {
-                background-color: #8DA9C4;
+                background-color: #8da9c4;
 
                 th,
                 td {
@@ -340,10 +340,9 @@ nav {
         }
         .about-main_copy-quote_attribution {
             font-size: $font-small;
-            color: #1C1D21;
+            color: #1c1d21;
             margin-bottom: 10px;
         }
-
     }
 }
 
@@ -363,7 +362,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFBEB;
+    background-color: #fffbeb;
 
     div {
         img {
@@ -380,10 +379,27 @@ nav {
         flex-direction: column;
         align-self: center;
     }
+
+    .questions_list {
+        button {
+            background-color: blue;
+            text-align: left;
+            font-family: AvenirNext-Regular, sans-serif;
+            font-size: $font-small;
+            padding: 10px 100px 10px 10px;
+            width: 100%;
+        }
+        label {
+            margin-top: -29px;
+            padding-bottom: 8px;
+            margin-left: 92%;
+            color: white;
+        }
+    }
 }
 
 .news_container {
-    background-color: #F7F8FD;
+    background-color: #f7f8fd;
     text-align: center;
 
     .news-story_flexcontainer {
@@ -498,7 +514,7 @@ footer {
 
 .aboutpage-introduction_container {
     margin-top: $nav-height;
-    background-color: #F7F8FD;
+    background-color: #f7f8fd;
     div {
         margin: 10px;
     }
@@ -535,11 +551,25 @@ footer {
     .aboutpage-attorneys_directory {
         display: flex;
         flex-wrap: wrap;
-        div {
-            margin: auto;
+        a {
+            margin: 10px auto;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: #032dc1;
+            }
 
-            img {
-                max-width: 250px; //media-query smaller on phones
+            .aboutpage-attorneys_profile {
+                background-color: white;
+                padding: 10px;
+                img {
+                    max-width: 200px; //media-query smaller on phones
+                }
+                h3 {
+                    color: #7f7f81;
+                    font-weight: initial;
+                }
+                
             }
         }
     }
@@ -569,7 +599,7 @@ footer {
     }
     .partner-profile_main {
         h3 {
-            font-family: PoynterOSDisplay, serif;
+            font-family: serif;
             font-style: italic;
             font-weight: 200 !important;
             font-size: $font-large;
@@ -584,14 +614,15 @@ footer {
         p {
             font-size: $font-medium_small;
             margin-top: 10px;
+            color: black;
         }
     }
 }
 
 // MEDIA QUERIES
 
-$phone: "only screen and (max-width: 599px)";
-$tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
+$phone: "only screen and (max-width: 710px)";
+$tablet: "only screen and (min-width: 711px) and (max-width: 1023px)";
 $desktop: "only screen and (min-width: 1024px)";
 
 @media #{$desktop} {
@@ -636,7 +667,6 @@ $desktop: "only screen and (min-width: 1024px)";
         color: white;
         opacity: 75%;
     }
-
 
     .padding-small {
         padding: 50px 10%;
@@ -683,7 +713,6 @@ $desktop: "only screen and (min-width: 1024px)";
         img {
             width: 80%;
         }
-        
     }
     .about-sub_container {
         align-items: initial;
@@ -742,7 +771,6 @@ $desktop: "only screen and (min-width: 1024px)";
 }
 
 @media #{$phone} {
-
     .header-top {
         font-size: $font-large;
     }
@@ -771,11 +799,18 @@ $desktop: "only screen and (min-width: 1024px)";
         padding: 50px 20%;
     }
 
-    
     .news_container {
         .news-story_flexcontainer {
             .news-story {
                 width: 80%;
+            }
+        }
+    }
+
+    .reviews_container {
+        div {
+            img {
+                width: 300px;
             }
         }
     }
@@ -789,7 +824,6 @@ $desktop: "only screen and (min-width: 1024px)";
         }
     }
 
-
     .nav-flex_container {
         flex-direction: column;
         .icon_large {
@@ -799,7 +833,7 @@ $desktop: "only screen and (min-width: 1024px)";
         a {
             text-align: center;
         }
-        
+
         li {
             margin: 10px 0px;
             a {
@@ -818,7 +852,6 @@ $desktop: "only screen and (min-width: 1024px)";
         position: relative;
         top: 30px;
         padding-left: 40px;
-        
 
         z-index: 2;
 
@@ -834,9 +867,7 @@ $desktop: "only screen and (min-width: 1024px)";
         -moz-transition: color 0.3s ease;
         -ms-transition: color 0.3s ease;
         -o-transition: color 0.3s ease;
-}
-
-    
+    }
 
     #menuToggle input {
         display: block;
@@ -893,7 +924,6 @@ $desktop: "only screen and (min-width: 1024px)";
         transform: rotate(45deg) translate(-2px, -1px);
         background: #232323;
         z-index: 2;
-
     }
 
     #menuToggle input {
