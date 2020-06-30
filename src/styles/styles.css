@@ -527,12 +527,28 @@ button {
   margin-top: 60px;
 }
 
+.contact-top_container .contact-top_copy h2, .contact-top_container .contact-top_copy p {
+  color: black;
+}
+
 .contact-bottom_container img {
   width: 100%;
 }
 
+.contact-bottom_container .contact-bottom_copy h2 {
+  color: black;
+}
+
 .contact-bottom_container .contact-bottom_copy address {
   font-style: initial;
+}
+
+.contact-bottom_container .contact-bottom_copy address p {
+  color: black;
+}
+
+.contact-bottom_container .contact-bottom_copy address a {
+  color: #E94F37;
 }
 
 footer {

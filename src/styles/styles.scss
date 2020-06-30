@@ -481,6 +481,12 @@ button {
 .contact-top_container {
     background: #f6f7fc;
     margin-top: 60px;
+
+    .contact-top_copy {
+        h2, p {
+            color: black;
+        }
+    }
 }
 
 .contact-bottom_container {
@@ -488,8 +494,18 @@ button {
         width: 100%;
     }
     .contact-bottom_copy {
+        h2 {
+            color: black;
+        }
         address {
             font-style: initial;
+            p {
+                color: black;
+            }
+
+            a {
+                color: #E94F37;
+            }
         }
     }
 }
