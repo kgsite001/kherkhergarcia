@@ -30,7 +30,7 @@ const IndexPage = () => (
       <div></div>
       <section className="hero-menu_container">
         <span role="img" aria-label="Man in business attire points to document in front of a seated woman in business attire. Another man in business attire sits in the background."></span>
-        <div className="hero-menu_copy padding-medium">
+        <div className="hero-menu_copy">
           <h1 className="header-top">We are with you all the way.</h1>
           <p className="paragraph-large">We are trial lawyers dedicated to seeking justice for our clients. Our reputation is built on our commitment to service and a strong record of success.</p>
           <button>Ask Us Anything ➝</button>
@@ -151,16 +151,16 @@ const IndexPage = () => (
         </div>
         <div className="about-sub_container responsive-flex">
           <div className="about-sub_copy">
-            <h4 className="paragraph-medium_small blue-bold">Experienced Trial Lawyers</h4>
-            <p className="paragraph-medium_small">Our experience is great. We havve worked on cases aroudn the country for years and we're prepared to get you through this.</p>
+            <h4 className="blue-bold">Experienced Trial Lawyers</h4>
+            <p>Our experience is great. We havve worked on cases aroudn the country for years and we're prepared to get you through this.</p>
           </div>
           <div className="about-sub_copy">
-            <h4 className="paragraph-medium_small blue-bold">Service Comes First</h4>
-            <p className="paragraph-medium_small">We are focused first on our clients</p>
+            <h4 className="blue-bold">Service Comes First</h4>
+            <p>We are focused first on our clients</p>
           </div>
           <div className="about-sub_copy">
-            <h4 className="paragraph-medium_small blue-bold">Ask Us Anything</h4>
-            <p className="paragraph-medium_small">We want you to make the best decision for you and your family Call one of our lawyers for a free consultation and get the answers you need to choose the right law firm.</p>
+            <h4 className="blue-bold">Ask Us Anything</h4>
+            <p>We want you to make the best decision for you and your family Call one of our lawyers for a free consultation and get the answers you need to choose the right law firm.</p>
           </div>
         </div>
       </section>
@@ -198,28 +198,28 @@ const IndexPage = () => (
 
         </div>
       </section>
-      <section className="news_container padding-medium">
+      <section className="news_container padding-small">
         <h2 className="header-uppercase-grey">Latest News</h2>
         <div className="news-story_flexcontainer responsive-flex">
           <div className="news-story">
-            <h4 className="news-story_title paragraph-medium_small">Two injured in Galveston oil explosion</h4>
+            <h4 className="news-story_title">Two injured in Galveston oil explosion</h4>
             <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
             <p className="paragraph-small-red">Read More ➝</p>
           </div>
           <div className="news-story">
-            <h4 className="news-story_title paragraph-medium_small">Two injured in Galveston oil explosion</h4>
+            <h4 className="news-story_title">Two injured in Galveston oil explosion</h4>
             <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
             <p className="paragraph-small-red">Read More ➝</p>
           </div>
           <div className="news-story">
-            <h4 className="news-story_title paragraph-medium_small">Two injured in Galveston oil explosion</h4>
+            <h4 className="news-story_title">Two injured in Galveston oil explosion</h4>
             <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
             <p className="paragraph-small-red">Read More ➝</p>
           </div>
         </div>
         <button>See More Updates ➝</button>
       </section>
-      <section className="ask_container padding-large">
+      <section className="ask_container padding-medium">
         <div className="ask-main_container">
           <h2 className="header-uppercase-grey">Ask Us Anything</h2>
           <h3 className="header-blue">Let us help you find a way forward..</h3>
@@ -229,20 +229,20 @@ const IndexPage = () => (
           <div className="ask-sub_info">
             <img src={scale} alt="Scale icon"></img>
             <h4>Know Your Rights</h4>
-            <p className="paragraph-medium_small">Understand what options you have so you can take the right steps forward.</p>
-            <p className="paragraph-medium_small-red">Read More ➝</p>
+            <p>Understand what options you have so you can take the right steps forward.</p>
+            <p className="paragraph-red">Read More ➝</p>
           </div>
           <div className="ask-sub_info">
             <img src={handshake} alt="Handshake icon"></img>
             <h4>Know Your Rights</h4>
-            <p className="paragraph-medium_small"> Understand what options you have so you can take the right steps forward.</p>
-            <p className="paragraph-medium_small-red">Download a Free Guide ➝</p>
+            <p> Understand what options you have so you can take the right steps forward.</p>
+            <p className="paragraph-red">Download a Free Guide ➝</p>
           </div>
           <div className="ask-sub_info">
             <img src={phone} alt="Cell phone texting icon"></img>
             <h4>Know Your Rights</h4>
-            <p className="paragraph-medium_small">Understand what options you have so you can take the right steps forward.</p>
-            <p className="paragraph-medium_small-red">Ask Us Anything ➝</p>
+            <p>Understand what options you have so you can take the right steps forward.</p>
+            <p className="paragraph-red">Ask Us Anything ➝</p>
           </div>
         </div>
       </section>

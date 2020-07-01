@@ -18,11 +18,68 @@
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 
+/*
+
+//-16 tablet
+$font-smaller: 6px;
+$font-small: 13px;
+$font-medium: 16px; //stays same
+$font-medium_large: 21px;
+$font-large: 16px;
+$font-larger: 40px;
+$font-largest: 64px;
+
+
+
+
+// -8 small desktop
+$font-smaller: 6px;
+$font-small: 13px;
+$font-medium: 16px;
+$font-medium_large: 21px;
+$font-large: 24px;
+$font-larger: 48px;
+$font-largest: 72px;
+
+//medium desktop
+$font-smaller: 14px;
+$font-small: 21px;
+$font-medium: 24px;
+$font-medium_large: 29px;
+$font-large: 32px;
+$font-larger: 56px;
+$font-largest: 80px;
+
+// +8 large desktop
+$font-smaller: 22px;
+$font-small: 29px;
+$font-medium: 32px;
+$font-medium_large: 37px;
+$font-large: 40px;
+$font-larger: 64px;
+$font-largest: 88px;
+
+
+Old->
+$font-smaller: 10px;
+$font-small: 12px;
+$font-medium_small: 14px;
+$font-medium: 16px;
+$font-medium_large: 18px;
+$font-large: 24px;
+$font-larger: 48px;
+$font-largest: 62px;
+*/
 * {
   margin: 0;
   padding: 0;
   font-family: "AvenirNext-Regular", sans-serif;
-  font-size: 16px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px;
 }
 
 p {
@@ -31,23 +88,20 @@ p {
 
 .header-top {
   font-family: PoynterOSDisplay, serif;
-  font-size: 48px;
-  margin-bottom: 10px;
+  font-size: 88px;
   color: white;
 }
 
 .header-grey {
   font-family: PoynterOSDisplay, serif;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 64px;
   color: #122a3e;
 }
 
 .header-white,
 .header-blue {
   font-family: PoynterOSDisplay, serif;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 64px;
   color: white;
 }
 
@@ -59,6 +113,7 @@ p {
 .header-uppercase-white {
   font-family: "AvenirNext-Bold", sans-serif;
   text-transform: uppercase;
+  font-size: 40px;
 }
 
 .header-uppercase-grey {
@@ -72,37 +127,32 @@ p {
 }
 
 .paragraph-large {
-  font-size: 18px;
+  font-size: 37px;
   color: white;
 }
 
-.paragraph-medium_small {
-  font-size: 14px;
-}
-
 .paragraph-small {
-  font-size: 12px;
+  font-size: 29px;
 }
 
 .paragraph-smaller {
-  font-size: 10px;
+  font-size: 22px;
 }
 
 .paragraph-small-red {
   text-align: right;
-  font-size: 12px;
+  font-size: 29px;
   font-weight: bold;
   color: #e94f37;
 }
 
-.paragraph-medium_small-red {
-  font-size: 14px;
+.paragraph-red {
   font-weight: bold;
   color: #e94f37;
 }
 
 .paragraph-small-white {
-  font-size: 12px;
+  font-size: 29px;
   color: white;
   font-weight: initial;
 }
@@ -167,7 +217,7 @@ nav #menuToggle input {
 }
 
 .nav-flex_container li a {
-  font-size: 10px;
+  font-size: 29px;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -178,7 +228,7 @@ nav #menuToggle input {
 }
 
 .nav-flex_container .icon_large {
-  max-width: 70px;
+  max-width: 80px;
   margin-left: 10px;
 }
 
@@ -192,19 +242,19 @@ nav #menuToggle input {
   width: 220px;
   height: 60px;
   margin-top: 0px;
+  padding: 0;
   border: 2px solid #3772fc;
   margin-right: 10px;
 }
 
 .nav-flex_container button p {
-  font-size: 10px;
+  font-size: 29px;
   color: white;
 }
 
 .nav-flex_container button address {
   font-style: initial;
   font-family: montserrat, sans-serif;
-  font-size: 14px;
 }
 
 .main-flex_container {
@@ -221,7 +271,7 @@ nav #menuToggle input {
   margin-top: 60px;
   background-image: url("../images/hero_worker.png");
   background-size: cover;
-  min-height: 50vh;
+  min-height: 60vh;
   background-color: #4e505c;
   background-blend-mode: multiply;
   opacity: 1;
@@ -241,7 +291,8 @@ nav #menuToggle input {
 }
 
 .hero-menu_container .hero-menu_copy {
-  max-width: 50%;
+  max-width: 75%;
+  padding: 50px;
 }
 
 .testimonials_container div {
@@ -277,14 +328,13 @@ nav #menuToggle input {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 20px;
-  width: 250px;
   border: 0px;
   -webkit-box-shadow: 2px 2px 5px 0px #878787;
   box-shadow: 2px 2px 5px 0px #878787;
 }
 
 .results_container .results-table_container .results-table tr {
-  padding: 5px 0px;
+  padding: 10px 10px;
 }
 
 .results_container .results-table_container .results-table th {
@@ -293,7 +343,7 @@ nav #menuToggle input {
 }
 
 .results_container .results-table_container .results-table td {
-  padding-left: 30%;
+  padding-left: 20%;
 }
 
 .results_container .results-table_container .results-table th,
@@ -317,7 +367,7 @@ nav #menuToggle input {
 
 .results_container .results-table_container .results-table .results-table_offer th,
 .results_container .results-table_container .results-table .results-table_offer td {
-  font-size: 12px;
+  font-size: 29px;
 }
 
 .results_container .results-table_container .results-table .results-table_details {
@@ -327,7 +377,7 @@ nav #menuToggle input {
 
 .results_container .results-table_container .results-table .results-table_details th,
 .results_container .results-table_container .results-table .results-table_details td {
-  font-size: 12px;
+  font-size: 29px;
 }
 
 .results_container .results-table_container .results-table .results-table_details td {
@@ -354,9 +404,8 @@ nav #menuToggle input {
 }
 
 .about-main_container .about-main_copy .about-main_copy-quote_attribution {
-  font-size: 12px;
+  font-size: 29px;
   color: #1c1d21;
-  margin-bottom: 10px;
 }
 
 .about-sub_container {
@@ -411,13 +460,13 @@ nav #menuToggle input {
   background-color: blue;
   text-align: left;
   font-family: AvenirNext-Regular, sans-serif;
-  font-size: 12px;
+  font-size: 29px;
   padding: 10px 100px 10px 10px;
   width: 100%;
 }
 
 .questions_container .questions_list label {
-  margin-top: -29px;
+  margin-top: -45px;
   padding-bottom: 8px;
   margin-left: 92%;
   color: white;
@@ -438,8 +487,7 @@ nav #menuToggle input {
   -webkit-box-shadow: 2px 2px 5px 0px #878787;
   box-shadow: 2px 2px 5px 0px #878787;
   background-color: white;
-  width: 50%;
-  margin: 20px 10px 0;
+  margin: 20px 20px;
   padding: 20px;
 }
 
@@ -503,10 +551,10 @@ nav #menuToggle input {
 button {
   color: white;
   font-family: Montserrat, serif;
-  font-size: 14px;
+  font-size: 29px;
   font-weight: bold;
-  padding: 5px 20px;
-  margin-top: 10px;
+  padding: 20px 20px;
+  margin-top: 20px;
   background: #e94f37;
   opacity: 1;
   border: 0px;
@@ -553,23 +601,6 @@ button {
 
 footer {
   background-color: #f6f7fc;
-}
-
-footer img {
-  width: 20%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-footer div {
-  width: 80%;
-  margin-left: 50px;
-}
-
-footer p {
-  margin-top: 10px;
-  color: #707070;
 }
 
 .aboutpage-introduction_container {
@@ -685,44 +716,24 @@ footer p {
   font-family: serif;
   font-style: italic;
   font-weight: 200 !important;
-  font-size: 24px;
+  font-size: 40px;
   border-bottom: 2px solid #60a3ff;
 }
 
 .partner-profile_container .partner-profile_main h4 {
   font-family: PoynterOSDisplay, serif;
-  font-size: 18px;
+  font-size: 37px;
   margin-top: 10px;
   border-bottom: 2px solid #60a3ff;
 }
 
 .partner-profile_container .partner-profile_main p {
-  font-size: 14px;
+  font-size: 29px;
   margin-top: 10px;
   color: black;
 }
 
 @media only screen and (min-width: 1024px) {
-  .header-top {
-    font-family: PoynterOSDisplay, serif;
-    font-size: 56px;
-    margin-bottom: 10px;
-  }
-  .header-grey {
-    font-family: PoynterOSDisplay, serif;
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  .header-white,
-  .header-blue {
-    font-family: PoynterOSDisplay, serif;
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  .paragraph-large {
-    font-size: 20px;
-    color: white;
-  }
   .padding-small {
     padding: 50px 10%;
   }
@@ -735,14 +746,12 @@ footer p {
   .nav-flex_container li {
     margin: 25px 0px;
   }
-  .nav-flex_container li a {
-    font-size: 12px;
-  }
   .hero-menu_container {
     min-height: 95vh !important;
   }
   .hero-menu_container .hero-menu_copy {
     max-width: 40%;
+    padding: 300px 200px;
   }
   .testimonials_container div {
     width: 50%;
@@ -803,12 +812,6 @@ footer p {
 }
 
 @media only screen and (max-width: 710px) {
-  .header-top {
-    font-size: 24px;
-  }
-  .paragraph-large {
-    font-size: 14px;
-  }
   .hero-menu_container {
     min-height: 10vh !important;
   }
@@ -852,7 +855,7 @@ footer p {
     margin: 10px 0px;
   }
   .nav-flex_container li a {
-    font-size: 16px;
+    font-size: 32px;
   }
   .nav-flex_container li a:hover {
     border-bottom: 0px;

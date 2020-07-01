@@ -18,6 +18,59 @@
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
+
+// +8 large desktop
+$font-smaller: 22px;
+$font-small: 29px;
+$font-medium: 32px;
+$font-medium_large: 37px;
+$font-large: 40px;
+$font-larger: 64px;
+$font-largest: 88px;
+
+/*
+
+//-16 tablet
+$font-smaller: 6px;
+$font-small: 13px;
+$font-medium: 16px; //stays same
+$font-medium_large: 21px;
+$font-large: 16px;
+$font-larger: 40px;
+$font-largest: 64px;
+
+
+
+
+// -8 small desktop
+$font-smaller: 6px;
+$font-small: 13px;
+$font-medium: 16px;
+$font-medium_large: 21px;
+$font-large: 24px;
+$font-larger: 48px;
+$font-largest: 72px;
+
+//medium desktop
+$font-smaller: 14px;
+$font-small: 21px;
+$font-medium: 24px;
+$font-medium_large: 29px;
+$font-large: 32px;
+$font-larger: 56px;
+$font-largest: 80px;
+
+// +8 large desktop
+$font-smaller: 22px;
+$font-small: 29px;
+$font-medium: 32px;
+$font-medium_large: 37px;
+$font-large: 40px;
+$font-larger: 64px;
+$font-largest: 88px;
+
+
+Old->
 $font-smaller: 10px;
 $font-small: 12px;
 $font-medium_small: 14px;
@@ -26,6 +79,7 @@ $font-medium_large: 18px;
 $font-large: 24px;
 $font-larger: 48px;
 $font-largest: 62px;
+*/
 
 $nav-height: 60px;
 
@@ -34,33 +88,36 @@ $nav-height: 60px;
     padding: 0;
     font-family: "AvenirNext-Regular", sans-serif;
     font-size: $font-medium;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px;
 }
 
 p {
     color: #7f7f81;
+    //margin: 5px;
 }
 
 //MODULES
 
 .header-top {
     font-family: PoynterOSDisplay, serif;
-    font-size: $font-larger;
-    margin-bottom: 10px;
+    font-size: $font-largest;
     color: white;
 }
 
 .header-grey {
     font-family: PoynterOSDisplay, serif;
-    font-size: $font-large;
-    margin-bottom: 10px;
+    font-size: $font-larger;
     color: #122a3e;
 }
 
 .header-white,
 .header-blue {
     font-family: PoynterOSDisplay, serif;
-    font-size: $font-large;
-    margin-bottom: 10px;
+    font-size: $font-larger;
     color: white;
 }
 
@@ -72,6 +129,7 @@ p {
 .header-uppercase-white {
     font-family: "AvenirNext-Bold", sans-serif;
     text-transform: uppercase;
+    font-size: $font-large;
 }
 
 .header-uppercase-grey {
@@ -89,9 +147,6 @@ p {
     color: white;
 }
 
-.paragraph-medium_small {
-    font-size: $font-medium_small;
-}
 
 .paragraph-small {
     font-size: $font-small;
@@ -108,8 +163,7 @@ p {
     color: #e94f37;
 }
 
-.paragraph-medium_small-red {
-    font-size: $font-medium_small;
+.paragraph-red {
     font-weight: bold;
     color: #e94f37;
 }
@@ -174,7 +228,7 @@ nav {
         height: 15px;
 
         a {
-            font-size: $font-smaller; //desktop font-small
+            font-size: $font-small; //desktop font-small
             font-weight: bold;
             text-decoration: none;
             color: black;
@@ -185,7 +239,7 @@ nav {
     }
 
     .icon_large {
-        max-width: 70px;
+        max-width: 80px;
         margin-left: 10px;
     }
 
@@ -199,18 +253,18 @@ nav {
         width: 220px;
         height: 60px;
         margin-top: 0px;
+        padding: 0;
         border: 2px solid #3772fc;
         margin-right: 10px;
 
         p {
-            font-size: $font-smaller;
+            font-size: $font-small;
             color: white;
         }
 
         address {
             font-style: initial;
             font-family: montserrat, sans-serif;
-            font-size: $font-medium_small;
         }
     }
 }
@@ -224,7 +278,7 @@ nav {
     margin-top: $nav-height;
     background-image: url("../images/hero_worker.png");
     background-size: cover;
-    min-height: 50vh;
+    min-height: 60vh;
     background-color: #4e505c;
     background-blend-mode: multiply;
     opacity: 1;
@@ -234,7 +288,8 @@ nav {
     justify-content: flex-end;
 
     .hero-menu_copy {
-        max-width: 50%;
+        max-width: 75%;
+        padding: 50px; //desktop query 300px 200px 
     }
 }
 
@@ -260,14 +315,13 @@ nav {
             display: flex;
             flex-direction: column;
             margin: 20px;
-            width: 250px;
             border: 0px;
             -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
             -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
             box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
 
             tr {
-                padding: 5px 0px;
+                padding: 10px 10px;
             }
 
             th {
@@ -276,7 +330,7 @@ nav {
             }
 
             td {
-                padding-left: 30%;
+                padding-left: 20%;
             }
 
             th,
@@ -341,7 +395,6 @@ nav {
         .about-main_copy-quote_attribution {
             font-size: $font-small;
             color: #1c1d21;
-            margin-bottom: 10px;
         }
     }
 }
@@ -390,7 +443,7 @@ nav {
             width: 100%;
         }
         label {
-            margin-top: -29px;
+            margin-top: -45px;
             padding-bottom: 8px;
             margin-left: 92%;
             color: white;
@@ -409,8 +462,7 @@ nav {
             -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
             box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
             background-color: white;
-            width: 50%;
-            margin: 20px 10px 0;
+            margin: 20px 20px;
             padding: 20px;
 
             .news-story_title,
@@ -464,10 +516,10 @@ nav {
 button {
     color: white;
     font-family: Montserrat, serif;
-    font-size: $font-medium_small;
+    font-size: $font-small;
     font-weight: bold;
-    padding: 5px 20px;
-    margin-top: 10px;
+    padding: 20px 20px;
+    margin-top: 20px;
     background: #e94f37;
     opacity: 1;
     border: 0px;
@@ -512,20 +564,6 @@ button {
 
 footer {
     background-color: #f6f7fc;
-
-    img {
-        width: 20%;
-        align-self: center;
-    }
-
-    div {
-        width: 80%;
-        margin-left: 50px;
-    }
-    p {
-        margin-top: 10px;
-        color: #707070;
-    }
 }
 
 .aboutpage-introduction_container {
@@ -628,7 +666,7 @@ footer {
             border-bottom: 2px solid #60a3ff;
         }
         p {
-            font-size: $font-medium_small;
+            font-size: $font-small;
             margin-top: 10px;
             color: black;
         }
@@ -642,31 +680,9 @@ $tablet: "only screen and (min-width: 711px) and (max-width: 1023px)";
 $desktop: "only screen and (min-width: 1024px)";
 
 @media #{$desktop} {
-    .header-top {
-        font-family: PoynterOSDisplay, serif;
-        font-size: $font-larger + 8px;
-        margin-bottom: 10px;
-    }
-    .header-grey {
-        font-family: PoynterOSDisplay, serif;
-        font-size: $font-large + 8px;
-        margin-bottom: 10px;
-    }
-    .header-white,
-    .header-blue {
-        font-family: PoynterOSDisplay, serif;
-        font-size: $font-large + 8px;
-        margin-bottom: 10px;
-    }
-    
-
     
     
-    .paragraph-large {
-        font-size: $font-medium_large + 2px;
-        color: white;
-    }
-
+    
     .padding-small {
         padding: 50px 10%;
     }
@@ -681,9 +697,6 @@ $desktop: "only screen and (min-width: 1024px)";
         li {
             margin: 25px 0px;
 
-            a {
-                font-size: $font-small;
-            }
         }
     }
 
@@ -692,6 +705,7 @@ $desktop: "only screen and (min-width: 1024px)";
 
         .hero-menu_copy {
             max-width: 40%;
+            padding: 300px 200px 
         }
     }
     .testimonials_container {
@@ -770,12 +784,6 @@ $desktop: "only screen and (min-width: 1024px)";
 }
 
 @media #{$phone} {
-    .header-top {
-        font-size: $font-large;
-    }
-    .paragraph-large {
-        font-size: $font-medium_small;
-    }
     .hero-menu_container {
         min-height: 10vh !important;
 
