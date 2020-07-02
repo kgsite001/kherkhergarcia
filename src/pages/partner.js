@@ -29,15 +29,15 @@ const PartnerPage = () => (
                 </div>
                 <div className="partner-profile_main">
                     <h2 className="header-grey">Moises Morales</h2>
-                    <h3>Partner</h3>
+                    <h3 className="paragraph-large">Partner</h3>
                     <p>Moises Morales maintains a litigation practice with an emphasis on personal injury and commercial claims. Mr. Morales grew up in rural west Texas and attended Fort Hancock High School. He received his Bachelor of Science in Political Science from Sul Ross State University, where he graduated summa cum laude. While attending Sul Ross, he worked full time and gained experienced in the legal career as a chief of staff for the local district attorney and then as a law clerk for a state representative. Mr. Morales later moved to Austin, to work the 82nd Legislative Session.</p>
                     <p>After this legislative experience, Mr. Morales moved to Houston to attend law school. He graduated from the University of Houston Law Center with a Doctor of Jurisprudence. During his law school career, Mr. Morales was the Chief Notes and Comments Editor of the Houston Business & Tax Journal. </p>
                     <p>Prior to joining the Kherkher Garcia, Mr. Morales gained valuable legal experience working as a law clerk in both Federal and State Courts, a Fortune 500 Company, and several civil litigation law firms. </p>
                     <p>Admitted to all courts of the State of Texas, 2015</p>
                     <p>Admitted to practice in the Southern District of Texas, 2018</p>
-                    <h4>Education</h4>
+                    <h4 className="paragraph-medium_large">Education</h4>
                     <p>Education here</p>
-                    <h4>Professional Affiliations</h4>
+                    <h4 className="paragraph-medium_large">Professional Affiliations</h4>
                     <p>Affiliations here</p>
 
                 </div>

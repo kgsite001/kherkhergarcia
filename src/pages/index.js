@@ -32,7 +32,7 @@ const IndexPage = () => (
         <span role="img" aria-label="Man in business attire points to document in front of a seated woman in business attire. Another man in business attire sits in the background."></span>
         <div className="hero-menu_copy">
           <h1 className="header-top">We are with you all the way.</h1>
-          <p className="paragraph-large">We are trial lawyers dedicated to seeking justice for our clients. Our reputation is built on our commitment to service and a strong record of success.</p>
+          <p className="paragraph-medium_large">We are trial lawyers dedicated to seeking justice for our clients. Our reputation is built on our commitment to service and a strong record of success.</p>
           <button>Ask Us Anything ➝</button>
         </div>
       </section>
@@ -49,100 +49,100 @@ const IndexPage = () => (
         </div>
 
       </section>
-      <section id="results" className="results_container padding-medium">
+      <section id="results" className="results_container padding-small">
         <h2 className="header-uppercase-grey">Results</h2>
         <h3 className="header-blue">Over 40 years of experience in the courtroom</h3>
         <p className="section_paragraph">Not every lawyer has been through a trial. We know how to try cases. Our expertise allows us to get recoveries from the most complex and challenging cases. We work on cases all across the country.</p>
         <div className="results-table_container responsive-flex">
+
           <table className="results-table">
             <tr className="results-table_won">
-              <th>We Won:</th>
-              <td>$46,500,000</td>
+              <th className="paragraph-large">We Won:</th>
+              <td className="paragraph-large">$46,500,000</td>
             </tr>
             <tr className="results-table_offer">
-              <th>Pre-Trial Offer:</th>
-              <td>$1,065,000</td>
+              <th className="paragraph-small">Pre-Trial Offer:</th>
+              <td className="paragraph-small">$1,065,000</td>
             </tr>
             <div className="results-table_details">
               <tr>
-                <th>Case:</th>
-                <td>Monsanto</td>
+                <th className="paragraph-smaller">Case:</th>
+                <td className="paragraph-smaller">Monsanto</td>
               </tr>
               <tr>
-                <th>Attorney:</th>
-                <td>Steve Kherkher</td>
+                <th className="paragraph-smaller">Attorney:</th>
+                <td className="paragraph-smaller">Steve Kherkher</td>
               </tr>
               <tr>
-                <th>Summary:</th>
-                <td>Monsanto used cancer-causing chemicals in their product</td>
+                <th className="paragraph-smaller">Summary:</th>
+                <td className="paragraph-smaller">Monsanto used cancer-causing chemicals in their product</td>
               </tr>
-              <p className="paragraph-small-red">Read More ➝</p>
+              <p className="paragraph-smaller-red">Read More ➝</p>
             </div>
 
           </table>
           <table className="results-table">
             <tr className="results-table_won">
-              <th>We Won:</th>
-              <td>$46,500,000</td>
+              <th className="paragraph-large">We Won:</th>
+              <td className="paragraph-large">$46,500,000</td>
             </tr>
             <tr className="results-table_offer">
-              <th>Pre-Trial Offer:</th>
-              <td>$1,065,000</td>
+              <th className="paragraph-small">Pre-Trial Offer:</th>
+              <td className="paragraph-small">$1,065,000</td>
             </tr>
             <div className="results-table_details">
               <tr>
-                <th>Case:</th>
-                <td>Monsanto</td>
+                <th className="paragraph-smaller">Case:</th>
+                <td className="paragraph-smaller">Monsanto</td>
               </tr>
               <tr>
-                <th>Attorney:</th>
-                <td>Steve Kherkher</td>
+                <th className="paragraph-smaller">Attorney:</th>
+                <td className="paragraph-smaller">Steve Kherkher</td>
               </tr>
               <tr>
-                <th>Summary:</th>
-                <td>Monsanto used cancer-causing chemicals in their product</td>
+                <th className="paragraph-smaller">Summary:</th>
+                <td className="paragraph-smaller">Monsanto used cancer-causing chemicals in their product</td>
               </tr>
-              <p className="paragraph-small-red">Read More ➝</p>
-
+              <p className="paragraph-smaller-red">Read More ➝</p>
             </div>
+
           </table>
           <table className="results-table">
             <tr className="results-table_won">
-              <th>We Won:</th>
-              <td>$46,500,000</td>
+              <th className="paragraph-large">We Won:</th>
+              <td className="paragraph-large">$46,500,000</td>
             </tr>
             <tr className="results-table_offer">
-              <th>Pre-Trial Offer:</th>
-              <td>$1,065,000</td>
+              <th className="paragraph-small">Pre-Trial Offer:</th>
+              <td className="paragraph-small">$1,065,000</td>
             </tr>
             <div className="results-table_details">
               <tr>
-                <th>Case:</th>
-                <td>Monsanto</td>
+                <th className="paragraph-smaller">Case:</th>
+                <td className="paragraph-smaller">Monsanto</td>
               </tr>
               <tr>
-                <th>Attorney:</th>
-                <td>Steve Kherkher</td>
+                <th className="paragraph-smaller">Attorney:</th>
+                <td className="paragraph-smaller">Steve Kherkher</td>
               </tr>
               <tr>
-                <th>Summary:</th>
-                <td>Monsanto used cancer-causing chemicals in their product</td>
+                <th className="paragraph-smaller">Summary:</th>
+                <td className="paragraph-smaller">Monsanto used cancer-causing chemicals in their product</td>
               </tr>
-              <p className="paragraph-small-red">Read More ➝</p>
-
+              <p className="paragraph-smaller-red">Read More ➝</p>
             </div>
+
           </table>
 
         </div>
         <button>See More Victories ➝</button>
       </section>
-      <section  id="aboutus" className="about_container padding-medium">
+      <section id="aboutus" className="about_container padding-medium">
         <div className="about-main_container responsive-flex">
           <div className="about-main_copy">
             <h2 className="header-uppercase-grey">About Us</h2>
-            <h3 className="header-grey">We are relentless in our effort to seek justice for our clients."</h3>
-            <img src={quotationMark}></img>
-            <p className="about-main_copy-quote_attribution">- Steve Kherkher, Founding Partner</p>
+            <h3 className="header-grey">“We are relentless in our effort to seek justice for our clients.”</h3>
+            <p className="about-main_copy-quote_attribution paragraph-small">- Steve Kherkher, Founding Partner</p>
             <p className="section_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div className="about-main_media">
@@ -182,20 +182,23 @@ const IndexPage = () => (
           <button>See More Common Questions ➝</button>
         </div>
         <div className="questions_list">
-          <button>What is the first thing I should do after a workplace accident? </button>
-          <label>▲</label>
-          <button>Can I recover if I had a prior work injury?</button>
-          <label>▲</label>
-
-          <button>They offered me a settlement. Should I accept it?</button>
-          <label>▲</label>
-
-          <button>How much time do I have to file a lawsuit after a truck accident?</button>
-          <label>▲</label>
-
-          <button>They offered me a settlement. Should I accept it?</button>
-          <label>▲</label>
-
+          <button>
+            <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
+            <p className="triangle">▲</p>
+          </button>
+          <button>
+            <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
+            <p className="triangle">▲</p>
+          </button>
+          <button>
+            <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
+            <p className="triangle">▲</p>
+          </button>
+          <button>
+            <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
+            <p className="triangle">▲</p>
+          </button>
+          
         </div>
       </section>
       <section className="news_container padding-small">
