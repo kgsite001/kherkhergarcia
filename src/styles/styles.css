@@ -87,12 +87,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 5px;
+  margin: 10px;
 }
 
 p {
   color: #7f7f81;
-  margin: 5px;
+  margin: 10px;
 }
 
 .header-top {
@@ -287,7 +287,7 @@ nav #menuToggle input {
 
 .nav-flex_container li button address {
   font-style: initial;
-  font-family: montserrat, sans-serif;
+  font-family: montserrat, AvenirNext-Regular, sans-serif;
   font-size: 21px;
 }
 
@@ -875,12 +875,9 @@ footer {
     width: 50%;
     margin-left: 50px;
   }
-  footer img {
-    width: 8%;
-  }
   footer div {
-    width: 80%;
-    margin-left: 50px;
+    width: 100%;
+    margin: 50px;
   }
 }
 

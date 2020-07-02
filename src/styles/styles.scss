@@ -100,12 +100,12 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 5px;
+    margin: 10px;
 }
 
 p {
     color: #7f7f81;
-    margin: 5px;
+    margin: 10px;
 }
 
 //MODULES
@@ -294,7 +294,7 @@ nav {
 
             address {
                 font-style: initial;
-                font-family: montserrat, sans-serif;
+                font-family: montserrat, AvenirNext-Regular, sans-serif;
                 font-size: $font-medium_large;
             }
         }
@@ -849,13 +849,9 @@ $desktop-large: "only screen and (min-width: 2560px)";
     }
 
     footer {
-        img {
-            width: 8%;
-        }
-
         div {
-            width: 80%;
-            margin-left: 50px;
+            width: 100%;
+            margin: 50px;
         }
     }
 }
