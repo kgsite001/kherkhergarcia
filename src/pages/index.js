@@ -141,7 +141,7 @@ const IndexPage = () => (
         <div className="about-main_container responsive-flex">
           <div className="about-main_copy">
             <h2 className="header-uppercase-grey">About Us</h2>
-            <h3 className="header-grey">“We are relentless in our effort to seek justice for our clients.”</h3>
+            <h3 className="header-grey"><span>“</span>We are relentless in our effort to seek justice for our clients.”</h3>
             <p className="about-main_copy-quote_attribution paragraph-small">- Steve Kherkher, Founding Partner</p>
             <p className="section_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
@@ -152,15 +152,15 @@ const IndexPage = () => (
         <div className="about-sub_container responsive-flex">
           <div className="about-sub_copy">
             <h4 className="blue-bold">Experienced Trial Lawyers</h4>
-            <p>Our experience is great. We havve worked on cases aroudn the country for years and we're prepared to get you through this.</p>
+            <p className="paragraph-small">Our experience is great. We have worked on cases around the country for years and we're prepared to get you through this.</p>
           </div>
           <div className="about-sub_copy">
             <h4 className="blue-bold">Service Comes First</h4>
-            <p>We are focused first on our clients</p>
+            <p className="paragraph-small">We are focused first on our clients</p>
           </div>
           <div className="about-sub_copy">
             <h4 className="blue-bold">Ask Us Anything</h4>
-            <p>We want you to make the best decision for you and your family Call one of our lawyers for a free consultation and get the answers you need to choose the right law firm.</p>
+            <p className="paragraph-small">We want you to make the best decision for you and your family Call one of our lawyers for a free consultation and get the answers you need to choose the right law firm.</p>
           </div>
         </div>
       </section>
