@@ -87,18 +87,19 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 p {
   color: #7f7f81;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .header-top {
   font-family: PoynterOSDisplay, serif;
   font-size: 64px;
   color: white;
+  margin: 0;
 }
 
 .header-grey {
@@ -112,7 +113,7 @@ p {
   margin-top: -2.5vw;
   margin-left: -4.8vw;
   color: #122a3e;
-  opacity: 0.10;
+  opacity: 0.1;
   font-size: 10vw;
   font-family: PoynterOSDisplay, serif;
 }
@@ -160,6 +161,7 @@ p {
 .paragraph-medium_large {
   font-size: 21px;
   color: white;
+  margin: 0;
 }
 
 .paragraph-large {
@@ -251,7 +253,7 @@ nav #menuToggle input {
 }
 
 .nav-flex_container li .icon_large {
-  width: 10vh;
+  width: 12vh;
   margin-top: -2%;
 }
 
@@ -372,16 +374,17 @@ nav #menuToggle input {
 }
 
 .results_container .results-table_container .results-table tr {
-  padding: 10px 10px;
-}
-
-.results_container .results-table_container .results-table th {
-  text-align: right;
-  padding-left: 10px;
-}
-
-.results_container .results-table_container .results-table td {
-  padding-left: 20%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .results_container .results-table_container .results-table th,
@@ -396,6 +399,7 @@ nav #menuToggle input {
 .results_container .results-table_container .results-table .results-table_won th,
 .results_container .results-table_container .results-table .results-table_won td {
   color: white;
+  font-family: AvenirNext-Bold, serif;
 }
 
 .results_container .results-table_container .results-table .results-table_offer {
@@ -404,15 +408,28 @@ nav #menuToggle input {
 
 .results_container .results-table_container .results-table .results-table_details {
   background-color: white;
-  padding: 20px 0px;
+  margin-top: 20px;
 }
 
+.results_container .results-table_container .results-table .results-table_details tr {
+  padding: 2px 50px;
+}
+
+.results_container .results-table_container .results-table .results-table_details th,
 .results_container .results-table_container .results-table .results-table_details td {
-  padding-left: 10px;
+  width: 50%;
+}
+
+.results_container .results-table_container .results-table .results-table_details th {
+  text-align: right;
+}
+
+.results_container .results-table_container .results-table .results-table_details th {
+  text-align: left;
 }
 
 .results_container .results-table_container .results-table .results-table_details p {
-  margin: 10px 10px;
+  margin: 20px;
 }
 
 .about-main_container div {
@@ -902,7 +919,7 @@ footer {
     font-size: 22px;
   }
   .paragraph-smaller {
-    font-size: 28px;
+    font-size: 21px;
   }
   .paragraph-small {
     font-size: 29px;
@@ -914,7 +931,7 @@ footer {
     font-size: 32px;
   }
   .paragraph-smaller-red {
-    font-size: 28px;
+    font-size: 21px;
   }
   .paragraph-small-white {
     font-size: 29px;
@@ -1012,7 +1029,7 @@ footer {
     font-size: 30px;
   }
   .paragraph-smaller {
-    font-size: 36px;
+    font-size: 28px;
   }
   .paragraph-small {
     font-size: 37px;
@@ -1024,7 +1041,7 @@ footer {
     font-size: 40px;
   }
   .paragraph-smaller-red {
-    font-size: 36px;
+    font-size: 28px;
   }
   .paragraph-small-white {
     font-size: 37px;
