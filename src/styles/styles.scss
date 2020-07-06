@@ -953,7 +953,7 @@ $desktop-large: "only screen and (min-device-width: 2560px)";
             }
 
             p {
-                font-size: $font-small;
+                font-size: $font-small + 8px;
             }
 
             a,
@@ -962,7 +962,7 @@ $desktop-large: "only screen and (min-device-width: 2560px)";
             b,
             i,
             u {
-                font-size: $font-small;
+                font-size: $font-small + 8px;
             }
         }
         .blog-post_sidebar_container {
@@ -1133,7 +1133,7 @@ $desktop-large: "only screen and (min-device-width: 2560px)";
             }
 
             p {
-                font-size: $font-small;
+                font-size: $font-small + 8px;
             }
 
             a,
@@ -1142,11 +1142,14 @@ $desktop-large: "only screen and (min-device-width: 2560px)";
             b,
             i,
             u {
-                font-size: $font-small;
+                font-size: $font-small + 8px;
             }
         }
         .blog-post_sidebar_container {
             h4 {
+                font-size: 24px;
+            }
+            button {
                 font-size: 24px;
             }
         }
@@ -1312,11 +1315,11 @@ $desktop-large: "only screen and (min-device-width: 2560px)";
             }
     
             p {
-                font-size: $font-small + 24px;
+                font-size: $font-small + 16px;
             }
     
             a, ul, li, b, i, u {
-                font-size: $font-small + 24px;
+                font-size: $font-small + 16px;
             }
         }
         .blog-post_sidebar_container {
@@ -1324,8 +1327,13 @@ $desktop-large: "only screen and (min-device-width: 2560px)";
             h4 {
                 font-size: 32px;
             }
+            button {
+                font-size: 24px;
+            }
         }
     }
+
+    
 }
 
 @media #{$phone} {

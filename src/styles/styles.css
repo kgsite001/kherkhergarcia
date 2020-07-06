@@ -990,7 +990,7 @@ footer {
     font-size: 18px;
   }
   .blog-post_container .blog-post_main p {
-    font-size: 13px;
+    font-size: 21px;
   }
   .blog-post_container .blog-post_main a,
   .blog-post_container .blog-post_main ul,
@@ -998,7 +998,7 @@ footer {
   .blog-post_container .blog-post_main b,
   .blog-post_container .blog-post_main i,
   .blog-post_container .blog-post_main u {
-    font-size: 13px;
+    font-size: 21px;
   }
   .blog-post_container .blog-post_sidebar_container h4 {
     font-size: 24px;
@@ -1129,7 +1129,7 @@ footer {
     font-size: 18px;
   }
   .blog-post_container .blog-post_main p {
-    font-size: 13px;
+    font-size: 21px;
   }
   .blog-post_container .blog-post_main a,
   .blog-post_container .blog-post_main ul,
@@ -1137,9 +1137,12 @@ footer {
   .blog-post_container .blog-post_main b,
   .blog-post_container .blog-post_main i,
   .blog-post_container .blog-post_main u {
-    font-size: 13px;
+    font-size: 21px;
   }
   .blog-post_container .blog-post_sidebar_container h4 {
+    font-size: 24px;
+  }
+  .blog-post_container .blog-post_sidebar_container button {
     font-size: 24px;
   }
 }
@@ -1268,13 +1271,16 @@ footer {
     font-size: 26px;
   }
   .blog-post_container .blog-post_main p {
-    font-size: 37px;
+    font-size: 29px;
   }
   .blog-post_container .blog-post_main a, .blog-post_container .blog-post_main ul, .blog-post_container .blog-post_main li, .blog-post_container .blog-post_main b, .blog-post_container .blog-post_main i, .blog-post_container .blog-post_main u {
-    font-size: 37px;
+    font-size: 29px;
   }
   .blog-post_container .blog-post_sidebar_container h4 {
     font-size: 32px;
+  }
+  .blog-post_container .blog-post_sidebar_container button {
+    font-size: 24px;
   }
 }
 
