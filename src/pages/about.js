@@ -16,12 +16,12 @@ const AboutPage = () => (
             <section className="aboutpage-introduction_container padding-small responsive-flex">
                 <div className="aboutpage-kg_profiles">
                     <div>
-                        <img src={kherkherProfile}></img>
+                        <img src={kherkherProfile} alt="Jesus Garcia"></img>
                         <h2>Steve Kherkher</h2>
                         <p>Founding Partner</p>
                     </div>
                     <div>
-                        <img src={garciaProfile}></img>
+                        <img src={garciaProfile} alt="Steve Kherkher"></img>
                         <h2>Jesus Garcia, Jr.</h2>
                         <p>Founding Partner</p>
                     </div>
@@ -39,7 +39,7 @@ const AboutPage = () => (
                     <p>We fight for you against all kinds of companies that have acted recklessly and negligently. Trucking, offshore, oil and energy, global manufacturers, maritime shipping, and others.</p>
                 </div>
                 <div>
-                    <img src={steveTeam}></img>
+                    <img src={steveTeam} alt="Steve Kherkher speaking with the team at Kherkher Garcia."></img>
                 </div>
             </section>
             <section className="aboutpage-attorneys_container padding-large">

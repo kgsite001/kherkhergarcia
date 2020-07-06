@@ -34,10 +34,12 @@ const Blog = (props) => {
             <p className="blog-post_main-author">{props.data.contentfulBlogPost.author}</p>
             <p>{documentToReactComponents(props.data.contentfulBlogPost.childContentfulBlogPostBodyRichTextNode.json)}</p>
           </section>
-          <section className="blog-post_sidebar">
-            <h4>Related Topics</h4>
-            <h4>Related Topics</h4>
-            <button>Ask Us Anything</button>
+          <section className="blog-post_sidebar_container">
+            <div>
+              <h4>Related Topics</h4>
+              <h4>Related Topics</h4>
+              <button>Ask Us Anything</button>
+            </div>
           </section>
         </div>
       </div>
