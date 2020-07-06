@@ -701,13 +701,13 @@ footer {
             font-family: serif;
             font-style: italic;
             font-weight: 200 !important;
-            border-bottom: 2px solid #032DC1;
+            border-bottom: 2px solid #032dc1;
         }
         h4 {
             font-family: PoynterOSDisplay, serif;
             color: black;
             margin-top: 10px;
-            border-bottom: 2px solid #032DC1;
+            border-bottom: 2px solid #032dc1;
         }
         p {
             margin-top: 10px;
@@ -721,15 +721,14 @@ footer {
     section {
         margin: 0 20px;
     }
-    
+
     .blog-post_main {
         width: 70%;
-        
 
         h2 {
             font-family: PoynterOSDisplay, serif;
             font-size: 45px;
-            border-bottom: 2px solid #032DC1;
+            border-bottom: 2px solid #032dc1;
         }
 
         .blog-post_main-category {
@@ -757,41 +756,43 @@ footer {
             width: 90%;
         }
 
-        a, ul, li, b, i, u {
+        a,
+        ul,
+        li,
+        b,
+        i,
+        u {
             font-size: $font-small;
         }
     }
     .blog-post_sidebar {
         width: 30%;
-        background-color: #F7F8FD;
+        background-color: #f7f8fd;
         height: auto;
         display: flex;
         flex-direction: column;
         height: 583px;
         
+
         h4 {
             font-family: AvenirNext-Bold, sans-serif;
             font-size: 24px;
-            color: #1C1D21;
+            color: #1c1d21;
+            width: 100%;
         }
 
-        button {
-            //justify-self: flex-end;
-        }
     }
 }
 
 // MEDIA QUERIES
 
-$phone: "only screen and (max-width: 710px)";
-$tablet: "only screen and (min-width: 711px) and (max-width: 1023px)";
-$desktops-all: "only screen and (min-width: 1024)";
-$desktop-small: "only screen and (min-width: 1024px) and (max-width: 1919px)";
-$desktop-medium: "only screen and (min-width: 1920px) and (max-width: 2559px)";
-$desktop-large: "only screen and (min-width: 2560px)";
+$phone: "only screen and (max-device-width: 710px)";
+$tablet: "only screen and (min-device-width: 711px) and (max-device-width: 1023px)";
+$desktop-small: "only screen and (min-device-width: 1024px) and (max-device-width: 1919px)";
+$desktop-medium: "only screen and (min-device-width: 1920px) and (max-device-width: 2559px)";
+$desktop-large: "only screen and (min-device-width: 2560px)";
 
-@media #{$desktops-all} {
-}
+
 
 @media #{$desktop-small} {
     * {
@@ -928,6 +929,44 @@ $desktop-large: "only screen and (min-width: 2560px)";
         div {
             width: 100%;
             margin: 50px;
+        }
+    }
+
+    .blog-post_container {
+        .blog-post_main {
+            h2 {
+                font-size: 45px;
+            }
+
+            .blog-post_main-category {
+                font-size: 24px;
+            }
+
+            .blog-post_main-date {
+                font-size: 21px;
+            }
+
+            .blog-post_main-author {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: $font-small;
+            }
+
+            a,
+            ul,
+            li,
+            b,
+            i,
+            u {
+                font-size: $font-small;
+            }
+        }
+        .blog-post_sidebar {
+            h4 {
+                font-size: 24px;
+            }
         }
     }
 }
@@ -1072,6 +1111,44 @@ $desktop-large: "only screen and (min-width: 2560px)";
             margin-left: 50px;
         }
     }
+
+    .blog-post_container {
+        .blog-post_main {
+            h2 {
+                font-size: 45px;
+            }
+
+            .blog-post_main-category {
+                font-size: 24px;
+            }
+
+            .blog-post_main-date {
+                font-size: 21px;
+            }
+
+            .blog-post_main-author {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: $font-small;
+            }
+
+            a,
+            ul,
+            li,
+            b,
+            i,
+            u {
+                font-size: $font-small;
+            }
+        }
+        .blog-post_sidebar {
+            h4 {
+                font-size: 24px;
+            }
+        }
+    }
 }
 
 @media #{$desktop-large} {
@@ -1212,6 +1289,41 @@ $desktop-large: "only screen and (min-width: 2560px)";
             margin-left: 50px;
         }
     }
+
+    .blog-post_container {    
+        .blog-post_main {
+            
+            h2 {
+                font-size: 53px;
+        }
+    
+            .blog-post_main-category {
+                font-size: 32px;
+            }
+    
+            .blog-post_main-date {
+                font-size: 29px;
+            }
+    
+            .blog-post_main-author {
+                font-size: 26px;
+            }
+    
+            p {
+                font-size: $font-small + 24px;
+            }
+    
+            a, ul, li, b, i, u {
+                font-size: $font-small + 24px;
+            }
+        }
+        .blog-post_sidebar {
+            
+            h4 {
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 @media #{$phone} {
@@ -1256,6 +1368,16 @@ $desktop-large: "only screen and (min-width: 2560px)";
             }
         }
     }
+
+
+        .blog-post_container {
+            .blog-post_main {
+                width: 100%;
+            }
+            .blog-post_sidebar {
+                width: 100%;
+            }
+        }
     //HAMBURGER MENU
 
     nav {
