@@ -38,7 +38,7 @@ const Blog = (props) => {
             <div>
               <h4>Related Topics</h4>
               <h4>Related Topics</h4>
-              <button>Ask Us Anything</button>
+              <button>Ask Us Anything ➝</button>
             </div>
           </section>
         </div>
