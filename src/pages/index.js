@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import quotationMark from "../images/quotation_mark.svg"
 import scale from "../images/scale.svg"
 import handshake from "../images/handshake.svg"
 import phone from "../images/phone.svg"

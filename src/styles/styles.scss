@@ -207,6 +207,12 @@ p {
     color: #e94f37;
 }
 
+.paragraph-small-black {
+    font-size: $font-small;
+    color: black;
+    font-weight: initial;
+}
+
 .padding-small {
     padding: 50px 5%;
 }
@@ -695,18 +701,82 @@ footer {
             font-family: serif;
             font-style: italic;
             font-weight: 200 !important;
-            border-bottom: 2px solid #60a3ff;
+            border-bottom: 2px solid #032DC1;
         }
         h4 {
             font-family: PoynterOSDisplay, serif;
             color: black;
             margin-top: 10px;
-            border-bottom: 2px solid #60a3ff;
+            border-bottom: 2px solid #032DC1;
         }
         p {
-            font-size: $font-small;
             margin-top: 10px;
+        }
+    }
+}
+
+.blog-post_container {
+    margin-top: $nav-height;
+
+    section {
+        margin: 0 20px;
+    }
+    
+    .blog-post_main {
+        width: 70%;
+        
+
+        h2 {
+            font-family: PoynterOSDisplay, serif;
+            font-size: 45px;
+            border-bottom: 2px solid #032DC1;
+        }
+
+        .blog-post_main-category {
+            font-size: 24px;
+            font-family: AvenirNext-Bold, sans-serif;
+            color: blue;
+            margin: 0;
+        }
+
+        .blog-post_main-date {
+            font-size: 21px;
+            color: #7f7f81;
+            margin: 0;
+        }
+
+        .blog-post_main-author {
+            font-size: 18px;
+            color: #7f7f81;
+            margin: 0;
+        }
+
+        p {
+            font-size: $font-small;
             color: black;
+            width: 90%;
+        }
+
+        a, ul, li, b, i, u {
+            font-size: $font-small;
+        }
+    }
+    .blog-post_sidebar {
+        width: 30%;
+        background-color: #F7F8FD;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        height: 583px;
+        
+        h4 {
+            font-family: AvenirNext-Bold, sans-serif;
+            font-size: 24px;
+            color: #1C1D21;
+        }
+
+        button {
+            //justify-self: flex-end;
         }
     }
 }
@@ -771,6 +841,10 @@ $desktop-large: "only screen and (min-width: 2560px)";
     }
 
     .paragraph-small-red {
+        font-size: $font-small;
+    }
+
+    .paragraph-small-black {
         font-size: $font-small;
     }
 
@@ -907,6 +981,11 @@ $desktop-large: "only screen and (min-width: 2560px)";
     .paragraph-small-red {
         font-size: $font-small + 16px;
     }
+
+    .paragraph-small-black {
+        font-size: $font-small + 16px;
+    }
+
     .padding-small {
         padding: 50px 10%;
     }
@@ -1041,6 +1120,10 @@ $desktop-large: "only screen and (min-width: 2560px)";
     }
 
     .paragraph-small-red {
+        font-size: $font-small + 24px;
+    }
+
+    .paragraph-small-black {
         font-size: $font-small + 24px;
     }
     .padding-small {
