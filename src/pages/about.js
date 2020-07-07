@@ -17,24 +17,24 @@ const AboutPage = () => (
                 <div className="aboutpage-kg_profiles">
                     <div>
                         <img src={kherkherProfile} alt="Jesus Garcia"></img>
-                        <h2>Steve Kherkher</h2>
-                        <p>Founding Partner</p>
+                        <h5>Steve Kherkher</h5>
+                        <h6>Founding Partner</h6>
                     </div>
                     <div>
                         <img src={garciaProfile} alt="Steve Kherkher"></img>
-                        <h2>Jesus Garcia, Jr.</h2>
-                        <p>Founding Partner</p>
+                        <h5>Jesus Garcia, Jr.</h5>
+                        <h6>Founding Partner</h6>
                     </div>
                 </div>
                 <div className="aboutpage-intro_copy">
-                    <h1 className="header-grey">Our focus is your justice.</h1>
+                    <h3>Our focus is your justice.</h3>
                     <p>Experience matters. We have presented cases in over 900 jury trials. And we’ve settled hundreds more. We have been very successful because we fight for you like you are our family—and we know how to win. Our record speaks for itself.</p>
                     <p>We fight for you against all kinds of companies that have acted recklessly and negligently. Trucking, offshore, oil and energy, global manufacturers, maritime shipping, and others.</p>
                 </div>
             </section>
             <section className="aboutpage-mission_container responsive-flex padding-medium">
                 <div>
-                    <h1 className="header-grey">Our Mission.</h1>
+                    <h3>Our Mission.</h3>
                     <p>This paragraph we talk about what exactly drives us as a law firm and the way we demand excellence for it.</p>
                     <p>We fight for you against all kinds of companies that have acted recklessly and negligently. Trucking, offshore, oil and energy, global manufacturers, maritime shipping, and others.</p>
                 </div>
@@ -43,69 +43,69 @@ const AboutPage = () => (
                 </div>
             </section>
             <section className="aboutpage-attorneys_container padding-large">
-                <h1 className="header-grey">Meet Our Team:</h1>
+                <h3>Meet Our Team:</h3>
                 <div className="aboutpage-attorneys_directory">
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                     <Link to="/partner">
                         <div className="aboutpage-attorneys_profile">
                             <img src={attorney}></img>
-                            <h2>Moises Morales</h2>
-                            <h3>Partner</h3>
+                            <h5 className="bold-blue">Moises Morales</h5>
+                            <h6>Partner</h6>
                         </div>
                     </Link>
                 </div>

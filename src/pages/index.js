@@ -40,8 +40,8 @@ const IndexPage = () => (
           <img src={videoPlaceholder}></img>
         </div>
         <div className="testimonials_copy">
-          <h2 className="header-uppercase-grey">Testimonials</h2>
-          <h3 className="header-grey">In a split second, Ruby's life changed forever.</h3>
+          <h2>Testimonials</h2>
+          <h3>In a split second, Ruby's life changed forever.</h3>
           <p>Ruby's day started like any other. We approach our clients like family. Our team is dedicated to putting your needs
           first and helping you achieve the best possible result for you. Our focus is your justice.</p>
           <button>See Ruby's Story ➝</button>
@@ -49,8 +49,8 @@ const IndexPage = () => (
 
       </section>
       <section id="results" className="results_container padding-small">
-        <h2 className="header-uppercase-grey">Results</h2>
-        <h3 className="header-blue">Over 40 years of experience in the courtroom</h3>
+        <h2>Results</h2>
+        <h3 className="blue">Over 40 years of experience in the courtroom</h3>
         <p className="section_paragraph">Not every lawyer has been through a trial. We know how to try cases. Our expertise allows us to get recoveries from the most complex and challenging cases. We work on cases all across the country.</p>
         <div className="results-table_container responsive-flex">
 
@@ -59,9 +59,27 @@ const IndexPage = () => (
               <th className="paragraph-large">We Won:</th>
               <td className="paragraph-large">$46,500,000</td>
             </tr>
-            <tr className="results-table_offer">
-              <th className="paragraph-small">Pre-Trial Offer:</th>
-              <td className="paragraph-small">$1,065,000</td>
+            <div className="results-table_details">
+              <tr>
+                <th className="paragraph-smaller">Case:</th>
+                <td className="paragraph-smaller">Monsanto</td>
+              </tr>
+              <tr>
+                <th className="paragraph-smaller">Attorney:</th>
+                <td className="paragraph-smaller">Steve Kherkher</td>
+              </tr>
+              <tr>
+                <th className="paragraph-smaller">Summary:</th>
+                <td className="paragraph-smaller">Monsanto used cancer-causing chemicals in their product</td>
+              </tr>
+              <p className="paragraph-smaller-red">Read More ➝</p>
+            </div>
+
+          </table>
+          <table className="results-table">
+            <tr className="results-table_won">
+              <th className="paragraph-large">We Won:</th>
+              <td className="paragraph-large">$46,500,000</td>
             </tr>
             <div className="results-table_details">
               <tr>
@@ -85,10 +103,6 @@ const IndexPage = () => (
               <th className="paragraph-large">We Won:</th>
               <td className="paragraph-large">$46,500,000</td>
             </tr>
-            <tr className="results-table_offer">
-              <th className="paragraph-small">Pre-Trial Offer:</th>
-              <td className="paragraph-small">$1,065,000</td>
-            </tr>
             <div className="results-table_details">
               <tr>
                 <th className="paragraph-smaller">Case:</th>
@@ -106,42 +120,15 @@ const IndexPage = () => (
             </div>
 
           </table>
-          <table className="results-table">
-            <tr className="results-table_won">
-              <th className="paragraph-large">We Won:</th>
-              <td className="paragraph-large">$46,500,000</td>
-            </tr>
-            <tr className="results-table_offer">
-              <th className="paragraph-small">Pre-Trial Offer:</th>
-              <td className="paragraph-small">$1,065,000</td>
-            </tr>
-            <div className="results-table_details">
-              <tr>
-                <th className="paragraph-smaller">Case:</th>
-                <td className="paragraph-smaller">Monsanto</td>
-              </tr>
-              <tr>
-                <th className="paragraph-smaller">Attorney:</th>
-                <td className="paragraph-smaller">Steve Kherkher</td>
-              </tr>
-              <tr>
-                <th className="paragraph-smaller">Summary:</th>
-                <td className="paragraph-smaller">Monsanto used cancer-causing chemicals in their product</td>
-              </tr>
-              <p className="paragraph-smaller-red">Read More ➝</p>
-            </div>
-
-          </table>
-
         </div>
         <button>See More Victories ➝</button>
       </section>
       <section id="aboutus" className="about_container padding-medium">
         <div className="about-main_container responsive-flex">
           <div className="about-main_copy">
-            <h2 className="header-uppercase-grey">About Us</h2>
-            <h3 className="header-grey"><span>“</span>We are relentless in our effort to seek justice for our clients.”</h3>
-            <p className="about-main_copy-quote_attribution paragraph-small">- Steve Kherkher, Founding Partner</p>
+            <h2>About Us</h2>
+            <h3><span>“</span>We are relentless in our effort to seek justice for our clients.”</h3>
+            <p className="about-main_copy-quote_attribution">- Steve Kherkher, Founding Partner</p>
             <p className="section_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div className="about-main_media">
@@ -164,8 +151,8 @@ const IndexPage = () => (
         </div>
       </section>
       <section id="reviews" className="reviews_container padding-medium">
-        <h2 className="header-uppercase-grey">Reviews</h2>
-        <h3 className="header-grey">What our clients say about us:</h3>
+        <h2>Reviews</h2>
+        <h3>What our clients say about us:</h3>
         <p className="section_paragraph">Better service means better recovery for our clients.</p>
         <div className="responsive-flex">
           <img src={review1}></img>
@@ -175,8 +162,8 @@ const IndexPage = () => (
       </section>
       <section className="questions_container responsive-flex padding-medium">
         <div className="questions_introduction">
-          <h2 className="header-uppercase-grey">Common Questions</h2>
-          <h3 className="header-grey">Remember to ask these questions.</h3>
+          <h2>Common Questions</h2>
+          <h3>Remember to ask these questions.</h3>
           <p className="section_paragraph">When you are injured and need help it is important to get answers that can help you receive the justice you deserve. These are frequently asked questions we receive from our clients.</p>
           <button>See More Common Questions ➝</button>
         </div>
@@ -201,30 +188,30 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="news_container padding-small">
-        <h2 className="header-uppercase-grey">Latest News</h2>
+        <h2>Latest News</h2>
         <div className="news-story_flexcontainer responsive-flex">
           <div className="news-story">
             <h4 className="news-story_title">Two injured in Galveston oil explosion</h4>
             <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
-            <p className="paragraph-small-red">Read More ➝</p>
+            <p className="paragraph-smaller-red">Read More ➝</p>
           </div>
           <div className="news-story">
             <h4 className="news-story_title">Two injured in Galveston oil explosion</h4>
             <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
-            <p className="paragraph-small-red">Read More ➝</p>
+            <p className="paragraph-smaller-red">Read More ➝</p>
           </div>
           <div className="news-story">
             <h4 className="news-story_title">Two injured in Galveston oil explosion</h4>
             <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
-            <p className="paragraph-small-red">Read More ➝</p>
+            <p className="paragraph-smaller-red">Read More ➝</p>
           </div>
         </div>
         <button>See More Updates ➝</button>
       </section>
       <section className="ask_container padding-medium">
         <div className="ask-main_container">
-          <h2 className="header-uppercase-grey">Ask Us Anything</h2>
-          <h3 className="header-blue">Let us help you find a way forward..</h3>
+          <h2>Ask Us Anything</h2>
+          <h3 className="blue">Let us help you find a way forward..</h3>
           <p className="section_paragraph">Use our guides to select the lawyer that is right for you.</p>
         </div>
         <div className="ask-sub_container responsive-flex">

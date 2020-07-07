@@ -27,7 +27,7 @@ const Blog = (props) => {
       <div className="main-flex_container">
         <div className="blog-post_container responsive-flex padding-medium">
           <section className="blog-post_main">
-            <h2>{props.data.contentfulBlogPost.title}</h2>
+            <h3>{props.data.contentfulBlogPost.title}</h3>
             <h3>{props.data.contentfulBlogPost.subtitle}</h3>
             <p className="blog-post_main-category">{props.data.contentfulBlogPost.category}</p>
             <p className="blog-post_main-date">{props.data.contentfulBlogPost.publishedDate}</p>

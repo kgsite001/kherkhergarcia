@@ -19,6 +19,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
+          <div className="main-flex_container">
             <ol> 
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
@@ -29,6 +30,7 @@ const BlogPage = () => {
                     )
                 })}
             </ol>
+            </div>
         </Layout>
     )
 }
