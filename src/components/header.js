@@ -36,6 +36,12 @@ const Header = () => (
         </ul>
       </div>
     </nav>
+    <Link to="/"><img className="mobile_logo" src={Logo}></img></Link>
+    <button className="mobile_call_button">
+              <p>Call or Text 24/7:</p>
+              <address>(888) 123-4567</address>
+              <p>Ayuda en Español</p>
+            </button>
   </header>
 )
 

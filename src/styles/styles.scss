@@ -352,7 +352,7 @@ nav {
 
 .hero-menu_container {
     margin-top: $nav-height;
-    background-image: url("../images/hero_worker.png");
+    background-image: url("../images/hero_worker.jpg");
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -503,6 +503,10 @@ nav {
         align-self: center;
 
         #answer1, #answer2, #answer3 {
+            display: none;
+        }
+
+        #toggle_hide1, #toggle_hide2, #toggle_hide3 {
             display: none;
         }
     }
@@ -847,6 +851,46 @@ footer {
     }
 }
 
+.mobile_logo {
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    right: 43vw;
+    margin: auto;
+    display: none;
+}
+
+.mobile_call_button {
+    background-color: #032dc1;
+    position: absolute;
+            width: 250px;
+            height: 100px;
+            top: -10px;
+            right: 0;
+            padding: 0;
+            border: 2px solid #3772fc;
+            margin-right: 10px;
+
+            p {
+                margin: 0;
+                color: white;
+                font-weight: initial;
+            }
+
+            p:nth-child(1) {
+                font-size: 14px;
+            }
+            address {
+                font-style: initial;
+                font-family: AvenirNext-Bold, sans-serif;
+                font-size: 28px;
+            }
+            p:nth-child(3) {
+                font-size: 10px;
+            }
+        
+}
+
 // MEDIA QUERIES
 
 $phone: "only screen and (max-width: 1199px)";
@@ -1053,7 +1097,6 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         
         .icon_large {
             margin: 0 auto;
-            display: none;
         }
 
         a {
@@ -1076,7 +1119,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
     #menuToggle {
         display: block;
         position: relative;
-        top: 30px;
+        top: 50px;
         padding-left: 40px;
 
         z-index: 2;

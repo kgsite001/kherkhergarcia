@@ -105,14 +105,17 @@ p {
 .header-grey {
   font-family: PoynterOSDisplay, serif;
   font-size: 40px;
-  color: #C1CFDA span;
-  color-position: absolute;
-  color-margin-top: -2.5vw;
-  color-margin-left: -4.8vw;
-  color-color: #122a3e;
-  color-opacity: 0.1;
-  color-font-size: 10vw;
-  color-font-family: PoynterOSDisplay, serif;
+  color: #122a3e;
+}
+
+.header-grey span {
+  position: absolute;
+  margin-top: -2.5vw;
+  margin-left: -4.8vw;
+  color: #122a3e;
+  opacity: 0.1;
+  font-size: 10vw;
+  font-family: PoynterOSDisplay, serif;
 }
 
 .header-white,
@@ -527,7 +530,7 @@ nav #menuToggle input {
 }
 
 .questions_container .questions_list button .triangle {
-  color: #FEC82E;
+  color: yellow;
   width: 5%;
 }
 

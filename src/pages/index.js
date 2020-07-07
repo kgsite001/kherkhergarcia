@@ -175,39 +175,62 @@ const IndexPage = () => (
         <div className="questions_list">
           <button onClick={() => {
             var x = document.getElementById("answer1");
+            var y = document.getElementById("toggle_show1")
+            var z = document.getElementById("toggle_hide1")
             if (x.style.display === "none") {
               x.style.display = "block";
+              z.style.display = "block";
+              y.style.display = "none";
             } else {
               x.style.display = "none";
+              z.style.display = "none";
+              y.style.display = "block";
             }
           }}>
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▼</p>
+            <p id="toggle_show1" className="triangle">▲</p>
+            <p id="toggle_hide1" className="triangle">▼</p>
+
           </button>
           <div id="answer1" className="question_answers">This is the answer to your question.</div>
           <button onClick={() => {
             var x = document.getElementById("answer2");
+            var y = document.getElementById("toggle_show2")
+            var z = document.getElementById("toggle_hide2")
             if (x.style.display === "none") {
               x.style.display = "block";
+              z.style.display = "block";
+              y.style.display = "none";
             } else {
               x.style.display = "none";
+              z.style.display = "none";
+              y.style.display = "block";
             }
           }}>
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▼</p>
+            <p id="toggle_show2" className="triangle">▲</p>
+            <p id="toggle_hide2" className="triangle">▼</p>
+
           </button>
           <div id="answer2" className="question_answers">This is the answer to your question.</div>
           <button onClick={() => {
             var x = document.getElementById("answer3");
+            var y = document.getElementById("toggle_show3")
+            var z = document.getElementById("toggle_hide3")
             if (x.style.display === "none") {
               x.style.display = "block";
+              z.style.display = "block";
+              y.style.display = "none";
             } else {
               x.style.display = "none";
+              z.style.display = "none";
+              y.style.display = "block";
             }
           }}>
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▼</p>
-          </button>
+            <p id="toggle_show3" className="triangle">▲</p>
+            <p id="toggle_hide3" className="triangle">▼</p>
+</button>
           <div id="answer3" className="question_answers">This is the answer to your question.</div>
         </div>
       </section>
