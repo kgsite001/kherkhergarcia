@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "PoynterOSDisplay";
+    src: url(../fonts/PoynterOSDisplay.ttf);
+}
+
+@font-face {
+    font-family: "AvenirNext-Regular";
+    src: url(../fonts/AvenirNext-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AvenirNext-Bold";
+    src: url(../fonts/AvenirNext-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+$nav-height: 120px;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "AvenirNext-Regular", sans-serif;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0px;
+}
+
+p {
+    color: #7f7f81;
+    margin: 10px 0px;
+}
+
+button {
+    color: white;
+    font-family: AvenirNext-Bold, serif;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    background: #e94f37;
+    opacity: 1;
+    border: 0px;
+}
+
+
+$phone: "only screen and (max-width: 990px)";
+$desktop-medium: "only screen and (min-width: 991px)";
