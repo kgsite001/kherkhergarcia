@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,6 +23,9 @@ import award7 from '../images/award-houston_top_lawyers.png'
 
 import videoPlaceholder from '../images/video_placeholder.png'
 
+function myFunction() {
+
+}
 
 const IndexPage = () => (
   <Layout>
@@ -171,23 +173,42 @@ const IndexPage = () => (
           <button>See More Common Questions ➝</button>
         </div>
         <div className="questions_list">
-          <button>
+          <button onClick={() => {
+            var x = document.getElementById("answer1");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }}>
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▲</p>
+            <p className="triangle">▼</p>
           </button>
-          <button>
+          <div id="answer1" className="question_answers">This is the answer to your question.</div>
+          <button onClick={() => {
+            var x = document.getElementById("answer2");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }}>
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▲</p>
+            <p className="triangle">▼</p>
           </button>
-          <button>
+          <div id="answer2" className="question_answers">This is the answer to your question.</div>
+          <button onClick={() => {
+            var x = document.getElementById("answer3");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }}>
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▲</p>
+            <p className="triangle">▼</p>
           </button>
-          <button>
-            <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
-            <p className="triangle">▲</p>
-          </button>
-          
+          <div id="answer3" className="question_answers">This is the answer to your question.</div>
         </div>
       </section>
       <section className="news_container padding-small">
@@ -253,5 +274,6 @@ const IndexPage = () => (
     </div>
   </Layout>
 )
+
 
 export default IndexPage

@@ -18,6 +18,11 @@
   src: url(../fonts/AvenirNext-DemiBold.otf);
 }
 
+@font-face {
+  font-family: "AvenirNext-Heavy";
+  src: url(../fonts/AvenirNext-Heavy.otf);
+}
+
 /*
 
 //-16 tablet
@@ -105,6 +110,7 @@ h2 {
 
 h3 {
   font-family: PoynterOSDisplay, serif;
+  margin-top: 5px;
   font-size: 56px;
   color: #1c1d21;
 }
@@ -120,7 +126,7 @@ h3 span {
 }
 
 h4 {
-  font-family: AvenirNext-Regular, sans-serif;
+  font-family: AvenirNext-Bold, sans-serif;
   font-size: 24px;
 }
 
@@ -141,6 +147,7 @@ h6 {
   font-size: 80px;
   color: white;
   margin: 0;
+  line-height: 1;
 }
 
 .blue {
@@ -239,6 +246,12 @@ h6 {
   width: 100%;
 }
 
+nav {
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
 nav #menuToggle input {
   display: none;
 }
@@ -261,6 +274,8 @@ nav #menuToggle input {
   width: 100vw;
   z-index: 1;
   height: 120px;
+  -webkit-box-shadow: 2px 2px 5px 0px #878787;
+  box-shadow: 2px 2px 5px 0px #878787;
 }
 
 .nav-flex_container li {
@@ -297,7 +312,7 @@ nav #menuToggle input {
 
 .nav-flex_container li button {
   background-color: #032dc1;
-  width: 250px;
+  width: 300px;
   height: 100px;
   margin-top: 0px;
   padding: 0;
@@ -308,6 +323,7 @@ nav #menuToggle input {
 .nav-flex_container li button p {
   margin: 0;
   color: white;
+  font-weight: initial;
 }
 
 .nav-flex_container li button p:nth-child(1) {
@@ -525,6 +541,13 @@ nav #menuToggle input {
       align-self: center;
 }
 
+.questions_container .questions_introduction #answer1, .questions_container .questions_introduction #answer2, .questions_container .questions_introduction #answer3,
+.questions_container .questions_list #answer1,
+.questions_container .questions_list #answer2,
+.questions_container .questions_list #answer3 {
+  display: none;
+}
+
 .questions_container .questions_introduction button {
   margin: 20px 5vw;
 }
@@ -633,8 +656,9 @@ nav #menuToggle input {
 }
 
 .awards_container .awards-icon_container img {
-  margin: 0px 0px;
-  width: 80px;
+  margin: 15px;
+  mix-blend-mode: multiply;
+  width: 125px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -642,8 +666,7 @@ nav #menuToggle input {
 
 button {
   color: white;
-  font-family: AvenirNext-Regular, sans-serif;
-  font-weight: bold;
+  font-family: AvenirNext-Heavy, sans-serif;
   padding: 20px;
   margin-top: 20px;
   background: #e94f37;
@@ -1018,6 +1041,9 @@ footer {
     padding: 100px 10px;
     width: 100%;
   }
+  .hero-menu_container .hero-menu_copy h1 {
+    font-size: 56px;
+  }
   .awards-icon_container img {
     width: 10% !important;
   }
@@ -1053,18 +1079,20 @@ footer {
   }
   .nav-flex_container .icon_large {
     margin: 0 auto;
+    display: none;
   }
   .nav-flex_container a {
     text-align: center;
   }
   .nav-flex_container li a {
-    font-size: 24px;
+    font-size: 18px;
   }
   .nav-flex_container li a:hover {
     border-bottom: 0px;
   }
   .nav-flex_container button {
     margin: auto;
+    display: none;
   }
   #menuToggle {
     display: block;

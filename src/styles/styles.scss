@@ -18,6 +18,11 @@
     src: url(../fonts/AvenirNext-DemiBold.otf)
 }
 
+@font-face {
+    font-family: "AvenirNext-Heavy";
+    src: url(../fonts/AvenirNext-Heavy.otf)
+}
+
 $font-smallest: 14px;
 $font-smaller: 18px;
 $font-small: 21px;
@@ -117,6 +122,7 @@ h2 {
 
 h3 {
     font-family: PoynterOSDisplay, serif;
+    margin-top: 5px;
     font-size: 56px;
     color: #1c1d21;
 
@@ -132,7 +138,7 @@ h3 {
 }
 
 h4 {
-    font-family: AvenirNext-Regular, sans-serif;
+    font-family: AvenirNext-Bold, sans-serif;
     font-size: 24px;
 }
 
@@ -155,6 +161,7 @@ h6 {
     font-size: 80px;
     color: white;
     margin: 0;
+    line-height: 1;
 }
 
 .blue {
@@ -260,6 +267,11 @@ nav {
             display: none;
         }
     }
+
+    
+    height: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-flex_container {
@@ -275,6 +287,10 @@ nav {
     width: 100vw;
     z-index: 1;
     height: $nav-height;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+            box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
 
     li {
         display: flex;
@@ -301,7 +317,7 @@ nav {
         }
         button {
             background-color: #032dc1;
-            width: 250px;
+            width: 300px;
             height: 100px;
             margin-top: 0px;
             padding: 0;
@@ -311,6 +327,7 @@ nav {
             p {
                 margin: 0;
                 color: white;
+                font-weight: initial;
             }
 
             p:nth-child(1) {
@@ -484,6 +501,10 @@ nav {
         display: flex;
         flex-direction: column;
         align-self: center;
+
+        #answer1, #answer2, #answer3 {
+            display: none;
+        }
     }
 
     .questions_introduction {
@@ -578,8 +599,9 @@ nav {
         justify-content: space-around;
 
         img {
-            margin: 0px 0px;
-            width: 80px;
+            margin: 15px;
+            mix-blend-mode: multiply;
+            width: 125px;
             align-self: center;
         }
     }
@@ -587,8 +609,7 @@ nav {
 
 button {
     color: white;
-    font-family: AvenirNext-Regular, sans-serif;
-    font-weight: bold;
+    font-family: AvenirNext-Heavy, sans-serif;
     padding: 20px;
     margin-top: 20px;
     background: #e94f37;
@@ -970,6 +991,10 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         .hero-menu_copy {
             padding: 100px 10px;
             width: 100%;
+
+            h1 {
+                font-size: 56px;
+            }
         }
     }
 
@@ -1013,6 +1038,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         }
     }
     //HAMBURGER MENU
+    
 
     nav {
         #menuToggle {
@@ -1024,8 +1050,10 @@ $desktop-medium: "only screen and (min-width: 1200px)";
 
     .nav-flex_container {
         flex-direction: column;
+        
         .icon_large {
             margin: 0 auto;
+            display: none;
         }
 
         a {
@@ -1034,7 +1062,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
 
         li {
             a {
-                font-size: $font-medium;
+                font-size: 18px;
                 &:hover {
                     border-bottom: 0px;
                 }
@@ -1042,6 +1070,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         }
         button {
             margin: auto;
+            display: none;
         }
     }
     #menuToggle {
