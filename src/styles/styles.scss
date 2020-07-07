@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: "AvenirNext-DemiBold";
-    src: url(../fonts/AvenirNext-DemiBold.otf)
+    src: url(../fonts/AvenirNext-DemiBold.otf);
 }
 
 @font-face {
     font-family: "AvenirNext-Heavy";
-    src: url(../fonts/AvenirNext-Heavy.otf)
+    src: url(../fonts/AvenirNext-Heavy.otf);
 }
 
 $font-smallest: 14px;
@@ -268,7 +268,6 @@ nav {
         }
     }
 
-    
     height: 0;
     padding: 0;
     margin: 0;
@@ -289,8 +288,8 @@ nav {
     height: $nav-height;
 
     -webkit-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-            -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
-            box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
+    box-shadow: 2px 2px 5px 0px rgba(135, 135, 135, 1);
 
     li {
         display: flex;
@@ -502,11 +501,17 @@ nav {
         flex-direction: column;
         align-self: center;
 
-        #answer1, #answer2, #answer3 {
+        #answer1,
+        #answer2,
+        #answer3,
+        #answer4 {
             display: none;
         }
 
-        #toggle_hide1, #toggle_hide2, #toggle_hide3 {
+        #toggle_hide1,
+        #toggle_hide2,
+        #toggle_hide3,
+        #toggle_hide4 {
             display: none;
         }
     }
@@ -603,7 +608,7 @@ nav {
         justify-content: space-around;
 
         img {
-            margin: 15px;
+            margin: 5px;
             mix-blend-mode: multiply;
             width: 125px;
             align-self: center;
@@ -643,6 +648,9 @@ button {
     img {
         width: 100%;
     }
+    div {
+        margin: 20px 0px;
+    }
     .contact-bottom_copy {
         address {
             font-style: initial;
@@ -661,6 +669,16 @@ button {
                 font-size: 26px;
             }
         }
+    }
+    .contact-bottom_map {
+        width: 500px;
+        height: 400px;
+        
+        div {
+            margin: 0;
+            max-width: 500px;
+            max-height: 400px;
+        };
     }
 }
 
@@ -710,9 +728,12 @@ footer {
         a {
             margin: 10px auto;
             text-decoration: none;
-            color: black;
+
             &:hover {
-                color: #032dc1;
+                h5,
+                h6 {
+                    color: #032dc1;
+                }
             }
 
             .aboutpage-attorneys_profile {
@@ -862,32 +883,31 @@ footer {
 .mobile_call_button {
     background-color: #032dc1;
     position: absolute;
-            width: 40vw;
-            height: 100px;
-            top: -10px;
-            right: 0;
-            padding: 0;
-            border: 2px solid #3772fc;
-            margin-right: 10px;
+    width: 40vw;
+    height: 100px;
+    top: -10px;
+    right: 0;
+    padding: 0;
+    border: 2px solid #3772fc;
+    margin-right: 10px;
 
-            p {
-                margin: 0;
-                color: white;
-                font-weight: initial;
-            }
+    p {
+        margin: 0;
+        color: white;
+        font-weight: initial;
+    }
 
-            p:nth-child(1) {
-                font-size: 14px;
-            }
-            address {
-                font-style: initial;
-                font-family: AvenirNext-Bold, sans-serif;
-                font-size: 28px;
-            }
-            p:nth-child(3) {
-                font-size: 10px;
-            }
-        
+    p:nth-child(1) {
+        font-size: 14px;
+    }
+    address {
+        font-style: initial;
+        font-family: AvenirNext-Bold, sans-serif;
+        font-size: 28px;
+    }
+    p:nth-child(3) {
+        font-size: 10px;
+    }
 }
 
 // MEDIA QUERIES
@@ -957,6 +977,8 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         .contact-bottom_copy {
             text-align: end;
         }
+
+        
     }
 
     .partner-profile_sidebar {
@@ -1002,7 +1024,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
             }
 
             p {
-                font-size: $font-small + 8px;
+                font-size: 21px;
             }
 
             a,
@@ -1011,7 +1033,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
             b,
             i,
             u {
-                font-size: $font-small + 8px;
+                font-size: 21px;
             }
         }
         .blog-post_sidebar_container {
@@ -1026,10 +1048,6 @@ $desktop-medium: "only screen and (min-width: 1200px)";
 }
 
 @media #{$phone} {
-    .header-top {
-        font-size: $font-largest - 16px;
-    }
-
     .hero-menu_container {
         .hero-menu_copy {
             padding: 100px 10px;
@@ -1081,7 +1099,6 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         }
     }
     //HAMBURGER MENU
-    
 
     nav {
         #menuToggle {
@@ -1093,7 +1110,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
 
     .nav-flex_container {
         flex-direction: column;
-        
+
         .icon_large {
             margin: 0 auto;
         }

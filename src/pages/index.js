@@ -230,9 +230,29 @@ const IndexPage = () => (
             <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
             <p id="toggle_show3" className="triangle">▲</p>
             <p id="toggle_hide3" className="triangle">▼</p>
-</button>
+          </button>
           <div id="answer3" className="question_answers">This is the answer to your question.</div>
+          <button onClick={() => {
+            var x = document.getElementById("answer4");
+            var y = document.getElementById("toggle_show4")
+            var z = document.getElementById("toggle_hide4")
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              z.style.display = "block";
+              y.style.display = "none";
+            } else {
+              x.style.display = "none";
+              z.style.display = "none";
+              y.style.display = "block";
+            }
+          }}>
+            <p className="paragraph-smaller">What is the first thing I should do after a workplace accident? </p>
+            <p id="toggle_show4" className="triangle">▲</p>
+            <p id="toggle_hide4" className="triangle">▼</p>
+          </button>
+          <div id="answer4" className="question_answers">This is the answer to your question.</div>
         </div>
+        
       </section>
       <section className="news_container padding-small">
         <h2>Latest News</h2>
