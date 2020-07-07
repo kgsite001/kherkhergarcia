@@ -1,7 +1,10 @@
 import React from "react"
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+
 
 import scale from "../images/scale.svg"
 import handshake from "../images/handshake.svg"
@@ -17,7 +20,7 @@ import award3 from '../images/award-super_lawyer.png'
 import award4 from '../images/award-association_for_justice.png'
 import award5 from '../images/award-top_percent.png'
 import award6 from '../images/award-million_dollar.png'
-import award7 from '../images/award-top_40.png'
+import award7 from '../images/award-houston_top_lawyers.png'
 
 import videoPlaceholder from '../images/video_placeholder.png'
 

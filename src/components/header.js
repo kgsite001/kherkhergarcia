@@ -4,7 +4,7 @@ import React from "react"
 
 import '../styles/styles.css'
 
-import Logo from '../images/logo_top.png'
+import Logo from '../images/logo_top.svg'
 import Home from '../images/home-solid.svg'
 
 const Header = () => (

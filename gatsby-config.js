@@ -38,6 +38,13 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-source-googlemaps-static`,
+      options: {
+          key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
+          center: `29.758668, -95.364646 || Houston, Texas`,
+      },
+  },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

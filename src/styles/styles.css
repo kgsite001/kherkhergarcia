@@ -14,8 +14,8 @@
 }
 
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "AvenirNext-DemiBold";
+  src: url(../fonts/AvenirNext-DemiBold.otf);
 }
 
 /*
@@ -316,7 +316,7 @@ nav #menuToggle input {
 
 .nav-flex_container li button address {
   font-style: initial;
-  font-family: AvenirNext-Regular, sans-serif;
+  font-family: AvenirNext-Bold, sans-serif;
   font-size: 32px;
 }
 
