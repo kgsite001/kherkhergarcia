@@ -13,7 +13,8 @@ const StaffPage = () => {
               src
             }
           }
-          name
+          firstName
+          lastName
           title
           slug
         }

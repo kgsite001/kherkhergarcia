@@ -19,7 +19,8 @@ const AboutPage = () => {
               src
             }
           }
-          name
+          firstName
+          lastName
           title
           slug
         }
@@ -68,7 +69,7 @@ const AboutPage = () => {
                                 <Link to={`/staff/${edge.node.slug}`}>
                                     <div className="aboutpage-attorneys_profile">
                                         <img src={edge.node.profileImage.resize.src}></img>
-                                        <h5 className="bold-blue">{edge.node.name}</h5>
+                                        <h5 className="bold-blue">{edge.node.firstName} {edge.node.lastName}</h5>
                                         <h6>{edge.node.title}</h6>
                                     </div>
                                 </Link>

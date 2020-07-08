@@ -23,7 +23,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     src
                   }
                 }
-                name
                 title
                 slug
               }

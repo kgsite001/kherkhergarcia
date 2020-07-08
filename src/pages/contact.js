@@ -19,7 +19,54 @@ const ContactPage = () => (
                     <p className="section_paragraph">Contact us even if you aren't ready to hire someone and just need some basic questions answered. Ask us anything.</p>
                 </div>
                 <div className="contact-top_form">
-                    <p>Insert form here.</p>
+                    <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="bot-field" />
+                        <input type="hidden" name="form-name" value="contact" />
+
+                        <label htmlFor="name">Name</label>
+                        <br></br>
+                        <input type="text" name="name" id="name" />
+                        <br></br>
+
+
+                        <label htmlFor="email">Email</label>
+                        <br></br>
+                        <input type="text" name="email" id="email" />
+                        <br></br>
+
+
+                        <label htmlFor="phone">Phone</label>
+                        <br></br>
+                        <input type="text" name="phone" id="phone" />
+                        <br></br>
+
+                        <p>How did you get hurt? (pick one)</p>
+                        <input type="radio" id="vehicle-accident" name="cause" value="male"></input>
+                        <label for="vehicle-accident">Vehicle Accident</label><br></br>
+                        <input type="radio" id="at-work" name="cause" value="female"></input>
+                        <label for="at-work">At Work</label><br></br>
+                        <input type="radio" id="medicine-or-drug" name="cause" value="other"></input>
+                        <label for="medicine-or-drug">Medicine or Drug</label><br></br>
+                        <input type="radio" id="other" name="cause" value="other"></input>
+                        <label for="other">Something Else</label>
+                        <br></br>
+
+                        <p>Call or Text (pick one)</p>
+                        <input type="radio" id="call" name="call-or-text" value="male"></input>
+                        <label for="call">Call</label><br></br>
+                        <input type="radio" id="text" name="call-or-text" value="female"></input>
+                        <label for="text">Text</label><br></br>
+                        <br></br>
+
+                        <ul className="actions">
+                            <li>
+                                <input type="submit" value="Send Message" className="special" />
+                            </li>
+                            <li>
+                                <input type="reset" value="Clear" />
+                            </li>
+                        </ul>
+                    </form>
                 </div>
             </section>
             <section className="contact-bottom_container responsive-flex padding-medium">
@@ -36,11 +83,11 @@ const ContactPage = () => (
                     </address>
                 </div>
                 <div className="contact-bottom_map">
-                   <GoogleApiWrapper />
+                    <GoogleApiWrapper />
                 </div>
             </section>
         </div>
-    </Layout>
+    </Layout >
 )
 
 export default ContactPage
