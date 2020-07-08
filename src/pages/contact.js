@@ -53,10 +53,10 @@ const ContactPage = () => (
 
 
                         <p>How did you get hurt? (pick one)</p>
-                        <input type="radio" id="vehicle-accident" name="Why did you get hurt?" value="Vehicle Accident"></input>
-                        <label for="Vehicle Accident">Vehicle Accident</label><br></br>
-                        <input type="radio" id="at-work" name="Why did you get hurt?" value="At Work"></input>
-                        <label for="At Work">At Work</label><br></br>
+                        <input type="radio" id="vehicle-accident" name="Preferred Contact" value="Call"></input>
+                        <label for="Call">Call</label><br></br>
+                        <input type="radio" id="at-work" name="Preferred Contact" value="Text"></input>
+                        <label for="Text">Text</label><br></br>
                         <br></br>
 
                         <ul className="actions">
