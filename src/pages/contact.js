@@ -51,11 +51,12 @@ const ContactPage = () => (
                         <label for="Something Else">Something Else</label>
                         <br></br>
 
-                        <p>Call or Text (pick one)</p>
-                        <input type="radio" id="call" name="Call or text?" value="Call or Text"></input>
-                        <label for="call">Call</label><br></br>
-                        <input type="radio" id="text" name="Call or text?" value="Call or Text"></input>
-                        <label for="text">Text</label>
+
+                        <p>How did you get hurt? (pick one)</p>
+                        <input type="radio" id="vehicle-accident" name="Why did you get hurt?" value="Vehicle Accident"></input>
+                        <label for="Vehicle Accident">Vehicle Accident</label><br></br>
+                        <input type="radio" id="at-work" name="Why did you get hurt?" value="At Work"></input>
+                        <label for="At Work">At Work</label><br></br>
                         <br></br>
 
                         <ul className="actions">
