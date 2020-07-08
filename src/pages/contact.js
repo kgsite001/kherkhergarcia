@@ -41,14 +41,14 @@ const ContactPage = () => (
                         <br></br>
 
                         <p>How did you get hurt? (pick one)</p>
-                        <input type="radio" id="cause" name="cause" value="male"></input>
-                        <label for="vehicle-accident">Vehicle Accident</label><br></br>
-                        <input type="radio" id="cause" name="cause" value="female"></input>
-                        <label for="at-work">At Work</label><br></br>
-                        <input type="radio" id="cause" name="cause" value="other"></input>
-                        <label for="medicine-or-drug">Medicine or Drug</label><br></br>
-                        <input type="radio" id="cause" name="cause" value="other"></input>
-                        <label for="other">Something Else</label>
+                        <input type="radio" id="Why did you get hurt?" name="cause" value="Vehicle Accident"></input>
+                        <label for="Vehicle Accident">Vehicle Accident</label><br></br>
+                        <input type="radio" id="Why did you get hurt?" name="cause" value="At Work"></input>
+                        <label for="At Work">At Work</label><br></br>
+                        <input type="radio" id="Why did you get hurt?" name="cause" value="Medicine or Drug"></input>
+                        <label for="Medicine or Drug">Medicine or Drug</label><br></br>
+                        <input type="radio" id="Why did you get hurt?" name="cause" value="Something Else"></input>
+                        <label for="Something Else">Something Else</label>
                         <br></br>
 
                         <p>Call or Text (pick one)</p>
