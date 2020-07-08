@@ -52,9 +52,9 @@ const ContactPage = () => (
                         <br></br>
 
                         <p>Call or Text (pick one)</p>
-                        <input type="radio" id="call" name="Call or Text" value="call"></input>
+                        <input type="radio" id="call" name="Call or text?" value="Call or Text"></input>
                         <label for="call">Call</label><br></br>
-                        <input type="radio" id="text" name="Call or text?" value="text"></input>
+                        <input type="radio" id="text" name="Call or text?" value="Call or Text"></input>
                         <label for="text">Text</label>
                         <br></br>
 
