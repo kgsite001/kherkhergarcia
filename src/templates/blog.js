@@ -32,7 +32,7 @@ const Blog = (props) => {
             <p className="blog-post_main-category">{props.data.contentfulBlogPost.category}</p>
             <p className="blog-post_main-date">{props.data.contentfulBlogPost.publishedDate}</p>
             <p className="blog-post_main-author">{props.data.contentfulBlogPost.author}</p>
-            <p>{documentToReactComponents(props.data.contentfulBlogPost.childContentfulBlogPostBodyRichTextNode.json)}</p>
+            <p className="blog-post_main-body">{documentToReactComponents(props.data.contentfulBlogPost.childContentfulBlogPostBodyRichTextNode.json)}</p>
           </section>
           <section className="blog-post_sidebar_container">
             <div>

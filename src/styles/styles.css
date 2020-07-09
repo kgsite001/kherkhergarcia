@@ -82,7 +82,6 @@ $font-largest: 62px;
   margin: 0;
   padding: 0;
   font-family: "AvenirNext-Regular", sans-serif;
-  line-height: 1.2;
 }
 
 h1,
@@ -92,12 +91,14 @@ h4,
 h5,
 h6 {
   margin: 10px 0px;
+  line-height: 1;
 }
 
 p {
   color: #7f7f81;
   margin: 10px 0px;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 h2 {
@@ -136,7 +137,6 @@ h5 {
   color: #1c1d21;
   margin-top: 5px;
   padding: 0;
-  line-height: 1;
 }
 
 h6 {
@@ -145,7 +145,6 @@ h6 {
   color: #1c1d21;
   margin: 0;
   padding: 0;
-  line-height: 1;
 }
 
 .header-top {
@@ -153,7 +152,6 @@ h6 {
   font-size: 80px;
   color: white;
   margin: 0;
-  line-height: 1;
 }
 
 .blue {
@@ -306,6 +304,9 @@ nav #menuToggle input {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  border-bottom: 5px solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-flex_container li a .icon_small {
@@ -705,6 +706,12 @@ button {
   font-size: 26px;
   opacity: 1;
   border: 0px;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+
+button:hover {
+  background: #fb603c;
 }
 
 .responsive-flex {
@@ -719,7 +726,7 @@ button {
 
 .contact-top_container {
   background: #f6f7fc;
-  margin-top: 60px;
+  margin-top: 240px;
 }
 
 .contact-top_container .contact-top_copy {
@@ -868,7 +875,7 @@ footer {
 }
 
 .aboutpage-introduction_container {
-  margin-top: 120px;
+  margin-top: 240px;
   background-color: #f7f8fd;
 }
 
@@ -960,7 +967,7 @@ footer {
 }
 
 .partner-profile_container {
-  margin-top: 120px;
+  margin-top: 240px;
 }
 
 .partner-profile_container .partner-profile_sidebar {
@@ -1006,13 +1013,14 @@ footer {
 
 .partner-profile_container .partner-profile_main p {
   font-family: AvenirNext-Regular;
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 21px;
   color: black;
+  line-height: 1.5;
 }
 
 .blog-post_container {
-  margin-top: 120px;
+  margin-top: 240px;
 }
 
 .blog-post_container section {
@@ -1051,7 +1059,8 @@ footer {
 .blog-post_container .blog-post_main p {
   font-size: 21px;
   color: black;
-  width: 90%;
+  width: 85%;
+  margin: 20px 0;
 }
 
 .blog-post_container .blog-post_main a,
@@ -1253,6 +1262,10 @@ footer {
   }
   .blog-post_container .blog-post_main {
     width: 100%;
+  }
+  .blog-post_container .blog-post_main .blog-post_main-body p {
+    line-height: 1.5;
+    margin-top: 25px;
   }
   .blog-post_container .blog-post_sidebar_container {
     width: 100%;

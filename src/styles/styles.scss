@@ -94,7 +94,6 @@ $nav-height: 120px;
     margin: 0;
     padding: 0;
     font-family: "AvenirNext-Regular", sans-serif;
-    line-height: 1.2;
 }
 
 h1,
@@ -104,12 +103,14 @@ h4,
 h5,
 h6 {
     margin: 10px 0px;
+    line-height: 1;
 }
 
 p {
     color: #7f7f81;
     margin: 10px 0px;
     font-size: 24px;
+    line-height: 1.2;
 }
 
 h2 {
@@ -148,7 +149,6 @@ h5 {
     color: #1c1d21;
     margin-top: 5px;
     padding: 0;
-    line-height: 1;
 }
 
 h6 {
@@ -158,8 +158,8 @@ h6 {
     
     margin: 0;
     padding: 0;
-    line-height: 1;
 }
+
 
 //MODULES
 
@@ -168,7 +168,6 @@ h6 {
     font-size: 80px;
     color: white;
     margin: 0;
-    line-height: 1;
 }
 
 .blue {
@@ -317,6 +316,8 @@ nav {
             font-weight: bold;
             text-decoration: none;
             color: black;
+            border-bottom: 5px solid white;
+            transition: 0.5s;
             &:hover {
                 border-bottom: 5px solid #fec82e;
             }
@@ -640,6 +641,11 @@ button {
     font-size: 26px;
     opacity: 1;
     border: 0px;
+    transition: 0.3;
+    &:hover 
+{
+        background: #fb603c;
+    }
 }
 
 .responsive-flex {
@@ -649,7 +655,7 @@ button {
 
 .contact-top_container {
     background: #f6f7fc;
-    margin-top: 60px;
+    margin-top: $nav-height * 2;
 
     .contact-top_copy {
         display: flex;
@@ -786,7 +792,7 @@ footer {
 }
 
 .aboutpage-introduction_container {
-    margin-top: $nav-height;
+    margin-top: $nav-height * 2;
     background-color: #f7f8fd;
     div {
         margin: 10px;
@@ -859,7 +865,7 @@ footer {
 }
 
 .partner-profile_container {
-    margin-top: $nav-height;
+    margin-top: $nav-height * 2;
 
     .partner-profile_sidebar {
         text-align: center;
@@ -902,15 +908,16 @@ footer {
         }
         p {
             font-family: AvenirNext-Regular;
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 21px;
             color: black;
+            line-height: 1.5;
         }
     }
 }
 
 .blog-post_container {
-    margin-top: $nav-height;
+    margin-top: $nav-height * 2;
 
     section {
         margin: 0 20px;
@@ -947,7 +954,8 @@ footer {
         p {
             font-size: $font-small;
             color: black;
-            width: 90%;
+            width: 85%;
+            margin: 20px 0;
         }
 
         a,
@@ -1200,6 +1208,13 @@ $desktop-medium: "only screen and (min-width: 1200px)";
     .blog-post_container {
         .blog-post_main {
             width: 100%;
+            .blog-post_main-body {
+                p {
+                    line-height: 1.5;
+                    margin-top: 25px;
+                }
+            }
+            
         }
         .blog-post_sidebar_container {
             width: 100%;
