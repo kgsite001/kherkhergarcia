@@ -58,10 +58,13 @@ p {
     line-height: 1.2;
 }
 a:active,
-a:focus, button:active, button:focus {
+a:focus,
+button:active,
+button:focus {
     box-shadow: none;
 }
-a:visited, button:visited {
+a:visited,
+button:visited {
     outline: none;
 }
 
@@ -116,7 +119,7 @@ h6 {
 
 .header-top {
     font-family: PoynterOSDisplay, serif;
-    font-size: 8.0rem;
+    font-size: 8rem;
     color: white;
     margin: 0;
 }
@@ -256,7 +259,7 @@ nav {
         margin: 1vh;
 
         .icon_large {
-            width: 120px;
+            width: 90px;
             margin-top: -2%;
         }
 
@@ -276,7 +279,7 @@ nav {
         }
         button {
             background-color: #032dc1;
-            width: 300px;
+            width: 200px;
             height: 100px;
             margin-top: 0px;
             padding: 0;
@@ -553,7 +556,7 @@ nav {
             margin: 20px;
 
             img {
-                width: 100px;
+                width: 10.0rem;
                 padding-bottom: 10px;
             }
 
@@ -579,7 +582,7 @@ nav {
         img {
             margin: 5px;
             mix-blend-mode: multiply;
-            width: 125px;
+            width: 12.5rem;
             align-self: center;
         }
     }
@@ -591,7 +594,7 @@ button {
     padding: 20px;
     margin-top: 20px;
     background: #e94f37;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     opacity: 1;
     border: 0px;
     transition: 0.3;
@@ -604,10 +607,9 @@ button.carousel-buttons {
     background-color: Transparent;
     margin: 0px -30px;
 
-
     img {
         margin: 0px -300px;
-    };
+    }
 }
 
 .responsive-flex {
@@ -656,7 +658,7 @@ button.carousel-buttons {
                 font-family: avenirNext-bold;
                 font-size: 1.6rem;
             }
-            font-size: 2.0rem;
+            font-size: 2rem;
             color: white;
             background-color: #032dc1;
 
@@ -948,10 +950,14 @@ footer {
     }
 }
 
+.question_answers {
+    font-size: 1.8rem;
+}
+
 .mobile_logo {
     position: absolute;
-    width: 115px;
-    top: 10px;
+    width: 80px;
+    top: 30px;
     right: 45vw;
     margin: auto;
 }
@@ -982,29 +988,38 @@ footer {
         font-size: 2.8rem;
     }
     p:nth-child(3) {
-        font-size: 1.0rem;
+        font-size: 1rem;
     }
+}
+.testimonials_container {
+    background: white;
 }
 
 // MEDIA QUERIES
 
 $phone: "only screen and (max-width: 767px)";
-$desktop-small: "only screen and (min-width: 768px) and (max-width: 1024px)";
-$desktop-medium: "only screen and (min-width: 1025px) and (max-width: 1699px)";
+$desktop-small: "only screen and (min-width: 768px) and (max-width: 1023px)";
+$desktop-medium: "only screen and (min-width: 1024px) and (max-width: 1699px)";
 $desktop-large: "only screen and (min-width: 1700px)";
 
 @media #{$desktop-small} {
     html {
         font-size: 40%;
     }
+    .nav-flex_container {
+        .icon_large {
+            width: 100px;
+            margin-top: -2%;
+        }
+    }
     .padding-small {
-        padding: 50px 10%;
+        padding: 50px 0%;
     }
     .padding-medium {
-        padding: 50px 15%;
+        padding: 50px 5%;
     }
     .padding-large {
-        padding: 50px 25%;
+        padding: 50px 10%;
     }
 
     .hero-menu_container {
@@ -1023,6 +1038,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
             width: 80%;
         }
     }
+    
     .about-main_container {
         div {
             width: 50%;
@@ -1033,10 +1049,26 @@ $desktop-large: "only screen and (min-width: 1700px)";
         align-items: initial;
     }
 
-    .questions_introduction {
-        width: 40%;
-        margin-right: 20px;
+    .news_container .news-story_flexcontainer .news-story {
+        box-shadow: rgb(135, 135, 135) 2px 2px 5px 0px;
+        background-color: white;
+        margin: 0px 10px;
+        padding: 10px;
     }
+
+    .questions_container {
+        .questions_introduction {
+            width: 40%;
+            margin-right: 20px;
+
+            button {
+                margin: 10px 0px;
+                padding: 10px 0px;
+            }
+        }
+    }
+
+    
 
     .responsive-flex {
         flex-direction: row;
@@ -1074,6 +1106,21 @@ $desktop-large: "only screen and (min-width: 1700px)";
         margin-left: 50px;
     }
 
+    .reviews_container div img {
+        max-width: 300px;
+    }
+
+
+    .results_container .results-table_container .results-table {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 20px;
+
+        .results-table_details tr {
+            padding: 2px 10px;
+        }
+    }
     footer {
         img {
             width: 8%;
@@ -1139,6 +1186,16 @@ $desktop-large: "only screen and (min-width: 1700px)";
     }
     .padding-large {
         padding: 50px 25%;
+    }
+    
+    .results_container .results-table_container .results-table tr {
+        padding: 10px 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .results_container .results-table_container .results-table .results-table_details tr {
+        padding: 2px 20px;
     }
 
     .hero-menu_container {
@@ -1260,7 +1317,6 @@ $desktop-large: "only screen and (min-width: 1700px)";
         }
     }
 }
-
 
 @media #{$desktop-large} {
     html {
@@ -1394,7 +1450,6 @@ $desktop-large: "only screen and (min-width: 1700px)";
             }
         }
     }
-
 }
 
 @media #{$phone} {
@@ -1407,7 +1462,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
             width: 100%;
 
             h1 {
-                font-size: 8.0rem;
+                font-size: 8rem;
             }
         }
     }

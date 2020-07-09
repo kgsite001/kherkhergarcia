@@ -32,6 +32,7 @@ import polygonLeft from '../images/polygon-left.svg'
 
 
 
+
 const IndexPage = () => {
 
   const data = useStaticQuery(graphql`

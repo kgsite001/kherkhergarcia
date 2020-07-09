@@ -58,12 +58,15 @@ p {
 }
 
 a:active,
-a:focus, button:active, button:focus {
+a:focus,
+button:active,
+button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-a:visited, button:visited {
+a:visited,
+button:visited {
   outline: none;
 }
 
@@ -115,7 +118,7 @@ h6 {
 
 .header-top {
   font-family: PoynterOSDisplay, serif;
-  font-size: 8.0rem;
+  font-size: 8rem;
   color: white;
   margin: 0;
 }
@@ -263,7 +266,7 @@ nav #menuToggle input {
 }
 
 .nav-flex_container li .icon_large {
-  width: 120px;
+  width: 90px;
   margin-top: -2%;
 }
 
@@ -286,7 +289,7 @@ nav #menuToggle input {
 
 .nav-flex_container li button {
   background-color: #032dc1;
-  width: 300px;
+  width: 200px;
   height: 100px;
   margin-top: 0px;
   padding: 0;
@@ -622,7 +625,7 @@ nav #menuToggle input {
 }
 
 .ask_container .ask-sub_container .ask-sub_info img {
-  width: 100px;
+  width: 10.0rem;
   padding-bottom: 10px;
 }
 
@@ -659,7 +662,7 @@ nav #menuToggle input {
 .awards_container .awards-icon_container img {
   margin: 5px;
   mix-blend-mode: multiply;
-  width: 125px;
+  width: 12.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -671,7 +674,7 @@ button {
   padding: 20px;
   margin-top: 20px;
   background: #e94f37;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   opacity: 1;
   border: 0px;
   -webkit-transition: 0.3;
@@ -727,7 +730,7 @@ button.carousel-buttons img {
 .contact-top_container .contact-top_form form {
   padding: 40px;
   width: 500px;
-  font-size: 2.0rem;
+  font-size: 2rem;
   color: white;
   background-color: #032dc1;
 }
@@ -1073,10 +1076,14 @@ footer {
   width: 100%;
 }
 
+.question_answers {
+  font-size: 1.8rem;
+}
+
 .mobile_logo {
   position: absolute;
-  width: 115px;
-  top: 10px;
+  width: 80px;
+  top: 30px;
   right: 45vw;
   margin: auto;
 }
@@ -1110,21 +1117,29 @@ footer {
 }
 
 .mobile_call_button p:nth-child(3) {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.testimonials_container {
+  background: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   html {
     font-size: 40%;
   }
+  .nav-flex_container .icon_large {
+    width: 100px;
+    margin-top: -2%;
+  }
   .padding-small {
-    padding: 50px 10%;
+    padding: 50px 0%;
   }
   .padding-medium {
-    padding: 50px 15%;
+    padding: 50px 5%;
   }
   .padding-large {
-    padding: 50px 25%;
+    padding: 50px 10%;
   }
   .hero-menu_container .hero-menu_copy {
     max-width: 50%;
@@ -1145,9 +1160,20 @@ footer {
         -ms-flex-align: initial;
             align-items: initial;
   }
-  .questions_introduction {
+  .news_container .news-story_flexcontainer .news-story {
+    -webkit-box-shadow: #878787 2px 2px 5px 0px;
+            box-shadow: #878787 2px 2px 5px 0px;
+    background-color: white;
+    margin: 0px 10px;
+    padding: 10px;
+  }
+  .questions_container .questions_introduction {
     width: 40%;
     margin-right: 20px;
+  }
+  .questions_container .questions_introduction button {
+    margin: 10px 0px;
+    padding: 10px 0px;
   }
   .responsive-flex {
     -webkit-box-orient: horizontal;
@@ -1176,6 +1202,23 @@ footer {
   .partner-profile_main {
     width: 50%;
     margin-left: 50px;
+  }
+  .reviews_container div img {
+    max-width: 300px;
+  }
+  .results_container .results-table_container .results-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    margin: 20px;
+  }
+  .results_container .results-table_container .results-table .results-table_details tr {
+    padding: 2px 10px;
   }
   footer img {
     width: 8%;
@@ -1215,7 +1258,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1699px) {
+@media only screen and (min-width: 1024px) and (max-width: 1699px) {
   html {
     font-size: 40%;
   }
@@ -1227,6 +1270,22 @@ footer {
   }
   .padding-large {
     padding: 50px 25%;
+  }
+  .results_container .results-table_container .results-table tr {
+    padding: 10px 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .results_container .results-table_container .results-table .results-table_details tr {
+    padding: 2px 20px;
   }
   .hero-menu_container .hero-menu_copy {
     max-width: 40%;
@@ -1428,7 +1487,7 @@ footer {
     width: 100%;
   }
   .hero-menu_container .hero-menu_copy h1 {
-    font-size: 8.0rem;
+    font-size: 8rem;
   }
   .awards-icon_container img {
     width: 10% !important;
