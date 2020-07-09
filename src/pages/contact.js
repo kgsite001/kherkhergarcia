@@ -20,53 +20,43 @@ const ContactPage = () => (
                 </div>
                 <div className="contact-top_form">
                     <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <h1>Get a Free Consultation</h1>
+                        <h2>Complete the form and our lawyers will contact you.</h2>
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="contact" />
 
-                        <label htmlFor="name">Name</label>
-                        <br></br>
-                        <input type="text" name="name" id="name" />
+                        <input type="text" name="name" id="name" value="Name" />
                         <br></br>
 
 
-                        <label htmlFor="email">Email</label>
-                        <br></br>
-                        <input type="text" name="email" id="email" />
+                        <input type="text" name="email" id="email" value="Email" />
                         <br></br>
 
 
-                        <label htmlFor="phone">Phone</label>
-                        <br></br>
-                        <input type="text" name="phone" id="phone" />
+                        <input type="text" name="phone" id="phone" value="Phone" />
                         <br></br>
 
                         <p>How did you get hurt? (pick one)</p>
                         <input type="radio" id="vehicle-accident" name="Why did you get hurt?" value="Vehicle Accident"></input>
-                        <label for="Vehicle Accident">Vehicle Accident</label><br></br>
+                        <button>Vehicle Accident</button>
                         <input type="radio" id="at-work" name="Why did you get hurt?" value="At Work"></input>
-                        <label for="At Work">At Work</label><br></br>
+                        <button>At Work</button><br></br>
                         <input type="radio" id="medicine-or-drug" name="Why did you get hurt?" value="Medicine or Drug"></input>
-                        <label for="Medicine or Drug">Medicine or Drug</label><br></br>
+                        <button>Medicine or Drug</button>
                         <input type="radio" id="something-else" name="Why did you get hurt?" value="Something Else"></input>
-                        <label for="Something Else">Something Else</label>
+                        <button>Something Else</button>
                         <br></br>
 
 
                         <p>How did you get hurt? (pick one)</p>
                         <input type="radio" id="vehicle-accident" name="Preferred Contact" value="Call"></input>
-                        <label for="Call">Call</label><br></br>
+                        <button>Call Me</button>
                         <input type="radio" id="at-work" name="Preferred Contact" value="Text"></input>
-                        <label for="Text">Text</label><br></br>
+                        <button>Text Me</button><br></br>
                         <br></br>
 
-                        <ul className="actions">
-                            <li>
-                                <input type="submit" value="Send Message" className="special" />
-                            </li>
-                            <li>
-                                <input type="reset" value="Clear" />
-                            </li>
-                        </ul>
+                        <input type="submit" value="Send Message" className="special" />
+
                     </form>
                 </div>
             </section>

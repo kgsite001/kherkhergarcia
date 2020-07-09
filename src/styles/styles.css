@@ -607,14 +607,25 @@ nav #menuToggle input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .news_container .news-story_flexcontainer .news-story {
   -webkit-box-shadow: 2px 2px 5px 0px #878787;
   box-shadow: 2px 2px 5px 0px #878787;
   background-color: white;
-  margin: 20px 20px;
+  margin: 20px 30px;
   padding: 20px;
+}
+
+.news_container .news-story_flexcontainer .news-story a {
+  text-decoration: none;
 }
 
 .news_container .news-story_flexcontainer .news-story .news-story_title,
@@ -705,24 +716,106 @@ button {
   margin-top: 60px;
 }
 
+.contact-top_container .contact-top_copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contact-top_container .contact-top_copy h2,
 .contact-top_container .contact-top_copy p {
   color: black;
 }
 
 .contact-top_container .contact-top_form form {
+  padding: 40px;
+  width: 80%;
   font-size: 20px;
   color: white;
   background-color: #032dc1;
 }
 
+.contact-top_container .contact-top_form form h1,
+.contact-top_container .contact-top_form form h2 {
+  text-align: center;
+}
+
+.contact-top_container .contact-top_form form h1 {
+  font-family: AvenirNext-Bold, sans-serif;
+  font-size: 24px;
+}
+
+.contact-top_container .contact-top_form form h2 {
+  font-family: AvenirNext-Regular, serif;
+  font-weight: 100;
+  text-transform: none;
+  color: white;
+  font-size: 21px;
+  letter-spacing: 0;
+}
+
 .contact-top_container .contact-top_form form p {
   font-size: 18px;
   color: white;
+  font-family: avenirNext-bold;
+  font-size: 16px;
 }
 
-.contact-top_container .contact-top_form form input {
-  text-align: 0 auto;
+.contact-top_container .contact-top_form form input[type="text"] {
+  width: 90%;
+  font-family: AvenirNext-Bold, sans-serif;
+  height: 50px;
+  padding-left: 50px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-top_container .contact-top_form form input[type="submit"] {
+  width: 100%;
+  text-align: center;
+  background-color: #e94f37;
+  font-family: AvenirNext-Heavy, serif;
+  border-radius: 15px;
+  border: 0;
+  color: white;
+  font-size: 21px;
+  height: 50px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.contact-top_container .contact-top_form form button {
+  width: 45%;
+  background-color: white;
+  font-family: AvenirNext-Bold, sans-serif;
+  color: black;
+  height: 40px;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.contact-top_container .contact-top_form form button:hover {
+  color: white;
+  background-color: #e94f37;
 }
 
 .contact-bottom_container img {
