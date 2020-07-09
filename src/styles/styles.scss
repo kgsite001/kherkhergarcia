@@ -1077,12 +1077,14 @@ $desktop-medium: "only screen and (min-width: 1200px)";
     .contact-bottom_container {
         div {
             width: 50%;
-            margin: 50px;
         }
     }
     .contact-bottom_container {
+
         .contact-bottom_copy {
             text-align: end;
+            margin-left: -50px;
+            margin-right: 50px;
         }
     }
 
