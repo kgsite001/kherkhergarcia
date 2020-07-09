@@ -25,6 +25,10 @@
 
 $nav-height: 120px;
 
+html {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +54,7 @@ h6 {
 p {
     color: #7f7f81;
     margin: 10px 0px;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 1.2;
 }
 a:active,
@@ -64,7 +68,7 @@ a:visited, button:visited {
 button h2 {
     font-family: "AvenirNext-Bold", sans-serif;
     text-transform: uppercase;
-    font-size: 31px;
+    font-size: 3.1rem;
     color: #c1cfda;
     letter-spacing: 0.0625em;
 }
@@ -72,7 +76,7 @@ button h2 {
 h3 {
     font-family: PoynterOSDisplay, serif;
     margin-top: 5px;
-    font-size: 56px;
+    font-size: 5.6rem;
     color: #1c1d21;
 
     span {
@@ -88,12 +92,12 @@ h3 {
 
 h4 {
     font-family: AvenirNext-Bold, sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 h5 {
     font-family: AvenirNext-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #1c1d21;
     margin-top: 5px;
     padding: 0;
@@ -101,7 +105,7 @@ h5 {
 
 h6 {
     font-family: AvenirNext-Regular, sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #1c1d21;
 
     margin: 0;
@@ -112,7 +116,7 @@ h6 {
 
 .header-top {
     font-family: PoynterOSDisplay, serif;
-    font-size: 80px;
+    font-size: 8.0rem;
     color: white;
     margin: 0;
 }
@@ -128,7 +132,7 @@ h6 {
 .header-uppercase-white {
     font-family: "AvenirNext-Bold", sans-serif;
     text-transform: uppercase;
-    font-size: 31px;
+    font-size: 3.1rem;
     color: #fff7d6;
 }
 
@@ -138,29 +142,29 @@ h6 {
 }
 
 .paragraph-smallest {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .paragraph-smaller {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .paragraph-small {
-    font-size: 21px;
+    font-size: 2.1rem;
 }
 
 .paragraph-medium_large {
-    font-size: 29px;
+    font-size: 2.9rem;
     color: white;
     margin: 0;
 }
 .paragraph-large {
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 .paragraph-smaller-red {
     text-align: right;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #e94f37;
 }
@@ -168,24 +172,24 @@ h6 {
 .paragraph-red {
     font-weight: bold;
     color: #e94f37;
-    font-size: 21px;
+    font-size: 2.1rem;
 }
 
 .paragraph-small-white {
-    font-size: 21px;
+    font-size: 2.1rem;
     color: white;
     font-weight: initial;
 }
 
 .paragraph-small-red {
     text-align: right;
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: bold;
     color: #e94f37;
 }
 
 .paragraph-small-black {
-    font-size: 21px;
+    font-size: 2.1rem;
     color: black;
     font-weight: initial;
 }
@@ -205,7 +209,7 @@ h6 {
 .blue-bold {
     color: #032dc1;
     font-family: AvenirNext-Bold, sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 // MAIN
@@ -285,15 +289,15 @@ nav {
             }
 
             p:nth-child(1) {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
             address {
                 font-style: initial;
                 font-family: AvenirNext-Bold, sans-serif;
-                font-size: 32px;
+                font-size: 3.2rem;
             }
             p:nth-child(3) {
-                font-size: 14px;
+                font-size: 1.4rem;
             }
         }
     }
@@ -418,7 +422,7 @@ nav {
     .about-main_copy {
         .about-main_copy-quote_attribution {
             color: #1c1d21;
-            font-size: 18px;
+            font-size: 1.8rem;
         }
     }
 }
@@ -533,7 +537,7 @@ nav {
             }
 
             .news-story_title {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
         }
     }
@@ -585,7 +589,7 @@ button {
     padding: 20px;
     margin-top: 20px;
     background: #e94f37;
-    font-size: 26px;
+    font-size: 2.6rem;
     opacity: 1;
     border: 0px;
     transition: 0.3;
@@ -600,7 +604,7 @@ button.carousel-buttons {
 
 
     img {
-        margin: 0px -30px;
+        margin: 0px -300px;
     };
 }
 
@@ -634,23 +638,23 @@ button.carousel-buttons {
 
             h1 {
                 font-family: AvenirNext-Bold, sans-serif;
-                font-size: 24px;
+                font-size: 2.4rem;
             }
             h2 {
                 font-family: AvenirNext-Regular, serif;
                 font-weight: 100;
                 text-transform: none;
                 color: white;
-                font-size: 21px;
+                font-size: 2.1rem;
                 letter-spacing: 0;
             }
             p {
-                font-size: 18px;
+                font-size: 1.8rem;
                 color: white;
                 font-family: avenirNext-bold;
-                font-size: 16px;
+                font-size: 1.6rem;
             }
-            font-size: 20px;
+            font-size: 2.0rem;
             color: white;
             background-color: #032dc1;
 
@@ -676,7 +680,7 @@ button.carousel-buttons {
                 border-radius: 15px;
                 border: 0;
                 color: white;
-                font-size: 21px;
+                font-size: 2.1rem;
                 height: 50px;
                 -webkit-border-radius: 15px;
                 -moz-border-radius: 15px;
@@ -690,7 +694,7 @@ button.carousel-buttons {
                 font-family: AvenirNext-Bold, sans-serif;
                 color: black;
                 height: 40px;
-                font-size: 14px;
+                font-size: 1.4rem;
                 padding: 8px;
                 border-radius: 15px;
                 -webkit-border-radius: 15px;
@@ -718,17 +722,17 @@ button.carousel-buttons {
             font-style: initial;
 
             h1 {
-                font-size: 26px;
+                font-size: 2.6rem;
             }
             p {
                 color: black;
                 margin: 0;
-                font-size: 26px;
+                font-size: 2.6rem;
             }
 
             a {
                 color: #e94f37;
-                font-size: 26px;
+                font-size: 2.6rem;
             }
         }
     }
@@ -844,7 +848,7 @@ footer {
     .partner-profile_main {
         h1 {
             font-family: PoynterOSDisplay, serif;
-            font-size: 56px;
+            font-size: 5.6rem;
             color: #1c1d21;
         }
         h2 {
@@ -857,14 +861,14 @@ footer {
         }
         h3 {
             font-size: PoynterOSDisplay, serif;
-            font-size: 36px;
+            font-size: 3.6rem;
             color: #1c1d21;
             border-bottom: 2px solid #032dc1;
         }
         p {
             font-family: AvenirNext-Regular;
             margin-top: 25px;
-            font-size: 21px;
+            font-size: 2.1rem;
             color: black;
             line-height: 1.5;
         }
@@ -883,31 +887,31 @@ footer {
 
         h2 {
             font-family: PoynterOSDisplay, serif;
-            font-size: 45px;
+            font-size: 4.5rem;
             border-bottom: 2px solid #032dc1;
         }
 
         .blog-post_main-category {
-            font-size: 24px;
+            font-size: 2.4rem;
             font-family: AvenirNext-Bold, sans-serif;
             color: #032dc1;
             margin: 0;
         }
 
         .blog-post_main-date {
-            font-size: 21px;
+            font-size: 2.1rem;
             color: #7f7f81;
             margin: 0;
         }
 
         .blog-post_main-author {
-            font-size: 18px;
+            font-size: 1.8rem;
             color: #7f7f81;
             margin: 0;
         }
 
         p {
-            font-size: 21px;
+            font-size: 2.1rem;
             color: black;
             width: 85%;
             margin: 20px 0;
@@ -919,7 +923,7 @@ footer {
         b,
         i,
         u {
-            font-size: 21px;
+            font-size: 2.1rem;
         }
     }
     .blog-post_sidebar_container {
@@ -935,7 +939,7 @@ footer {
 
         h4 {
             font-family: AvenirNext-Bold, sans-serif;
-            font-size: 24px;
+            font-size: 2.4rem;
             color: #1c1d21;
             width: 100%;
         }
@@ -968,15 +972,15 @@ footer {
     }
 
     p:nth-child(1) {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     address {
         font-style: initial;
         font-family: AvenirNext-Bold, sans-serif;
-        font-size: 28px;
+        font-size: 2.8rem;
     }
     p:nth-child(3) {
-        font-size: 10px;
+        font-size: 1.0rem;
     }
 }
 
@@ -1077,23 +1081,23 @@ $desktop-medium: "only screen and (min-width: 1200px)";
     .blog-post_container {
         .blog-post_main {
             h2 {
-                font-size: 45px;
+                font-size: 4.5rem;
             }
 
             .blog-post_main-category {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
 
             .blog-post_main-date {
-                font-size: 21px;
+                font-size: 2.1rem;
             }
 
             .blog-post_main-author {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
 
             p {
-                font-size: 21px;
+                font-size: 2.1rem;
             }
 
             a,
@@ -1102,15 +1106,15 @@ $desktop-medium: "only screen and (min-width: 1200px)";
             b,
             i,
             u {
-                font-size: 21px;
+                font-size: 2.1rem;
             }
         }
         .blog-post_sidebar_container {
             h4 {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
             button {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
         }
     }
@@ -1123,7 +1127,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
             width: 100%;
 
             h1 {
-                font-size: 56px;
+                font-size: 8.0rem;
             }
         }
     }
@@ -1196,7 +1200,7 @@ $desktop-medium: "only screen and (min-width: 1200px)";
 
         li {
             a {
-                font-size: 18px;
+                font-size: 1.8rem;
                 &:hover {
                     border-bottom: 0px;
                 }
