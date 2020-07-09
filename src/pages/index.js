@@ -1,5 +1,7 @@
 import React from "react"
 import { useStaticQuery, Link } from "gatsby"
+import Carousel from 'nuka-carousel'
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,6 +25,11 @@ import award6 from '../images/award-million_dollar.png'
 import award7 from '../images/award-houston_top_lawyers.png'
 
 import videoPlaceholder from '../images/video_placeholder.png'
+
+import polygonRight from '../images/polygon-right.svg'
+import polygonLeft from '../images/polygon-left.svg'
+
+
 
 
 const IndexPage = () => {
@@ -268,22 +275,48 @@ const IndexPage = () => {
           </div>
 
         </section>
-        <section className="news_container padding-small">
+        <section className="news_container padding-medium">
           <h2>Latest News</h2>
-          <div className="news-story_flexcontainer responsive-flex">
-            {data.allContentfulBlogPost.edges.map((edge, i) => {
-              if (i < 3) {
-              return (
-                <div className="news-story">
-                  <h4 className="news-story_title">{edge.node.title}</h4>
-                  <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
-                  <Link to={`/blog/${edge.node.slug}`}><p className="paragraph-smaller-red">Read More ➝</p></Link>
-                </div>
-            )
-              }
-            })}
-          </div>
+          <Carousel
+            autoplay={false}
+            autoplayInterval={5000}
+            pauseOnHover={false}
+            wrapAround={true}
+            renderCenterLeftControls={({ previousSlide }) => (
+              <button onClick={previousSlide} className="carousel-buttons"><img src={polygonLeft}/></button>
+            )}
+            renderCenterRightControls={({ nextSlide }) => (
+              <button onClick={nextSlide} className="carousel-buttons"><img src={polygonRight}/></button>
+            )}>
+            <div className="news-story_flexcontainer responsive-flex">
+              {data.allContentfulBlogPost.edges.map((edge, i) => {
+                if (i < 3) {
+                  return (
+                    <div className="news-story">
+                      <h4 className="news-story_title">{edge.node.title}</h4>
+                      <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
+                      <Link to={`/blog/${edge.node.slug}`}><p className="paragraph-smaller-red">Read More ➝</p></Link>
+                    </div>
+                  )
+                }
+              })}
+            </div>
+            <div className="news-story_flexcontainer responsive-flex">
+              {data.allContentfulBlogPost.edges.map((edge, i) => {
+                if (i < 3) {
+                  return (
+                    <div className="news-story">
+                      <h4 className="news-story_title">{edge.node.title}</h4>
+                      <p className="news-story_excerpt paragraph-small">GALVESTON, TX - Two people were hospitalized yesterday when an oil storage tank they were working near exploded. Galveston spokesperson Marissa Barnett reports that both individuals are expected to survive.</p>
+                      <Link to={`/blog/${edge.node.slug}`}><p className="paragraph-smaller-red">Read More ➝</p></Link>
+                    </div>
+                  )
+                }
+              })}
+            </div>
+          </Carousel>
         </section>
+
         <section className="ask_container padding-medium">
           <div className="ask-main_container">
             <h2>Ask Us Anything</h2>

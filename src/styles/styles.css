@@ -29,6 +29,13 @@
   font-family: "AvenirNext-Regular", sans-serif;
 }
 
+* *,
+* ::after,
+* ::before {
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+}
+
 h1,
 h2,
 h3,
@@ -46,7 +53,17 @@ p {
   line-height: 1.2;
 }
 
-h2 {
+a:active,
+a:focus, button:active, button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a:visited, button:visited {
+  outline: none;
+}
+
+button h2 {
   font-family: "AvenirNext-Bold", sans-serif;
   text-transform: uppercase;
   font-size: 31px;
@@ -659,6 +676,15 @@ button:hover {
   background: #fb603c;
 }
 
+button.carousel-buttons {
+  background-color: Transparent;
+  margin: 0px -30px;
+}
+
+button.carousel-buttons img {
+  margin: 0px -30px;
+}
+
 .responsive-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,7 +752,8 @@ button:hover {
   font-size: 16px;
 }
 
-.contact-top_container .contact-top_form form input[type="text"], .contact-top_container .contact-top_form form input[type="email"] {
+.contact-top_container .contact-top_form form input[type="text"],
+.contact-top_container .contact-top_form form input[type="email"] {
   width: 90%;
   font-family: AvenirNext-Bold, sans-serif;
   height: 50px;

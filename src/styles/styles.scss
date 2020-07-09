@@ -23,13 +23,18 @@
     src: url(../fonts/AvenirNext-Heavy.otf);
 }
 
-
 $nav-height: 120px;
 
 * {
     margin: 0;
     padding: 0;
     font-family: "AvenirNext-Regular", sans-serif;
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: initial;
+    }
 }
 
 h1,
@@ -48,8 +53,15 @@ p {
     font-size: 24px;
     line-height: 1.2;
 }
+a:active,
+a:focus, button:active, button:focus {
+    box-shadow: none;
+}
+a:visited, button:visited {
+    outline: none;
+}
 
-h2 {
+button h2 {
     font-family: "AvenirNext-Bold", sans-serif;
     text-transform: uppercase;
     font-size: 31px;
@@ -91,11 +103,10 @@ h6 {
     font-family: AvenirNext-Regular, sans-serif;
     font-size: 14px;
     color: #1c1d21;
-    
+
     margin: 0;
     padding: 0;
 }
-
 
 //MODULES
 
@@ -578,10 +589,19 @@ button {
     opacity: 1;
     border: 0px;
     transition: 0.3;
-    &:hover 
-{
+    &:hover {
         background: #fb603c;
     }
+}
+
+button.carousel-buttons {
+    background-color: Transparent;
+    margin: 0px -30px;
+
+
+    img {
+        margin: 0px -30px;
+    };
 }
 
 .responsive-flex {
@@ -634,7 +654,8 @@ button {
             color: white;
             background-color: #032dc1;
 
-            input[type="text"], input[type="email"] {
+            input[type="text"],
+            input[type="email"] {
                 width: 90%;
                 font-family: AvenirNext-Bold, sans-serif;
                 height: 50px;
@@ -646,7 +667,7 @@ button {
                 -moz-border-radius: 10px;
                 -ms-border-radius: 10px;
                 -o-border-radius: 10px;
-}
+            }
             input[type="submit"] {
                 width: 100%;
                 text-align: center;
@@ -661,8 +682,8 @@ button {
                 -moz-border-radius: 15px;
                 -ms-border-radius: 15px;
                 -o-border-radius: 15px;
-}
-            button  {
+            }
+            button {
                 width: 45%;
                 text-align: center;
                 background-color: white;
@@ -680,7 +701,7 @@ button {
                     color: white;
                     background-color: #e94f37;
                 }
-}
+            }
         }
     }
 }
@@ -766,8 +787,7 @@ footer {
     .aboutpage-attorneys_directory {
         display: flex;
         flex-wrap: wrap;
-        
-        
+
         a {
             margin: 10px auto;
             text-decoration: none;
@@ -783,8 +803,7 @@ footer {
                 background-color: white;
                 padding: 10px;
                 width: 230px;
-                
-                
+
                 img {
                     height: 174.8px;
                     width: 230px; //media-query smaller on phones
@@ -1024,7 +1043,6 @@ $desktop-medium: "only screen and (min-width: 1200px)";
         }
     }
     .contact-bottom_container {
-
         .contact-bottom_copy {
             text-align: end;
             margin-left: -50px;
@@ -1150,7 +1168,6 @@ $desktop-medium: "only screen and (min-width: 1200px)";
                     margin-top: 25px;
                 }
             }
-            
         }
         .blog-post_sidebar_container {
             width: 100%;
