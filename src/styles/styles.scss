@@ -311,7 +311,8 @@ nav {
 
 .hero-menu_container {
     margin-top: $nav-height;
-    background-image: url("../images/hero_worker.jpg");
+    background-image: url("../images/hero_image.jpg");
+    mix-blend-mode: multiply;
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -989,8 +990,8 @@ footer {
 
 $phone: "only screen and (max-width: 767px)";
 $desktop-small: "only screen and (min-width: 768px) and (max-width: 1024px)";
-$desktop-medium: "only screen and (min-width: 1025px) and (max-width: 1499px)";
-$desktop-large: "only screen and (min-width: 1500px)";
+$desktop-medium: "only screen and (min-width: 1025px) and (max-width: 1699px)";
+$desktop-large: "only screen and (min-width: 1700px)";
 
 @media #{$desktop-small} {
     html {
@@ -1008,7 +1009,7 @@ $desktop-large: "only screen and (min-width: 1500px)";
 
     .hero-menu_container {
         .hero-menu_copy {
-            max-width: 30%;
+            max-width: 50%;
             padding: 200px 100px; //desktop query 300px 200px
         }
     }
@@ -1142,8 +1143,8 @@ $desktop-large: "only screen and (min-width: 1500px)";
 
     .hero-menu_container {
         .hero-menu_copy {
-            max-width: 30%;
-            padding: 200px 200px; //desktop query 300px 200px
+            max-width: 40%;
+            padding: 200px 100px; //desktop query 300px 200px
         }
     }
 

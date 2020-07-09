@@ -19,7 +19,36 @@ const ContactPage = () => (
                     <p className="section_paragraph">Contact us even if you aren't ready to hire someone and just need some basic questions answered. Ask us anything.</p>
                 </div>
                 <div className="contact-top_form">
-                    <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+                    
+                </div>
+            </section>
+            <section className="contact-bottom_container responsive-flex padding-medium">
+                <div className="contact-bottom_copy">
+                    <h3 className="black">Kherkher Garcia LLP</h3>
+                    <address>
+                        <h1>Houston Office</h1>
+                        <p>801 Travis Street, Suite 2175</p>
+                        <p>Houston, Texas 77002</p>
+                        <br></br>
+                        <p>Phone: <a>(713) 333-1030</a></p>
+                        <p>Fax: (713) 333-1029</p>
+                        <a>contactus@kherkhergarcia.com</a>
+                    </address>
+                </div>
+                <div className="contact-bottom_map">
+                    <GoogleApiWrapper />
+                </div>
+            </section>
+        </div>
+    </Layout >
+)
+
+export default ContactPage
+
+
+/*
+
+<form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                         <h1>Get a Free Consultation</h1>
                         <h2>Complete the form and our lawyers will contact you.</h2>
                         <input type="hidden" name="bot-field" />
@@ -58,27 +87,4 @@ const ContactPage = () => (
                         <input type="submit" value="Send Message" className="special" />
 
                     </form>
-                </div>
-            </section>
-            <section className="contact-bottom_container responsive-flex padding-medium">
-                <div className="contact-bottom_copy">
-                    <h3 className="black">Kherkher Garcia LLP</h3>
-                    <address>
-                        <h1>Houston Office</h1>
-                        <p>801 Travis Street, Suite 2175</p>
-                        <p>Houston, Texas 77002</p>
-                        <br></br>
-                        <p>Phone: <a>(713) 333-1030</a></p>
-                        <p>Fax: (713) 333-1029</p>
-                        <a>contactus@kherkhergarcia.com</a>
-                    </address>
-                </div>
-                <div className="contact-bottom_map">
-                    <GoogleApiWrapper />
-                </div>
-            </section>
-        </div>
-    </Layout >
-)
-
-export default ContactPage
+*/
