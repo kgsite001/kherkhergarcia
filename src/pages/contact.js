@@ -25,34 +25,34 @@ const ContactPage = () => (
                         <input type="hidden" name="bot-field" />
                         <input type="hidden" name="form-name" value="contact" />
 
-                        <input type="text" name="name" id="name" value="Name" />
+                        <input type="text" required name="name" id="name" placeholder="Name" />
                         <br></br>
 
 
-                        <input type="text" name="email" id="email" value="Email" />
+                        <input type="email" required name="email" id="email" placeholder="Email" />
                         <br></br>
 
 
-                        <input type="text" name="phone" id="phone" value="Phone" />
+                        <input type="text" name="phone" required id="phone" placeholder="Phone" />
                         <br></br>
 
                         <p>How did you get hurt? (pick one)</p>
                         <input type="radio" id="vehicle-accident" name="Why did you get hurt?" value="Vehicle Accident"></input>
-                        <button>Vehicle Accident</button>
+                        <button type="button">Vehicle Accident</button>
                         <input type="radio" id="at-work" name="Why did you get hurt?" value="At Work"></input>
-                        <button>At Work</button><br></br>
+                        <button type="button">At Work</button><br></br>
                         <input type="radio" id="medicine-or-drug" name="Why did you get hurt?" value="Medicine or Drug"></input>
-                        <button>Medicine or Drug</button>
+                        <button type="button">Medicine or Drug</button>
                         <input type="radio" id="something-else" name="Why did you get hurt?" value="Something Else"></input>
-                        <button>Something Else</button>
+                        <button type="button">Something Else</button>
                         <br></br>
 
 
                         <p>How did you get hurt? (pick one)</p>
                         <input type="radio" id="vehicle-accident" name="Preferred Contact" value="Call"></input>
-                        <button>Call Me</button>
+                        <button type="button">Call Me</button>
                         <input type="radio" id="at-work" name="Preferred Contact" value="Text"></input>
-                        <button>Text Me</button><br></br>
+                        <button type="button">Text Me</button><br></br>
                         <br></br>
 
                         <input type="submit" value="Send Message" className="special" />

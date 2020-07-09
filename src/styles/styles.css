@@ -132,14 +132,20 @@ h4 {
 
 h5 {
   font-family: AvenirNext-Bold, sans-serif;
-  font-size: 21px;
+  font-size: 14px;
   color: #1c1d21;
+  margin-top: 5px;
+  padding: 0;
+  line-height: 1;
 }
 
 h6 {
   font-family: AvenirNext-Regular, sans-serif;
-  font-size: 21px;
+  font-size: 14px;
   color: #1c1d21;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .header-top {
@@ -736,7 +742,7 @@ button {
 
 .contact-top_container .contact-top_form form {
   padding: 40px;
-  width: 80%;
+  width: 500px;
   font-size: 20px;
   color: white;
   background-color: #032dc1;
@@ -768,7 +774,7 @@ button {
   font-size: 16px;
 }
 
-.contact-top_container .contact-top_form form input[type="text"] {
+.contact-top_container .contact-top_form form input[type="text"], .contact-top_container .contact-top_form form input[type="email"] {
   width: 90%;
   font-family: AvenirNext-Bold, sans-serif;
   height: 50px;
@@ -800,6 +806,7 @@ button {
 
 .contact-top_container .contact-top_form form button {
   width: 45%;
+  text-align: center;
   background-color: white;
   font-family: AvenirNext-Bold, sans-serif;
   color: black;
@@ -935,10 +942,16 @@ footer {
 .aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile {
   background-color: white;
   padding: 10px;
+  width: 230px;
 }
 
 .aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile img {
-  max-width: 200px;
+  height: 174.8px;
+  width: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px -5px;
+     object-position: 0px -5px;
 }
 
 .aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile h3 {

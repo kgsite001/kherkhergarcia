@@ -68,7 +68,9 @@ const AboutPage = () => {
                             return (
                                 <Link to={`/staff/${edge.node.slug}`}>
                                     <div className="aboutpage-attorneys_profile">
-                                        <img src={edge.node.profileImage.resize.src}></img>
+                                        
+                                            <img src={edge.node.profileImage.resize.src}></img>
+                                        
                                         <h5 className="bold-blue">{edge.node.firstName} {edge.node.lastName}</h5>
                                         <h6>{edge.node.title}</h6>
                                     </div>
