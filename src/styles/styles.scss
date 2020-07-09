@@ -23,70 +23,6 @@
     src: url(../fonts/AvenirNext-Heavy.otf);
 }
 
-$font-smallest: 14px;
-$font-smaller: 18px;
-$font-small: 21px;
-$font-medium: 24px;
-$font-medium_large: 29px;
-$font-large: 31px;
-$font-larger: 56px;
-$font-largest: 80px;
-
-/*
-
-//-16 tablet
-$font-smallest: 6px;
-$font-smaller: 12px;
-$font-small: 13px;
-$font-medium: 16px; //stays same
-$font-medium_large: 21px;
-$font-large: 16px;
-$font-larger: 40px;
-$font-largest: 64px;
-
-
-
-
-// -8 small desktop
-$font-smallest: 6px;
-$font-smaller: 12px;
-$font-small: 13px;
-$font-medium: 16px;
-$font-medium_large: 21px;
-$font-large: 24px;
-$font-larger: 48px;
-$font-largest: 72px;
-
-//medium desktop
-$font-smallest: 14px;
-$font-smaller: 18px;
-$font-small: 21px;
-$font-medium: 24px;
-$font-medium_large: 29px;
-$font-large: 32px;
-$font-larger: 56px;
-$font-largest: 80px;
-
-// +8 large desktop
-$font-smallest: 22px;
-$font-small: 29px;
-$font-medium: 32px;
-$font-medium_large: 37px;
-$font-large: 40px;
-$font-larger: 64px;
-$font-largest: 88px;
-
-
-Old->
-$font-smaller: 10px;
-$font-small: 12px;
-$font-medium_small: 14px;
-$font-medium: 16px;
-$font-medium_large: 18px;
-$font-large: 24px;
-$font-larger: 48px;
-$font-largest: 62px;
-*/
 
 $nav-height: 120px;
 
@@ -191,19 +127,19 @@ h6 {
 }
 
 .paragraph-smallest {
-    font-size: $font-smallest;
+    font-size: 14px;
 }
 
 .paragraph-smaller {
-    font-size: $font-smaller;
+    font-size: 18px;
 }
 
 .paragraph-small {
-    font-size: $font-small;
+    font-size: 21px;
 }
 
 .paragraph-medium_large {
-    font-size: $font-medium_large;
+    font-size: 29px;
     color: white;
     margin: 0;
 }
@@ -213,7 +149,7 @@ h6 {
 
 .paragraph-smaller-red {
     text-align: right;
-    font-size: $font-smaller;
+    font-size: 18px;
     font-weight: bold;
     color: #e94f37;
 }
@@ -225,20 +161,20 @@ h6 {
 }
 
 .paragraph-small-white {
-    font-size: $font-small;
+    font-size: 21px;
     color: white;
     font-weight: initial;
 }
 
 .paragraph-small-red {
     text-align: right;
-    font-size: $font-small;
+    font-size: 21px;
     font-weight: bold;
     color: #e94f37;
 }
 
 .paragraph-small-black {
-    font-size: $font-small;
+    font-size: 21px;
     color: black;
     font-weight: initial;
 }
@@ -952,7 +888,7 @@ footer {
         }
 
         p {
-            font-size: $font-small;
+            font-size: 21px;
             color: black;
             width: 85%;
             margin: 20px 0;
@@ -964,7 +900,7 @@ footer {
         b,
         i,
         u {
-            font-size: $font-small;
+            font-size: 21px;
         }
     }
     .blog-post_sidebar_container {
