@@ -41,264 +41,6 @@ html {
     }
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  footer {
-    background-color: #EEF0F2;
-    color: #1C1D21;
-    line-height: 1.2;
-  }
-  footer a {
-    text-decoration: none;
-    color: #1C1D21;
-    transition: color 0.2s ease-in-out;
-  }
-  footer a:hover {
-        text-decoration: underline;
-        color:#E94F37;
-  }
-
-  .ft-logo {
-    text-indent: -9999px;
-    background-image: url("../images/logo_top.svg"); 
-    min-height: 150px;
-    background-repeat: no-repeat;
-    background-size: 150px;
-    margin-bottom: 15px;
-}
-
-.ft-contact a, .ft-office a {
-    color: #fff;
-    vertical-align: text-top;
-    text-align: center;
-}
-
-a.ft-button {
-    display: block;
-    background: #032DC1;
-    transition: background-color 0.5s ease;
-    color: #fff;
-    font-weight: bold;
-    margin: 10px 0;
-    max-width: 200px;
-    line-height: 40px;
-    text-align: center;
-    }
-
-
-a.ft-button:hover {
-background: #E94F37;
-color: #fff;
-text-decoration: none;
-}
-
-.ft-directions::before {
-    margin: 0 5px 0 0;
-    background-image: url("../images/location.svg");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: inline-flex;
-    width: 20px; 
-    height: 20px;
-    content:"";
-    vertical-align: text-top;
-}
-
-.ft-text::before {
-    margin: 0 10px 0 0;
-    background-image: url("../images/text.svg");
-    background-size: 30px 30px;
-    display: inline-block;
-    width: 30px; 
-    height: 30px;
-    content:"";
-    vertical-align: middle;
-}
-
-.ft-email::before {
-    margin: 0 10px 0 0px;
-    background-image: url("../images/email.svg");
-    background-size: 25px 25px;
-    display: inline-block;
-    width: 25px; 
-    height: 25px;
-    content:"";
-    vertical-align: middle;
-}
-
-p.kg-address {
-    margin-bottom: 18px;
-}
-
-
-  .ft-title {
-    color: #1C1D21;
-    font-family: "AvenirNext-Bold", serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-  }
-
-  /* Footer main */
-  .ft-main {
-    padding: 1.25rem 1.875rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media only screen and (min-width: 477px /* 477px */) {
-    .ft-main {
-      justify-content: space-evenly;
-    }
-  }
-  @media only screen and (min-width: 1240px /* 1240px */) {
-    .ft-main {
-      justify-content: space-evenly;
-    }
-  }
-  .ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem;
-  }
-  
-    /* Footer social */
-  .ft-social-list {
-    display: flex;
-  }
-
-  .ft-social-list li {
-    list-style: none; 
-    margin: 0.5rem;
-  }
-
-  a.fa-facebook {
-    background-image: url("../images/facebook.svg");
-    text-indent: -9999px;
-    height:50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
-
-a.fa-twitter {
-    background-image: url("../images/twitter.svg");
-    text-indent: -9999px;
-    height:50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
-
-a.fa-instagram {
-    background-image: url("../images/instagram.svg");
-    text-indent: -9999px;
-    height:50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
-
-a.fa-youtube {
-    background-image: url("../images/youtube.svg");
-    text-indent: -9999px;
-    height:50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
-
-a.fa-linkedin {
-    background-image: url("../images/linkedin.svg");
-    background-size: 50px 50px;
-    text-indent: -9999px;
-    height:50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    
-}
-
-.ft-copyright {margin: 20px 0 25px;}
-.ft-copyright p {
-    text-align: center; 
-    font-size: 16px;
-}
-
-  /* Footer legal */
-  .ft-legal {
-    background-color: #7F7F81;
-    color: #EEF0F2;
-  }
-  .ft-legal-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ft-legal-list li {
-    margin: 0 auto;
-    white-space: nowrap;
-  }
-
-  .ft-legal p {
-    font-size: 14px;
-    margin: 0 auto;
-    max-width: 1024px;
-    text-align: center;
-    padding: 20px 20px 100px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h1,
 h2,
 h3,
@@ -497,7 +239,6 @@ nav {
     margin: 0;
 }
 
-
 .nav-flex_container {
     display: flex;
     flex-direction: row;
@@ -525,7 +266,6 @@ nav {
         .icon_large {
             width: 90px;
             margin-top: -2%;
-            
         }
 
         a {
@@ -541,7 +281,6 @@ nav {
             &:hover {
                 border-bottom: 5px solid #fec82e;
             }
-
         }
         button {
             background-color: #032dc1;
@@ -822,7 +561,7 @@ nav {
             margin: 20px;
 
             img {
-                width: 10.0rem;
+                width: 10rem;
                 padding-bottom: 10px;
             }
 
@@ -874,7 +613,7 @@ button.carousel-buttons {
     margin: 0px -30px;
 
     img {
-        margin: 0px -300px;
+        padding: 0;
     }
 }
 
@@ -1035,6 +774,13 @@ footer {
         width: 100%;
         div {
             text-align: left;
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: #032dc1;
+                }
+            }
             img {
                 max-width: 100%;
                 border: 5px solid white;
@@ -1223,19 +969,21 @@ footer {
 .mobile_logo {
     position: absolute;
     width: 80px;
-    top: 30px;
-    right: 45vw;
+    top: 20px;
+    left: 2px;
     margin: auto;
+    padding: 10px;
 }
 
 .mobile_call_button {
     background-color: #032dc1;
     position: absolute;
-    width: 40vw;
+    width: 150px;
     height: 100px;
     top: -10px;
-    right: 0;
     padding: 0;
+    left: 50%;
+    margin-left: -75px;
     border: 2px solid #3772fc;
     margin-right: 10px;
 
@@ -1297,6 +1045,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
             margin-top: -2%;
         }
     }
+
     .padding-small {
         padding: 50px 0%;
     }
@@ -1306,7 +1055,6 @@ $desktop-large: "only screen and (min-width: 1700px)";
     .padding-large {
         padding: 50px 10%;
     }
-    
 
     .hero-menu_container {
         .hero-menu_copy {
@@ -1324,7 +1072,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
             width: 80%;
         }
     }
-    
+
     .about-main_container {
         div {
             width: 50%;
@@ -1353,8 +1101,6 @@ $desktop-large: "only screen and (min-width: 1700px)";
             }
         }
     }
-
-    
 
     .responsive-flex {
         flex-direction: row;
@@ -1395,7 +1141,6 @@ $desktop-large: "only screen and (min-width: 1700px)";
     .reviews_container div img {
         max-width: 300px;
     }
-
 
     .results_container .results-table_container .results-table {
         display: flex;
@@ -1479,7 +1224,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
         margin: 20px 30px;
         padding: 10px;
     }
-    
+
     .results_container .results-table_container .results-table tr {
         padding: 10px 3px;
         display: flex;
@@ -1611,7 +1356,6 @@ $desktop-large: "only screen and (min-width: 1700px)";
 }
 
 @media #{$desktop-large} {
-
     .nav-flex_container li button address {
         font-size: 2.2rem !important;
     }
@@ -1619,6 +1363,64 @@ $desktop-large: "only screen and (min-width: 1700px)";
     html {
         font-size: 62.5%;
     }
+
+    //Sean's additions:
+    ////////////////////////
+    Button {
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+
+    .nav-flex_container li button {
+        height: 80px;
+        border: 4px solid #3772fc;
+    }
+
+    .nav-flex_container li button address {
+        font-size: 2.2rem;
+    }
+
+    .nav-flex_container li button p:first-child {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        margin-top: 30px;
+    }
+
+    h3 span {
+        margin-left: -7vw;
+        color: #c1cfda;
+        opacity: 1;
+        font-size: 12vw;
+    }
+
+    .about-main_container .about-main_copy .about-main_copy-quote_attribution {
+        font-size: 2rem;
+        margin: -10px 0 20px 0;
+    }
+
+    .about-sub_container div {
+        width: 400px;
+    }
+
+    aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile img {
+        height: 200px;
+        width: 200px;
+    }
+
+    h5,
+    h6 {
+        margin-bottom: 0.5rem;
+    }
+
+    .aboutpage-attorneys_container .aboutpage-attorneys_directory a .aboutpage-attorneys_profile {
+        width: 200px;
+    }
+
+    ///////////////////
+    ///////////////////
+
     .padding-small {
         padding: 50px 10%;
     }
@@ -1767,6 +1569,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
     .awards-icon_container {
         img {
             width: 10% !important;
+            mix-blend-mode: luminosity;
         }
     }
     .padding-small {
@@ -1823,7 +1626,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
         flex-direction: column;
 
         .icon_large {
-            margin: 0 auto;
+            display: none;
         }
 
         a {
@@ -1849,6 +1652,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
         top: 50px;
         padding-left: 40px;
 
+
         z-index: 2;
 
         -webkit-user-select: none;
@@ -1865,15 +1669,15 @@ $desktop-large: "only screen and (min-width: 1700px)";
         -o-transition: color 0.3s ease;
     }
 
+    ////// TO EDIT
     #menuToggle input {
         display: block;
-        width: 40px;
-        height: 32px;
+        width: 90px;
+        height: 90px;
         position: absolute;
-        top: -7px;
-        left: 36px;
-        border: 1px solid black;
-
+        top: -30px;
+        right: 0px;
+        
         cursor: pointer;
 
         opacity: 0; /* hide this */
@@ -1890,6 +1694,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
         width: 33px;
         height: 4px;
         margin-bottom: 5px;
+        margin-left: 80%;
         position: relative;
 
         background: black;

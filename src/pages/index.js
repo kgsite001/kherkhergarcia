@@ -77,10 +77,22 @@ const IndexPage = () => {
         </section>
         <section id="results" className="results_container padding-small">
           <h2>Results</h2>
+          
           <h3 className="blue">Over 40 years of experience in the courtroom</h3>
           <p className="section_paragraph">Not every lawyer has been through a trial. We know how to try cases. Our expertise allows us to get recoveries from the most complex and challenging cases. We work on cases all across the country.</p>
+          
+          <Carousel 
+            autoplay={false}
+            autoplayInterval={5000}
+            pauseOnHover={false}
+            wrapAround={true}
+            renderCenterLeftControls={({ previousSlide }) => (
+              <button onClick={previousSlide} className="carousel-buttons"><img src={polygonLeft}/></button>
+            )}
+            renderCenterRightControls={({ nextSlide }) => (
+              <button onClick={nextSlide} className="carousel-buttons"><img src={polygonRight}/></button>
+            )}>
           <div className="results-table_container responsive-flex">
-
             <table className="results-table">
               <tr className="results-table_won">
                 <th className="paragraph-large">We Won:</th>
@@ -145,9 +157,9 @@ const IndexPage = () => {
                 </tr>
                 <p className="paragraph-smaller-red">Read More ➝</p>
               </div>
-
             </table>
           </div>
+          </Carousel>
           <button>See More Victories ➝</button>
         </section>
         <section id="aboutus" className="about_container padding-medium">
@@ -192,7 +204,7 @@ const IndexPage = () => {
             <h2>Common Questions</h2>
             <h3>Remember to ask these questions.</h3>
             <p className="section_paragraph">When you are injured and need help it is important to get answers that can help you receive the justice you deserve. These are frequently asked questions we receive from our clients.</p>
-            <button>See More Common Questions ➝</button>
+            <button>More Common Questions ➝</button>
           </div>
           <div className="questions_list">
             <button onClick={() => {

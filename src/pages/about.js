@@ -11,7 +11,7 @@ import steveTeam from '../images/steve_team.png'
 const AboutPage = () => {
     const data = useStaticQuery(graphql`
   query {
-    allContentfulStaffProfile (sort: {fields:publishedDate, order:DESC}) {
+    allContentfulStaffProfile (sort: {fields: lastName, order: ASC}) {
       edges {
         node {
           profileImage {
@@ -35,13 +35,16 @@ const AboutPage = () => {
                 <section className="aboutpage-introduction_container padding-small responsive-flex">
                     <div className="aboutpage-kg_profiles">
                         <div>
-                            <img src={kherkherProfile} alt="Jesus Garcia"></img>
-                            <h5>Steve Kherkher</h5>
+                            <Link href="/staff/steven-kherkher">
+                                <img src={kherkherProfile} alt="Jesus Garcia"></img>
+                                <h5>Steve Kherkher</h5>
+                            </Link>
                             <h6>Founding Partner</h6>
                         </div>
                         <div>
-                            <img src={garciaProfile} alt="Steve Kherkher"></img>
-                            <h5>Jesus Garcia, Jr.</h5>
+                            <Link href="/staff/jesus-garcia"><img src={garciaProfile} alt="Steve Kherkher"></img>
+                                <h5>Jesus Garcia, Jr.</h5>
+                            </Link>
                             <h6>Founding Partner</h6>
                         </div>
                     </div>
@@ -68,9 +71,9 @@ const AboutPage = () => {
                             return (
                                 <Link to={`/staff/${edge.node.slug}`}>
                                     <div className="aboutpage-attorneys_profile">
-                                        
-                                            <img src={edge.node.profileImage.resize.src}></img>
-                                        
+
+                                        <img src={edge.node.profileImage.resize.src}></img>
+
                                         <h5 className="bold-blue">{edge.node.firstName} {edge.node.lastName}</h5>
                                         <h6>{edge.node.title}</h6>
                                     </div>
