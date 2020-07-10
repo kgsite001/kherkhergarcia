@@ -332,6 +332,7 @@ nav #menuToggle input {
 }
 
 .hero-menu_container {
+  background-color: #3772FC;
   margin-top: 120px;
   background-image: url("../images/hero_image.jpg");
   mix-blend-mode: multiply;
@@ -340,9 +341,8 @@ nav #menuToggle input {
   background-position-y: 50%;
   min-height: 100vh;
   background-repeat: no-repeat;
-  background-color: #4e505c;
   background-blend-mode: multiply;
-  opacity: 1;
+  opacity: 0.90;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
