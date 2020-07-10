@@ -1774,4 +1774,198 @@ footer {
             transform: none;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+
+
+footer {
+  background-color: #EEF0F2 !important;
+  color: #1C1D21 !important;
+  line-height: 1.2 !important;
+  font-size: 1.7rem;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer a {
+  text-decoration: underline;
+  color: #1C1D21;
+  transition: color 0.2s ease-in-out;
+}
+footer a:hover {
+      text-decoration: none;
+      color:#E94F37;
+}
+/* Footer main */
+.ft-main {
+  padding: 7rem 1rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+.ft-logo {
+  text-indent: -9999px;
+  background-image: url(../images/kg-logo.png); 
+  min-height: 125px !important;
+  background-repeat: no-repeat;
+  background-size: 125px !important;
+  margin-bottom: 15px !important;
+}
+.ft-contact a, .ft-office a {
+  color: #fff;
+  vertical-align: text-top;
+  text-align: center;
+}
+a.ft-button {
+  display: block;
+  background: #032DC1;
+  transition: background-color 0.5s ease;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 10px;
+  width: 200px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "AvenirNext-Bold", serif;
+  text-decoration: none;
+  }
+a.ft-button:hover {
+background: #E94F37;
+color: #fff;
+text-decoration: none;
+}
+.ft-directions {
+  margin-top: 15px !important;
+}
+.ft-directions::before {
+  margin: 0 5px 0 0;
+  background-image: url("../images/location.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-flex;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  vertical-align: text-top;
+}
+.ft-text::before {
+  margin: 0 10px 0 0;
+  background-image: url("../images/text.svg");
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  vertical-align: middle;
+}
+.ft-email::before {
+  margin: 0 10px 0 0px;
+  background-image: url("../images/email.svg");
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  content:"";
+  vertical-align: middle;
+}
+p.kg-address {
+  margin-bottom: 0.625rem;
+}
+.ft-title {
+  color: #1C1D21;
+  font-family: "AvenirNext-Bold", serif;
+  font-size: 2.5rem !important;
+  padding-bottom: 0.625rem;
+  text-transform: capitalize !important;
+  letter-spacing: -0.05rem !important;
+}
+  /* Footer social */
+.ft-social-list {
+  display: flex;
+}
+.ft-social-list li {
+  list-style: none; 
+  margin: 0.5rem;
+}
+a.fa-facebook {
+  background-image: url(../images/facebook.svg);
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  height:40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+a.fa-twitter {
+  background-image: url(../images/twitter.svg);
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  height:40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+a.fa-instagram {
+  background-image: url(../images/instagram.svg);
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  height:40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+a.fa-youtube {
+  background-image: url(../images/youtube.svg);
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  height:40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+a.fa-linkedin {
+  background-image: url(../images/linkedin.svg);
+  background-size: 40px 40px;
+  text-indent: -9999px;
+  height:40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  
+}
+.ft-copyright {margin: 20px 0 25px;}
+.ft-copyright p {
+  text-align: center; 
+  font-size: 16px;
+}
+/* Footer legal */
+.ft-legal {
+  background-color: #7F7F81 !important;
+  width: 100%;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.ft-legal p {
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+  padding: 20px 20px 100px;
+  color: #EEF0F2 !important;
+  }
