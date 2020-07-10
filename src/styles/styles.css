@@ -972,6 +972,23 @@ footer {
   border: 5px solid #f6f7fc;
 }
 
+.partner-profile_container .partner-profile_sidebar p {
+  font-size: 1.8rem;
+  font-family: AvenirNext-DemiBold, serif !important;
+  color: black;
+}
+
+.partner-profile_container .partner-profile_sidebar a {
+  font-size: 1.8rem;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.partner-profile_container .partner-profile_sidebar a:hover {
+  color: #032dc1;
+}
+
 .partner-profile_container .partner-profile_sidebar div .partner-profile_icons img {
   border: 0px;
   width: 25px;
@@ -1294,7 +1311,7 @@ footer {
 
 @media only screen and (min-width: 1024px) and (max-width: 1699px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
   .padding-small {
     padding: 50px 10%;

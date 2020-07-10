@@ -53,12 +53,11 @@ const Staff = (props) => (
         <div className="partner-profile_sidebar">
           <img src={props.data.contentfulStaffProfile.profileImage.resize.src} alt={props.data.contentfulStaffProfile.profileImage.description || ''}></img>
           <div>
-            <div className="partner-profile_icons">
-              <img src={iconPhone}></img>
-              <img src={iconEmail}></img>
-              <img src={iconAddress}></img>
-              <img src={iconLinkedIn}></img>
-            </div>
+            <p>Phone:</p>
+            <a href={`tel:${props.data.contentfulStaffProfile.phone}`}>{props.data.contentfulStaffProfile.phone}</a>
+            <p>Email:</p>
+<a href={`mailto:${props.data.contentfulStaffProfile.email}`}>{props.data.contentfulStaffProfile.email}</a>
+            <br></br>
             <button>Ask Us Anything ➝</button>
           </div>
         </div>

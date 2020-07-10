@@ -263,12 +263,15 @@ nav {
         align-self: center;
         margin: 1vh;
 
+        
+
         .icon_large {
             width: 90px;
             margin-top: -2%;
         }
 
         a {
+            
             .icon_small {
                 width: 25px;
             }
@@ -848,6 +851,19 @@ footer {
             max-width: 250px;
             border: 5px solid #f6f7fc;
         }
+        p {
+            font-size: 1.8rem;
+            font-family: AvenirNext-DemiBold, serif !important;
+            color: black;
+        }
+        a {
+            font-size: 1.8rem;
+            color: black;
+            transition: 0.5s;
+            &:hover {
+                color: #032dc1;
+            }
+        }
         div {
             .partner-profile_icons {
                 img {
@@ -1207,7 +1223,7 @@ $desktop-large: "only screen and (min-width: 1700px)";
 
 @media #{$desktop-medium} {
     html {
-        font-size: 40%;
+        font-size: 50%;
     }
     .padding-small {
         padding: 50px 10%;

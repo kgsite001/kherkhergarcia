@@ -16,7 +16,7 @@ const Header = () => (
         <span></span>
         <span></span>
         <ul className="nav-flex_container" id="menu">
-          <li><Link to="/"><img className="icon_large" src={Logo}></img></Link></li>
+          <li><Link to="/" id="logo-link_header"><img className="icon_large" src={Logo}></img></Link></li>
           <li><Link to="/about" className="paragraph-smaller">About Us</Link></li>
           <li><a className="paragraph-smaller" href="/#aboutus">What We Do</a></li>
           <li><a className="paragraph-smaller" href="/#results">Our Results</a></li>
