@@ -116,6 +116,10 @@ h6 {
   padding: 0;
 }
 
+svg.paging-dot circle {
+  display: none;
+}
+
 .header-top {
   font-family: PoynterOSDisplay, serif;
   font-size: 8rem;
@@ -677,8 +681,8 @@ button {
   font-size: 2.4rem;
   opacity: 1;
   border: 0px;
-  -webkit-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 button:hover {
@@ -706,7 +710,7 @@ button.carousel-buttons img {
 
 .contact-top_container {
   background: #f6f7fc;
-  margin-top: 240px;
+  padding-top: 240px !important;
 }
 
 .contact-top_container .contact-top_copy {
@@ -1121,7 +1125,27 @@ footer {
 }
 
 .testimonials_container {
-  background: white;
+  background-color: white;
+}
+
+.about-main_container {
+  background-color: white;
+}
+
+.questions_container {
+  background-color: white;
+}
+
+.ask_container {
+  background-color: white;
+}
+
+.aboutpage-introduction_container {
+  background-color: white;
+}
+
+.contact-bottom_container {
+  background-color: white;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1270,6 +1294,13 @@ footer {
   }
   .padding-large {
     padding: 50px 25%;
+  }
+  .news_container .news-story_flexcontainer .news-story {
+    -webkit-box-shadow: 2px 2px 5px 0px #878787;
+            box-shadow: 2px 2px 5px 0px #878787;
+    background-color: white;
+    margin: 20px 30px;
+    padding: 10px;
   }
   .results_container .results-table_container .results-table tr {
     padding: 10px 3px;
