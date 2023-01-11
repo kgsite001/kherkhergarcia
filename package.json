@@ -17,7 +17,7 @@
     "gatsby-source-contentful": "^2.3.24",
     "gatsby-source-filesystem": "^2.3.18",
     "gatsby-source-googlemaps-static": "^1.1.12",
-    "gatsby-transformer-remark": "^2.8.23",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.10",
     "google-maps-react": "^2.0.6",
     "nuka-carousel": "^4.7.0",
